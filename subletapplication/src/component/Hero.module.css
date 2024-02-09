@@ -67,6 +67,7 @@
   padding: 1rem;
   background-image: url("/src/assets/messag.png");
   border-radius: 10px;
+  background-repeat: no-repeat;
 }
 
 .div2 {
