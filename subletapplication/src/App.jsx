@@ -3,6 +3,7 @@ import Navbar from "./component/Navbar";
 import Heropage from "./component/Heropage";
 import Herophoto from "./component/Herophoto";
 import Herosection from "./component/Herosection";
+import Footer from "./component/Footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Heropage />
       <Herophoto />
       <Herosection />
+      <Footer />
     </>
   );
 };

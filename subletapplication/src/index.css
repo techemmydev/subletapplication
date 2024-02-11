@@ -128,3 +128,8 @@ button:focus-visible {
   background-position: center;
   background-size: contain;
 }  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
