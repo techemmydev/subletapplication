@@ -1,22 +1,46 @@
 import React from "react";
 import footerstyle from "./footer.module.css";
+import { MdOutlineLocalPhone } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+
+import { CiFacebook } from "react-icons/ci";
+
+import { FaInstagram } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer>
       <div className={footerstyle.footercontainer}>
         <div className={footerstyle.flexcontainer}>
           <div>
-            <h1>logo</h1>
+            <div className={footerstyle.footerimage}>
+              <img
+                src="/src/assets/Frame 1.png"
+                alt="logofooter"
+                className={footerstyle.footerimage2}
+              />
+            </div>
           </div>
-          <div>
+          <div className={footerstyle.contactlist}>
             <h2>contact us</h2>
             <ul>
-              <li>08065592378,090575757575</li>
-              <li>088888888888888888</li>
+              <li>
+                <MdOutlineLocalPhone className={footerstyle.iconstyle} /> +234
+                817 1122 907, +234 814 4349 593
+              </li>
+              <li>
+                <FaWhatsapp className={footerstyle.iconstyle} />
+                +234 8023019 103
+              </li>
+              <li>
+                <MdOutlineMail className={footerstyle.iconstyle} />
+                <span className={footerstyle.ctaemail}> sublet@gmail.com </span>
+              </li>
             </ul>
           </div>
-          <div>
-            <h2>quick link</h2>
+          <div className={footerstyle.quicklink}>
+            <h2>quick links</h2>
             <nav>
               <ul>
                 <li>contact us</li>
@@ -24,12 +48,10 @@ const Footer = () => {
                 <li>terms of use</li>
               </ul>
             </nav>
-          </div>
-          <div>
-            <ul>
-              <li>08065592378,090575757575</li>
-              <li>088888888888888888</li>
-            </ul>
+            <div className={footerstyle.icon_quicklink}>
+              <CiFacebook className={footerstyle.iconstyle_quick} />
+              <FaInstagram className={footerstyle.iconstyle_quick} />
+            </div>
           </div>
         </div>
       </div>
