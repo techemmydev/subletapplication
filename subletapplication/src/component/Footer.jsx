@@ -9,6 +9,7 @@ import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const copyright = new Date().getFullYear();
   return (
     <footer>
       <div className={footerstyle.footercontainer}>
@@ -53,6 +54,10 @@ const Footer = () => {
               <FaInstagram className={footerstyle.iconstyle_quick} />
             </div>
           </div>
+          <p className={footerstyle.copyright}>
+            {" "}
+            © {copyright} SUBLET | All Rights Reserved{" "}
+          </p>
         </div>
       </div>
     </footer>
