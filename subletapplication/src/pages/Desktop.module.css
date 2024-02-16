@@ -1,0 +1,199 @@
+.welcomepagescreen {
+  width: 100%;
+  /* background-color: var(--color-white); */
+  height: 130vh;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+
+  /* background-image: url("/src/assets/imagebackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+.innerwelcompagescreencontainer {
+  width: 70%;
+  height: 700px;
+  background-image: url("/src/assets/imagebackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.secondinnercontainer {
+  width: 60%;
+  height: 530px;
+  margin-top: 25px;
+  position: relative;
+  /* background-color: black; */
+}
+.detailsinputcontainer {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 440px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcomepagescreenContent {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.welcomepagescreenContent h1 {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-transform: capitalize;
+}
+.welcomepagescreenContent p {
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+
+  letter-spacing: 0em;
+}
+.inputformcontainer {
+  width: 90%;
+  /* background-color: green; */
+  height: 400px;
+}
+.inputicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.inputicon button {
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  border-radius: 24px;
+  gap: 10px;
+  border: none;
+}
+.fb {
+  width: 10px;
+}
+.goo {
+  width: 18px;
+}
+.spans {
+  font-family: "Inter";
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 60px;
+  margin-bottom: 20px;
+  /* background-color: aqua; */
+}
+.frameline {
+  border-top: 1px solid #e6e6e6;
+  width: 150px;
+}
+.framelineparagraph {
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #808080;
+}
+.input_Details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.input_Details input {
+  width: 90%;
+  margin: 15px;
+  color: #808080;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+}
+.input_Details input::placeholder {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-transform: capitalize;
+  color: #808080;
+}
+
+.forgot {
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.frameInput1 {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  color: rebeccapurple;
+}
+
+.frameInput2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.forgot span {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.already {
+  text-decoration: underline;
+}
+.welcomeButton {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.dontHaveAnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+.signUp {
+  color: var(--color-aquamarine-100);
+}
