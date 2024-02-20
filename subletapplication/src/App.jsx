@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Outletcomponent from "./component/Outletcomponent";
-import HomePage from "./pages/Landingpage";
-import AboutusPage from "./pages/Aboutpage";
-import NotFound from "./pages/PageNotFound";
-import WelcomeBackPage from "./pages/Desktop";
+import Outletcomponent from "./My_Component/OutletComponents/Outletcomponent";
+import HomePage from "./My_ScreenPages/LandingPage/Landingpage";
+import AboutusPage from "./My_ScreenPages/AboutPage/Aboutpage";
+import NotFound from "./My_ScreenPages/PageNotFound/PageNotFounds";
+import WelcomeBackPage from "./My_ScreenPages/LoginPage/Desktop";
 
 const App = () => {
   return (

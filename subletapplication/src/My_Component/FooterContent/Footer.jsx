@@ -1,5 +1,5 @@
 import React from "react";
-import footerstyle from "../component/Style_Component/footer.module.css";
+import footerstyle from "../../My_Component/FooterContent/footer.module.css";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <div className={footerstyle.footerimage}>
               <img
-                src="/src/assets/Frame 1.png"
+                src="/src/assets/SubletImages/Frame 1.png"
                 alt="logofooter"
                 className={footerstyle.footerimage2}
               />

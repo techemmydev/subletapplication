@@ -1,7 +1,8 @@
 import React from "react";
-import navStyles from "./Style_Component/Navbar.module.css";
-import SubletLogo from "./SubletLogo";
-import Button from "./Button";
+import navStyles from "../../My_Component/NavigationBar/Navbar.module.css";
+import { routes } from "../../My_DataArrays/NavbarLink";
+import SubletLogo from "../../My_Component/SubletLogo/SubletLogo";
+import Button from "../../My_Component/ButtonComponent/Button";
 import { Link, useLocation } from "react-router-dom";
 const Navbar = (props) => {
   const { joinus } = props;
@@ -11,21 +12,6 @@ const Navbar = (props) => {
   function isActive(route) {
     return location.pathname === route;
   }
-
-  const routes = [
-    {
-      label: "Home",
-      path: "/",
-    },
-    {
-      label: "About",
-      path: "/about",
-    },
-    {
-      label: "Contact",
-      path: "/contact",
-    },
-  ];
 
   return (
     <>
@@ -60,8 +46,7 @@ const Navbar = (props) => {
             </div>
             <div className={navStyles.logindetails}>
               <Link to="/login">
-                {" "}
-                <li>sign in</li>{" "}
+                <li>sign in</li>
               </Link>
 
               <Button sign={joinus} className="show">

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../component/Button";
-import styles from "./Desktop.module.css";
+import Button from "../../My_Component/ButtonComponent/Button";
+import styles from "../../My_Component/LoginComponent/Desktop.module.css";
 
 const Desktop = (props) => {
   const { joinus } = props;
@@ -18,7 +18,7 @@ const Desktop = (props) => {
               <div className={styles.inputicon}>
                 <button>
                   <img
-                    src="/src/assets/googleicon.png"
+                    src="/src/assets/SubletImages/googleicon.png"
                     alt="messages"
                     className={styles.goo}
                   />{" "}
@@ -26,7 +26,7 @@ const Desktop = (props) => {
                 </button>
                 <button>
                   <img
-                    src="/src/assets/facebookicon.png"
+                    src="/src/assets/SubletImages/facebookicon.png"
                     alt="messages"
                     className={styles.fb}
                   />{" "}

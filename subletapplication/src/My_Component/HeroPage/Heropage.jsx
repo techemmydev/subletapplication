@@ -1,11 +1,11 @@
 import React from "react";
-import herostyle from "../component/Style_Component/Hero.module.css";
-import Freebutton from "./Freebutton";
+import herostyle from "../../My_Component/HeroPage/Hero.module.css";
+import Freebutton from ".././FreeButton/Freebutton";
 const Heropage = () => {
   return (
     <section className={herostyle.hero_section}>
       <div className={herostyle.ellipse}>
-        <img src="./src/assets/Ellipse.png" alt="messages" />
+        <img src="./src/assets/SubletImages/Ellipse.png" alt="messages" />
       </div>
       <main className={herostyle.maincontainer}>
         <div>

@@ -1,6 +1,6 @@
 import React from "react";
-import logoStyles from "./Style_Component/SubletLogo.module.css";
-import logo from "../assets/subletImage/subletLogos/logo.png";
+import logoStyles from "../../My_Component/SubletLogo/SubletLogo.module.css";
+import logo from "../../assets/SubletImages/logo.png";
 
 const SubletLogo = () => {
   return (

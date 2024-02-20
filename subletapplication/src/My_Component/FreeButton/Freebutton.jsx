@@ -1,5 +1,5 @@
 import React from "react";
-import freebtn from "../component/Style_Component/Frebutton.module.css";
+import freebtn from "../../My_Component/FreeButton/Frebutton.module.css";
 const Freebutton = () => {
   return (
     <div>
