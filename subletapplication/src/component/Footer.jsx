@@ -1,5 +1,5 @@
 import React from "react";
-import footerstyle from "./footer.module.css";
+import footerstyle from "../component/Style_Component/footer.module.css";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";

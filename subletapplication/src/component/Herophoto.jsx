@@ -1,5 +1,5 @@
 import React from "react";
-import heropicture from "./Herophoto.module.css";
+import heropicture from "../component/Style_Component/Herophoto.module.css";
 const Herophoto = () => {
   return (
     <section className={heropicture.hero_section}>

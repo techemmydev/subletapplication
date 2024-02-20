@@ -1,5 +1,5 @@
 import React from "react";
-import herostyle from "./Hero.module.css";
+import herostyle from "../component/Style_Component/Hero.module.css";
 import Freebutton from "./Freebutton";
 const Heropage = () => {
   return (

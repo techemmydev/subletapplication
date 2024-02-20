@@ -124,7 +124,7 @@
   padding: 2rem;
 }
 
-h4 {
+.h4content {
   margin-bottom: 20px;
   text-transform: capitalize;
   font-family: "Roboto";
@@ -132,7 +132,7 @@ h4 {
   font-weight: 500;
   line-height: 18px;
 }
-p {
+.pcontent {
   font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;

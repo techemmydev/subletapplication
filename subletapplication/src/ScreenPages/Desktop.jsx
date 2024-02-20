@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../component/Button";
 import styles from "./Desktop.module.css";
 
@@ -75,7 +76,10 @@ const Desktop = (props) => {
 
               <div className={styles.dontHaveAnContainer}>
                 <span>{`Don’t have an account ? `}</span>
-                <span className={styles.signUp}>Sign up</span>
+                <span className={styles.signUp}>
+                  {" "}
+                  <Link to="/join"> Sign up</Link>{" "}
+                </span>
               </div>
             </div>
           </div>
@@ -85,11 +89,4 @@ const Desktop = (props) => {
   );
 };
 
-{
-  /* <div className={styles.innerwelcompagescreencontainer}>
-        <div className={styles.secondinnercontainer}>
-          <div className={styles.detailsinputcontainer}></div>
-        </div>
-      </div> */
-}
 export default Desktop;

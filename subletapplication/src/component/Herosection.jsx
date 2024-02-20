@@ -1,5 +1,5 @@
 import React from "react";
-import herosectionstyle from "./herosection.module.css";
+import herosectionstyle from "../component/Style_Component/herosection.module.css";
 
 const Herosection = () => {
   return (
@@ -18,8 +18,8 @@ const Herosection = () => {
               </div>
 
               <div>
-                <h4>Calendar</h4>
-                <p>
+                <h4 className={herosectionstyle.h4content}>Calendar</h4>
+                <p className={herosectionstyle.pcontent}>
                   see What Payment are due on what day. With the 12-month view
                   and annual expeneses Stand out
                 </p>
@@ -34,8 +34,8 @@ const Herosection = () => {
               </div>
 
               <div>
-                <h4>Report</h4>
-                <p>
+                <h4 className={herosectionstyle.h4content}>Report</h4>
+                <p className={herosectionstyle.pcontent}>
                   A clear picture of what you’re spending (and possibly
                   wasting). how much displayed with simple clarity
                 </p>
@@ -50,8 +50,10 @@ const Herosection = () => {
               </div>
 
               <div>
-                <h4>Real-time mangement</h4>
-                <p>
+                <h4 className={herosectionstyle.h4content}>
+                  Real-time mangement
+                </h4>
+                <p className={herosectionstyle.pcontent}>
                   A clear picture of what you’re spending (and possibly
                   wasting). how much displayed with simple clarity
                 </p>
@@ -65,8 +67,8 @@ const Herosection = () => {
                 <img src="/src/assets/vector2.png" alt="messages" />
               </div>
               <div>
-                <h4>Oranganisation</h4>
-                <p>
+                <h4 className={herosectionstyle.h4content}>Oranganisation</h4>
+                <p className={herosectionstyle.pcontent}>
                   Deep organisational features keep every subscription
                   associated with the right entity.
                 </p>
@@ -83,8 +85,8 @@ const Herosection = () => {
                 />
               </div>
               <div>
-                <h4>Alert</h4>
-                <p>
+                <h4 className={herosectionstyle.h4content}>Alert</h4>
+                <p className={herosectionstyle.pcontent}>
                   Sublet allows you to set alerts before your next payments.
                   Exactly when you want them. Sent wherever you want.
                 </p>
