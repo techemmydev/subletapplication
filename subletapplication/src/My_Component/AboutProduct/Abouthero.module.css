@@ -1,5 +1,5 @@
 .section_about {
-  background-color: orange;
+  /* background-color: orange; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,8 +8,9 @@
   padding: 2rem;
 }
 .aboutcontainer {
-  background-color: blue;
+  /* background-color: blue; */
   max-width: 1200px;
+
   padding: 2rem;
 }
 .section_grid {
@@ -21,13 +22,15 @@
 .flex {
   display: flex;
   flex-direction: column;
-  background-color: blueviolet;
+
+  /* background-color: blueviolet; */
 }
 .swap_product {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: brown;
+  /* background-color: brown; */
+  gap: 40px;
 }
 .aboutheading {
   font-family: "Inter";
@@ -36,4 +39,17 @@
   line-height: 50px;
   letter-spacing: 0em;
   margin-left: 10px;
+}
+.aboutpara {
+  max-width: 85%;
+  margin-top: 5px;
+  /* background-color: chocolate; */
+}
+.aboutpara p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  text-wrap: wrap;
 }

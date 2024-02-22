@@ -6,6 +6,7 @@ import HomePage from "./My_ScreenPages/LandingPage/Landingpage";
 import AboutusPage from "./My_ScreenPages/AboutPage/Aboutpage";
 import NotFound from "./My_ScreenPages/PageNotFound/PageNotFounds";
 import WelcomeBackPage from "./My_ScreenPages/LoginPage/Desktop";
+import ContactusPage from "./My_ScreenPages/ContactPage/Contactus";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
         <Route path="login" element={<WelcomeBackPage />} />
         <Route path="/" element={<Outletcomponent />}>
           <Route path="/about" element={<AboutusPage />} />
-          {/* {/* <Route path="contact" element={<Contact />} /> */}
+          <Route path="contact" element={<ContactusPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         {/* <Route path="*" element={<NotFound />} /> */}
