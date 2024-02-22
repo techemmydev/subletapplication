@@ -1,18 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 .hero_section {
   width: 100%;
   background-color: #b3f4e3;
   border-top: 1px solid white;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .maincontainer {
@@ -30,13 +25,13 @@
   /* background-color: #333333; */
   position: absolute;
   left: 1px;
-  top: 30px;
+  top: 60px;
 }
 .maincontainer h3 {
   color: #6dd0e2;
   margin-bottom: 25px;
   font-family: "Inter", sans-serif;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 25px;
   letter-spacing: 0em;
@@ -53,10 +48,11 @@
 .maincontainer p {
   font-family: "Roboto";
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 .div1 {
@@ -66,7 +62,7 @@
   position: relative;
   z-index: 2; /* Higher z-index value */
   padding: 1rem;
-  background-image: url("/src/assets/messag.png");
+  background-image: url("/src/assets/Subletimages/messag.png");
   border-radius: 10px;
   background-repeat: no-repeat;
 }
@@ -74,7 +70,7 @@
 .div2 {
   width: 280px;
   height: 400px;
-  right: 100px;
+  right: 150px;
   border-radius: 10px;
   /* background-color: rebeccapurple; */
   padding: 1rem;

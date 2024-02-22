@@ -1,12 +1,9 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 footer {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 .footercontainer {
-  width: 100%;
-  height: 60vh;
+  max-width: 100%;
+  height: 70vh;
   display: flex;
   cursor: pointer;
   justify-content: center;
@@ -14,24 +11,22 @@ footer {
   background-color: #333333;
 }
 .flexcontainer {
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   /* background-color: orangered; */
   padding: 2rem;
-  height: 50vh;
-  gap: 50px;
+  height: 60vh;
 }
 .footerimage {
-  width: 153px;
-  height: 145px;
-
+  height: 50vh;
+  flex-direction: column;
   /* background-color: black; */
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 2rem;
 }
 .footerimage2 {
   width: 100px;
@@ -46,8 +41,8 @@ footer {
   width: 24px;
 }
 .iconstyle_quick {
-  width: 24px;
-  margin-left: 10px;
+  width: 39px;
+
   color: white;
 }
 .flexcontainer h2 {
@@ -60,6 +55,11 @@ footer {
   color: #ffffff;
   /* background-color: black; */
 }
+.contactlist {
+  /* background-color: aqua; */
+  height: auto;
+  padding: 1rem;
+}
 .contactlist ul {
   list-style: none;
 }
@@ -71,24 +71,20 @@ footer {
   line-height: 40px;
   letter-spacing: 0em;
 }
+.emaillink {
+  text-decoration: none;
+}
+.emaillink :hover {
+  color: grey;
+}
 .ctaemail {
   color: #0bdaa6;
 }
-/* .contactlist {
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: 0em;
-} */
-
-/* .quicklink {
-  font-family: "Roboto";
-  /* font-size: 14px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0em; 
-} */
+.quicklink {
+  /* background-color: #0bdaa6; */
+  flex-basis: 30%;
+  padding: 1rem;
+}
 .quicklink ul {
   list-style: none;
 }
@@ -98,12 +94,14 @@ footer {
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0em;
+}
+.quicklinks {
+  text-decoration: none;
   color: #0bdaa6;
+}
+.quicklinks:hover {
+  color: grey;
 }
 .icon_quicklink {
   text-align: right;
-}
-.copyright {
-  text-align: left;
-  color: #888888;
 }

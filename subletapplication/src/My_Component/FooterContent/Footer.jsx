@@ -1,5 +1,6 @@
 import React from "react";
 import footerstyle from "../../My_Component/FooterContent/footer.module.css";
+import { Link } from "react-router-dom";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
@@ -17,7 +18,7 @@ const Footer = () => {
           <div>
             <div className={footerstyle.footerimage}>
               <img
-                src="/src/assets/SubletImages/Frame 1.png"
+                src="/src/assets/Subletimages/Frame 1.png"
                 alt="logofooter"
                 className={footerstyle.footerimage2}
               />
@@ -36,7 +37,12 @@ const Footer = () => {
               </li>
               <li>
                 <MdOutlineMail className={footerstyle.iconstyle} />
-                <span className={footerstyle.ctaemail}> sublet@gmail.com </span>
+                <Link className={footerstyle.emaillink}>
+                  <span className={footerstyle.ctaemail}>
+                    {" "}
+                    sublet@gmail.com{" "}
+                  </span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -44,9 +50,18 @@ const Footer = () => {
             <h2>quick links</h2>
             <nav>
               <ul>
-                <li>contact us</li>
-                <li>privacy policy</li>
-                <li>terms of use</li>
+                <Link className={footerstyle.quicklinks}>
+                  {" "}
+                  <li>contact us</li>
+                </Link>
+                <Link className={footerstyle.quicklinks}>
+                  {" "}
+                  <li>privacy policy</li>
+                </Link>
+                <Link className={footerstyle.quicklinks}>
+                  {" "}
+                  <li>terms of use</li>
+                </Link>
               </ul>
             </nav>
             <div className={footerstyle.icon_quicklink}>
@@ -54,12 +69,24 @@ const Footer = () => {
               <FaInstagram className={footerstyle.iconstyle_quick} />
             </div>
           </div>
-          <p className={footerstyle.copyright}>
-            {" "}
-            © {copyright} SUBLET | All Rights Reserved{" "}
-          </p>
         </div>
       </div>
+      <p
+        style={{
+          textAlign: "center",
+          backgroundColor: " #333333",
+
+          padding: "2rem",
+          fontFfamily: "Roboto",
+          fontSize: "14px",
+          fontWeight: "600",
+          lineHeight: "30px",
+          letterSpacing: "0em",
+          color: "#0bdaa6",
+        }}
+      >
+        {copyright} All Rights Reserved
+      </p>
     </footer>
   );
 };

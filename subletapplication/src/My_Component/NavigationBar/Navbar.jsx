@@ -31,7 +31,7 @@ const Navbar = (props) => {
                       to={route.path}
                       key={index}
                       style={{
-                        color: isActive(route.path) ? " #0bdaa6" : "",
+                        color: isActive(route.path) ? " #0bdaa6" : null,
                         fontWeight: isActive(route.path) ? "700" : "500",
                         textDecoration: isActive(route.path)
                           ? "underline"
