@@ -67,37 +67,7 @@
   /* background-color: green; */
   height: 400px;
 }
-.inputicon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-}
 
-.inputicon button {
-  width: 180px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 10px;
-  border-radius: 24px;
-  gap: 10px;
-  border: none;
-}
-.fb {
-  width: 10px;
-}
-.goo {
-  width: 18px;
-}
-.spans {
-  font-family: "Inter";
-  text-transform: capitalize;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 21px;
-  letter-spacing: 0em;
-}
 .or {
   display: flex;
   align-items: center;
@@ -153,13 +123,10 @@
   justify-content: space-between;
   margin: auto;
 }
-.frameInput1 {
-  background-color: red;
+/* .frameInput1 {
   width: 20px;
   height: 20px;
-  color: rebeccapurple;
-  border-radius: 13px;
-}
+} */
 
 .frameInput2 {
   display: flex;

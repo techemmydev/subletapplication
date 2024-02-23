@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Button from "../../My_Component/ButtonComponent/Button";
-import styles from "../../My_Component/LoginComponent/Desktop.module.css";
+import styles from "../../My_ScreenPages/LoginPage/Desktop.module.css";
+import Google from "../../My_Component/LoginComponent/Google";
 
 const Desktop = (props) => {
   const { joinus } = props;
+  const [Ischeck, SetIscheckbox] = useState(false);
+
+  const ClickedCheckedbox = () => {
+    SetIscheckbox(!Ischeck);
+  };
+
   return (
     <main className={styles.welcomepagescreen}>
       <div className={styles.innerwelcompagescreencontainer}>
@@ -15,24 +23,7 @@ const Desktop = (props) => {
 
           <div className={styles.detailsinputcontainer}>
             <div className={styles.inputformcontainer}>
-              <div className={styles.inputicon}>
-                <button>
-                  <img
-                    src="/src/assets/SubletImages/googleicon.png"
-                    alt="messages"
-                    className={styles.goo}
-                  />{" "}
-                  <span className={styles.spans}>google</span>
-                </button>
-                <button>
-                  <img
-                    src="/src/assets/SubletImages/facebookicon.png"
-                    alt="messages"
-                    className={styles.fb}
-                  />{" "}
-                  <span className={styles.spans}>facebook</span>
-                </button>
-              </div>
+              <Google />
               <div className={styles.or}>
                 <div className={styles.frameline}></div>
                 <p className={styles.framelineparagraph}>or</p>
@@ -55,10 +46,16 @@ const Desktop = (props) => {
               <div className={styles.forgot}>
                 <div className={styles.frameInput2}>
                   <input
+                    style={{
+                      backgroundColor: Ischeck ? "green" : "red",
+                      width: "20px",
+                      height: "20px",
+                    }}
+                    checked={Ischeck}
                     type="checkbox"
                     name=""
                     id=""
-                    className={styles.frameInput1}
+                    onClick={(e) => ClickedCheckedbox(e.target.checked)}
                   />
                   <span className={styles.keep}>Keep me Logged in</span>
                 </div>

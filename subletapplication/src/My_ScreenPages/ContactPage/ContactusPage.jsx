@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "../ContactPage/contactus.module.css";
+import Contact from "../../My_Component/ContactComponent/contact";
 const Contactus = () => {
   return (
     <>
       <main
         style={{
           width: "100%",
-          height: "100vh",
+          height: "140vh",
           backgroundColor: "#E7FBF6",
           display: "flex",
           justifyContent: "center",
@@ -15,9 +16,10 @@ const Contactus = () => {
       >
         <section
           style={{
-            width: "80%",
+            width: "75%",
             // backgroundColor: "red",
-            height: "80vh",
+            gap: "50px",
+            height: "100vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -27,11 +29,11 @@ const Contactus = () => {
             style={{
               // backgroundColor: "orangered",
               width: "60%",
-              height: "400px",
+              height: "600px",
               padding: "2rem",
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
+              justifyContent: "space-evenly",
               flexDirection: "column",
             }}
           >
@@ -44,7 +46,7 @@ const Contactus = () => {
               <p className={styles.p}>Sublet@gmail.com</p>
               <p className={styles.p}>+234 703 856 3487 , +234 803 922 3488</p>
             </div>
-            <div style={{ display: "flex", gap: "10px", overflow: "hidden" }}>
+            <div style={{ display: "flex", gap: "20px", overflow: "hidden" }}>
               <div className={styles.h2}>
                 <h2>Customer support</h2>
                 <p>
@@ -62,9 +64,19 @@ const Contactus = () => {
             </div>
           </div>
           <div
-            style={{ backgroundColor: "brown", width: "60%", height: "400px" }}
+            style={{
+              backgroundColor: "white",
+              width: "60%",
+              height: "600px",
+              borderRadius: "20px",
+              overflow: "hidden",
+            }}
           >
-            <div>2</div>
+            <div>
+              <div style={{ padding: "2rem" }}>
+                <Contact />
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -72,7 +84,7 @@ const Contactus = () => {
         <div
           style={{
             display: "flex",
-            backgroundColor: "red",
+            // backgroundColor: "red",
             width: "80%",
             height: "70vh",
             justifyContent: "center",
@@ -83,19 +95,43 @@ const Contactus = () => {
             style={{
               width: "40%",
               height: "400px",
-              backgroundColor: "orangered",
+              // backgroundColor: "orangered",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <div>1</div>
+            <div>
+              <img
+                src="/src/assets/Subletimages/map.logo.png"
+                alt=""
+                width={"80%"}
+              />
+            </div>
           </div>
           <div
             style={{
               width: "40%",
               height: "400px",
-              backgroundColor: "orange",
+              // backgroundColor: "orange",
+              display: "flex",
+              justifyContent: "space-evenly",
+
+              flexDirection: "column",
+              padding: "2rem",
             }}
           >
-            <div>2</div>
+            <div>
+              <h2 className={styles.location}>Our Location</h2>
+              <h1 className={styles.locationh1}>Connecting Near and far</h1>
+            </div>
+            <div className={styles.address}>
+              <h5>Head quaters </h5>
+              <address>
+                Sublet inc. Lagos, Nigeria 123 Tech Boulevard, jibowu Lagos 123
+                Tech Boulevard. Nigeria
+              </address>
+            </div>
           </div>
         </div>
       </aside>

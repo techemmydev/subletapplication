@@ -77,7 +77,7 @@ const Footer = () => {
           backgroundColor: " #333333",
 
           padding: "2rem",
-          fontFfamily: "Roboto",
+          fontfamily: "Inter",
           fontSize: "14px",
           fontWeight: "600",
           lineHeight: "30px",
