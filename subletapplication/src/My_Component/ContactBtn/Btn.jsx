@@ -1,6 +1,6 @@
 import React from "react";
 
-const Btn = () => {
+const Btn = ({ children }) => {
   return (
     <div>
       <button
@@ -23,7 +23,7 @@ const Btn = () => {
         }}
         type="submit"
       >
-        submit
+        {children}
       </button>
     </div>
   );

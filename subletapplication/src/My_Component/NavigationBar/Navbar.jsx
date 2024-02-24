@@ -1,9 +1,9 @@
-import React from "react";
 import navStyles from "../../My_Component/NavigationBar/Navbar.module.css";
 import { routes } from "../../My_DataArrays/NavbarLink";
 import SubletLogo from "../../My_Component/SubletLogo/SubletLogo";
 import Button from "../../My_Component/ButtonComponent/Button";
 import { Link, useLocation } from "react-router-dom";
+
 const Navbar = (props) => {
   const { joinus } = props;
 

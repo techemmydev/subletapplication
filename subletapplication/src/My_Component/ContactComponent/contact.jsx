@@ -76,7 +76,7 @@ const contact = () => {
             </div>
           </div>
           <div>
-            <Btn />
+            <Btn>submit</Btn>
             {/* <button type="submit">submit</button> */}
           </div>
           <div className={style.privacy}>

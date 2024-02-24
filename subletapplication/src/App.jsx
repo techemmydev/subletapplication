@@ -7,18 +7,19 @@ import AboutusPage from "./My_ScreenPages/AboutPage/Aboutpage";
 import NotFound from "./My_ScreenPages/PageNotFound/PageNotFounds";
 import WelcomeBackPage from "./My_ScreenPages/LoginPage/Desktop";
 import ContactusPage from "./My_ScreenPages/ContactPage/ContactusPage";
-
+import MyRegisterPage from "./My_ScreenPages/RegisterPage/RegisterScreen";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="login" element={<WelcomeBackPage />} />
         <Route path="/" element={<Outletcomponent />}>
+          <Route path="login" element={<WelcomeBackPage />} />
           <Route path="/about" element={<AboutusPage />} />
-          <Route path="contact" element={<ContactusPage />} />
+          <Route path="/contact" element={<ContactusPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="/signup" element={<MyRegisterPage />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </BrowserRouter>

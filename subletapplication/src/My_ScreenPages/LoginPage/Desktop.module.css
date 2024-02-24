@@ -123,26 +123,58 @@
   justify-content: space-between;
   margin: auto;
 }
-/* .frameInput1 {
+.frameInput1 {
   width: 20px;
   height: 20px;
-} */
+  border: 1px solid black;
+}
+
+.frameInput2 input[type="checkbox"]:checked {
+  background-color: #0bdaa6;
+  border: none;
+}
+.frameInput2 input[type="checkbox"]:checked:after {
+  content: "\2713";
+  color: white;
+}
+.frameInput2 input[type="checkbox"] {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  appearance: none;
+  border-radius: 10%;
+  box-shadow: none;
+  font-size: 1em;
+}
 
 .frameInput2 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.forgot span {
+.keep {
   font-family: "Inter";
   font-size: 12px;
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
+  color: #000;
 }
 .already {
-  text-decoration: underline;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+}
+.alreadyLink a {
+  color: #000;
+}
+.alreadyLink a:active {
+  color: #0bdaa6;
 }
 .welcomeButton {
   margin-top: 30px;
@@ -162,6 +194,8 @@
   line-height: 12px;
   letter-spacing: 0em;
 }
-.signUp {
+
+.dontHaveAnContainer a {
+  text-decoration: none;
   color: var(--color-aquamarine-100);
 }

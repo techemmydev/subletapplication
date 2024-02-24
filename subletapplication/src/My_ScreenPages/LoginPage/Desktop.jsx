@@ -46,28 +46,34 @@ const Desktop = (props) => {
               <div className={styles.forgot}>
                 <div className={styles.frameInput2}>
                   <input
-                    style={{
-                      backgroundColor: Ischeck ? "green" : "red",
-                      width: "20px",
-                      height: "20px",
-                    }}
+                    // style={{
+                    //   backgroundColor: Ischeck ? "green" : "red",
+                    //   width: "20px",
+                    //   height: "20px",
+                    // }}
                     checked={Ischeck}
                     type="checkbox"
                     name=""
                     id=""
                     onClick={(e) => ClickedCheckedbox(e.target.checked)}
+                    className={styles.frameInput1}
                   />
                   <span className={styles.keep}>Keep me Logged in</span>
                 </div>
 
-                <div>
+                <div className={styles.alreadyLink}>
                   {" "}
-                  <span className={styles.already}>Forgot Password?</span>
+                  <Link>
+                    {" "}
+                    <span className={styles.already}>
+                      Forgot Password?
+                    </span>{" "}
+                  </Link>
                 </div>
               </div>
               <div className={styles.welcomeButton}>
                 <Button sign={joinus} className="show">
-                  sign in
+                  log in
                 </Button>
               </div>
 
