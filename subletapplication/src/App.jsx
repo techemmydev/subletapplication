@@ -17,9 +17,10 @@ const App = () => {
           <Route path="login" element={<WelcomeBackPage />} />
           <Route path="/about" element={<AboutusPage />} />
           <Route path="/contact" element={<ContactusPage />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="/signup" element={<MyRegisterPage />} />
+        <Route path="*" element={<NotFound />} />
+
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </BrowserRouter>
