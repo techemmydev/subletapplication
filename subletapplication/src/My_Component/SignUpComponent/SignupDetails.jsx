@@ -4,7 +4,7 @@ import SubletLogo from "../SubletLogo/SubletLogo";
 // import Btn from "../ContactBtn/Btn";
 import Google from "../LoginComponent/Google";
 import { Link } from "react-router-dom";
-import Btn from "../ContactBtn/Btn";
+// import Btn from "../ContactBtn/Btn";
 
 const SignupDetails = () => {
   return (
@@ -24,7 +24,7 @@ const SignupDetails = () => {
           <h5>
             Already have an account ?{" "}
             <span>
-              <Link>Sign in</Link>
+              <Link to="/login">Sign in</Link>
             </span>
           </h5>
         </div>
@@ -69,16 +69,18 @@ const SignupDetails = () => {
               </div>
             </div>
           </form>
-          <div style={{ marginLeft: "10px" }}>
-            <Link>
-              {" "}
-              <Btn>sign up</Btn>{" "}
-            </Link>
+          <div
+            style={{
+              marginLeft: "10px",
+              marginTop: "10px",
+            }}
+          >
+            <Link>{/* <Btn className={style.shw}>sign up</Btn> */}</Link>
           </div>
 
           <div className={style.or}>
             <div className={style.frameline}></div>
-            <p className={style.framelineparagraph}>or sign up</p>
+            <p className={style.framelineparagraph}>or sign up with</p>
             <div className={style.frameline}></div>
           </div>
           <div>

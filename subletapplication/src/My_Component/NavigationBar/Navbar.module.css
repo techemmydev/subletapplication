@@ -2,7 +2,7 @@
   width: 100%;
   height: 110px;
   flex-shrink: 0;
-  /* background: #f8f6f2; */
+  background: #f8f6f2;
   cursor: pointer;
 }
 .container {
@@ -53,11 +53,15 @@
   gap: 30px;
   text-transform: capitalize;
 }
-.logindetails a {
+.logindetails {
   text-decoration: none;
   color: #0d0d0d;
 }
-.logindetails a:hover {
+.sigin {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+.sigin:hover {
   color: #0bdaa6;
   text-decoration: underline;
 }
@@ -70,4 +74,8 @@
   font-weight: 500;
   line-height: 1.5;
   text-transform: capitalize;
+}
+.joinus {
+  color: white;
+  text-decoration: none;
 }

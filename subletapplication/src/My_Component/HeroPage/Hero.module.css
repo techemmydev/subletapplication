@@ -78,3 +78,7 @@
   z-index: 0; /* Lower z-index value */
   border: dotted 2px #9bdfeb;
 }
+.free {
+  text-decoration: none;
+  color: #0bdaa6;
+}

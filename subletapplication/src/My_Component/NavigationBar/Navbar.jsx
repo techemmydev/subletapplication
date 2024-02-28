@@ -4,9 +4,7 @@ import SubletLogo from "../../My_Component/SubletLogo/SubletLogo";
 import Button from "../../My_Component/ButtonComponent/Button";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = (props) => {
-  const { joinus } = props;
-
+const Navbar = () => {
   const location = useLocation();
   // const isActive = (route) => location.pathname === route;
   function isActive(route) {
@@ -45,12 +43,14 @@ const Navbar = (props) => {
               </nav>
             </div>
             <div className={navStyles.logindetails}>
-              <Link to="/login">
+              <Link to="/login" className={navStyles.sigin}>
                 <li>sign in</li>
               </Link>
 
-              <Button sign={joinus} className="show">
-                join us
+              <Button>
+                <Link to="signin" className={navStyles.joinus}>
+                  join us
+                </Link>
               </Button>
             </div>
           </div>

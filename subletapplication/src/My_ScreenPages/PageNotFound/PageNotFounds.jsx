@@ -1,5 +1,7 @@
 import React from "react";
 import style from "../PageNotFound/pagenotfound.module.css";
+import { Link } from "react-router-dom";
+
 const PageNotFound = () => {
   return (
     <main
@@ -21,7 +23,10 @@ const PageNotFound = () => {
           <p>had its names changed or mighnt have been removed</p>
         </div>
 
-        <button>go to home page</button>
+        <Link to="/">
+          {" "}
+          <button className={style.pagenotBtn}>go to home page</button>{" "}
+        </Link>
       </div>
     </main>
   );

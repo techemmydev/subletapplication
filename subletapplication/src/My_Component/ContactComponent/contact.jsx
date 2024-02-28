@@ -1,8 +1,10 @@
 import React from "react";
 import style from "../../My_Component/ContactComponent/contact.module.css";
-import Btn from "../ContactBtn/Btn";
+// import Btn from "../ContactBtn/Btn";
 import { HiOutlineMail } from "react-icons/hi";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import Button from "../ButtonComponent/Button";
 const contact = () => {
   const [clicked, setClicked] = useState(false);
 
@@ -76,8 +78,29 @@ const contact = () => {
             </div>
           </div>
           <div>
-            <Btn>submit</Btn>
-            {/* <button type="submit">submit</button> */}
+            {/* <Btn>submit</Btn> */}
+            <Link to="/#">
+              <Button
+                children="submit"
+                style={{
+                  width: "100%",
+                  display: "inline-block",
+                  backgroundColor: "#0BDAA6",
+                  color: "white",
+                  height: "50px",
+                  padding: " 14px, 20px, 14px, 20px",
+                  borderRadius: "18px",
+                  border: "none",
+                  textAlign: "center",
+                  fontamily: "Roboto",
+                  fontSize: "13px",
+                  fontWeight: "500",
+                  lineHeight: "18px",
+                  letterSpacing: "0em",
+                  textTransform: "capitalize",
+                }}
+              />
+            </Link>
           </div>
           <div className={style.privacy}>
             <p>

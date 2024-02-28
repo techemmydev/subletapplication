@@ -1,6 +1,8 @@
 import React from "react";
 import herostyle from "../../My_Component/HeroPage/Hero.module.css";
-import Freebutton from ".././FreeButton/Freebutton";
+import Button from "../ButtonComponent/Button";
+import { Link } from "react-router-dom";
+
 const Heropage = () => {
   return (
     <section className={herostyle.hero_section}>
@@ -16,8 +18,30 @@ const Heropage = () => {
             curve, delivering instant notifications for new deals, updates, and
             offers from your favorite brands and services.
           </p>
-          <Freebutton />
+
+          <Button
+            styley={{
+              padding: "28px, 42px, 28px, 42px",
+              borderRadius: "12px",
+              border: "2px solid #0bdaa6",
+              marginTop: "30px",
+              width: "249px",
+              height: "60px",
+              fontFamily: "Roboto",
+              backgroundColor: "#b3f4e3",
+              color: "white",
+              fontSize: "20px",
+              fontWeight: "500",
+              lineHeight: "20px",
+              letterSpacing: "0em",
+            }}
+          >
+            <Link to="/signup" className={herostyle.free}>
+              START NOW, IT’S FREE
+            </Link>
+          </Button>
         </div>
+
         <div className={herostyle.div2}></div>
         <div className={herostyle.imagecontainer}>
           <div className={herostyle.div1}></div>

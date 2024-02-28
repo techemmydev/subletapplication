@@ -29,13 +29,14 @@
 
 .input_Details input {
   width: 50%;
-  font-weight: 700;
+  font-weight: 400;
   margin: 10px;
   color: #808080;
   height: 40px;
   padding: 10px;
   border-radius: 28px;
   border: 1px solid #e6e6e6;
+  outline-color: #e6e6e6;
 }
 .input_Details input::placeholder {
   font-family: "Inter";
@@ -44,11 +45,11 @@
   color: #e6e6e6;
   text-transform: capitalize;
 }
-.getin_touch,
+/* .getin_touch,
 input,
 :focus {
   outline-color: unset;
-}
+} */
 
 .input_Detailsemail {
   display: flex;
@@ -60,8 +61,9 @@ input,
   border: 1px solid #e6e6e6;
   overflow: hidden;
 }
-/* .clicked {
-} */
+.clicked {
+  border: 1px solid #e6e6e6;
+}
 
 .icon {
   color: #4d4d4d;
@@ -73,13 +75,13 @@ input,
 }
 .input_Detailsemail input {
   width: 110%;
-  font-weight: 700;
+  font-weight: 400;
   border: none;
   margin: 10px;
   color: #808080;
   padding: 10px;
   border-radius: 28px;
-  /* border: 1px solid #e6e6e6; */
+  outline-color: white;
 }
 .input_Detailsemail input::placeholder {
   font-family: "Inter";

@@ -62,12 +62,8 @@ const Desktop = (props) => {
                 </div>
 
                 <div className={styles.alreadyLink}>
-                  {" "}
-                  <Link>
-                    {" "}
-                    <span className={styles.already}>
-                      Forgot Password?
-                    </span>{" "}
+                  <Link to="/reset">
+                    <span className={styles.already}>Forgot Password?</span>{" "}
                   </Link>
                 </div>
               </div>
@@ -81,7 +77,7 @@ const Desktop = (props) => {
                 <span>{`Don’t have an account ? `}</span>
                 <span className={styles.signUp}>
                   {" "}
-                  <Link to="/join"> Sign up</Link>{" "}
+                  <Link to="/signup"> Sign up</Link>{" "}
                 </span>
               </div>
             </div>
