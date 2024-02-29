@@ -1,17 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import Button from "../../My_Component/ButtonComponent/Button";
 import styles from "../../My_ScreenPages/LoginPage/Desktop.module.css";
 import Google from "../../My_Component/LoginComponent/Google";
-
-const Desktop = (props) => {
-  const { joinus } = props;
+import { IoIosEyeOff } from "react-icons/io";
+import { IoIosEye } from "react-icons/io";
+const Desktop = () => {
   const [Ischeck, SetIscheckbox] = useState(false);
-
   const ClickedCheckedbox = () => {
     SetIscheckbox(!Ischeck);
   };
+  const [person, setPerson] = useState({ email: "", password: "" });
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    console.log(value);
+    // console.log(name);
+    setPerson({ ...person, [name]: value });
+  };
 
+  const [showPassword, setShowPassword] = useState(false);
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
   return (
     <main className={styles.welcomepagescreen}>
       <div className={styles.innerwelcompagescreencontainer}>
@@ -35,13 +46,31 @@ const Desktop = (props) => {
                   placeholder="email"
                   required
                   className={styles.frameInner}
+                  name="email"
+                  id="email"
+                  value={person.email}
+                  onInput={handleChange}
                 />
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder="password"
                   required
                   className={styles.frameInner}
+                  name="password"
+                  value={person.password}
+                  onInput={handleChange}
                 />
+                <span
+                  onClick={togglePasswordVisibility}
+                  style={{
+                    color: "black",
+                    position: "absolute",
+                    right: "45px",
+                    top: "95px",
+                  }}
+                >
+                  {showPassword ? <IoIosEye /> : <IoIosEyeOff />}
+                </span>
               </div>
               <div className={styles.forgot}>
                 <div className={styles.frameInput2}>
@@ -55,22 +84,28 @@ const Desktop = (props) => {
                     type="checkbox"
                     name=""
                     id=""
-                    onClick={(e) => ClickedCheckedbox(e.target.checked)}
+                    onChange={(e) => ClickedCheckedbox(e.target.checked)}
                     className={styles.frameInput1}
                   />
                   <span className={styles.keep}>Keep me Logged in</span>
                 </div>
 
                 <div className={styles.alreadyLink}>
-                  <Link to="/reset">
+                  <Link to="/reset-password">
                     <span className={styles.already}>Forgot Password?</span>{" "}
                   </Link>
                 </div>
               </div>
               <div className={styles.welcomeButton}>
-                <Button sign={joinus} className="show">
+                {/* <Link className={styles}> */}
+                <Button
+                  style={{
+                    color: "white",
+                  }}
+                >
                   log in
                 </Button>
+                {/* </Link> */}
               </div>
 
               <div className={styles.dontHaveAnContainer}>
@@ -84,6 +119,7 @@ const Desktop = (props) => {
           </div>
         </div>
       </div>
+      <Outlet />
     </main>
   );
 };

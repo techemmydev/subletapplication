@@ -8,7 +8,9 @@ import NotFound from "./My_ScreenPages/PageNotFound/PageNotFounds";
 import WelcomeBackPage from "./My_ScreenPages/LoginPage/Desktop";
 import ContactusPage from "./My_ScreenPages/ContactPage/ContactusPage";
 import MyRegisterPage from "./My_ScreenPages/RegisterPage/RegisterScreen";
-import ResetPassword from "./My_ScreenPages/ResetPassword/ResetPassword";
+import ResetPasswordPage from "./My_ScreenPages/ResetPasswordScreen/ResetPassword";
+import SetpasswordPage from "./My_ScreenPages/SetPassword/SetPasswords";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,14 +20,12 @@ const App = () => {
           <Route path="/about" element={<AboutusPage />} />
           <Route path="/contact" element={<ContactusPage />} />
         </Route>
-
-        <Route path="/login" element={<WelcomeBackPage />}>
-          <Route path="reset" element={<ResetPassword />} />
-        </Route>
         <Route path="/signup" element={<MyRegisterPage />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/login" element={<WelcomeBackPage />} />
+        <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path="/set-password" element={<SetpasswordPage />} />
 
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

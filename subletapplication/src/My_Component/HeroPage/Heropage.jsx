@@ -20,7 +20,7 @@ const Heropage = () => {
           </p>
 
           <Button
-            styley={{
+            style={{
               padding: "28px, 42px, 28px, 42px",
               borderRadius: "12px",
               border: "2px solid #0bdaa6",
@@ -29,11 +29,16 @@ const Heropage = () => {
               height: "60px",
               fontFamily: "Roboto",
               backgroundColor: "#b3f4e3",
-              color: "white",
+              // color: "red",
               fontSize: "20px",
               fontWeight: "500",
               lineHeight: "20px",
               letterSpacing: "0em",
+            }}
+            hoverStyle={{
+              backgroundColor: " #0bdaa6",
+              color: "white",
+              transition: "1s",
             }}
           >
             <Link to="/signup" className={herostyle.free}>

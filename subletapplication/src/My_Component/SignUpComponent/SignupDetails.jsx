@@ -1,12 +1,18 @@
 import React from "react";
 import style from "../../My_Component/SignUpComponent/Signupdetail.module.css";
 import SubletLogo from "../SubletLogo/SubletLogo";
-// import Btn from "../ContactBtn/Btn";
+import { useState } from "react";
 import Google from "../LoginComponent/Google";
 import { Link } from "react-router-dom";
-// import Btn from "../ContactBtn/Btn";
+import Button from "../ButtonComponent/Button";
 
+import { IoIosEyeOff } from "react-icons/io";
+import { IoIosEye } from "react-icons/io";
 const SignupDetails = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
   return (
     <div className={style.container}>
       <div>
@@ -52,7 +58,7 @@ const SignupDetails = () => {
                   Password
                 </label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder=" input your password"
                   required
                 />
@@ -63,10 +69,23 @@ const SignupDetails = () => {
                 </label>
                 <input
                   type="password"
+                  // type={showPassword ? "text" : "password"}
                   placeholder=" confirm password"
                   required
                 />
               </div>
+
+              <span
+                onClick={togglePasswordVisibility}
+                style={{
+                  color: "black",
+                  position: "absolute",
+                  right: "45px",
+                  top: "62%",
+                }}
+              >
+                {showPassword ? <IoIosEye /> : <IoIosEyeOff />}
+              </span>
             </div>
           </form>
           <div
@@ -76,6 +95,14 @@ const SignupDetails = () => {
             }}
           >
             <Link>{/* <Btn className={style.shw}>sign up</Btn> */}</Link>
+            <Button
+              style={{
+                width: "100%",
+                color: "white",
+              }}
+            >
+              sign up
+            </Button>
           </div>
 
           <div className={style.or}>

@@ -48,7 +48,7 @@ const Navbar = () => {
               </Link>
 
               <Button>
-                <Link to="signin" className={navStyles.joinus}>
+                <Link to="/signup" className={navStyles.joinus}>
                   join us
                 </Link>
               </Button>

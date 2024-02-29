@@ -3,9 +3,9 @@
   padding: 1rem;
   height: 110vh;
 }
-.shw {
+/* .shw {
   background-color: red;
-}
+} */
 .logocontent p {
   font-family: "Poppins";
   font-size: 16px;
@@ -26,9 +26,12 @@
 }
 .SignupDetails_Input {
   margin-top: 20px;
+  padding: 1rem;
+  position: relative;
 }
 .SignupDetails_Input input {
   display: block;
+  padding: 1rem;
   width: 100%;
   margin: 10px;
   border: 1px solid #e9eff5;

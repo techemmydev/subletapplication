@@ -1,9 +1,23 @@
 import React from "react";
 import ButtonStyles from "../../My_Component/ButtonComponent/Button.module.css";
-const Button = ({ children, styley }) => {
+import { useState } from "react";
+const Button = ({ children, style, hoverStyle }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <div>
-      <button className={ButtonStyles.myButton} style={`${styley}`}>
+      <button
+        className={`${ButtonStyles.myButton} `}
+        style={isHovered ? { ...style, ...hoverStyle } : style}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         {children}
       </button>
     </div>

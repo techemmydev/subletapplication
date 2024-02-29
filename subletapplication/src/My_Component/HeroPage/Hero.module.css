@@ -82,3 +82,7 @@
   text-decoration: none;
   color: #0bdaa6;
 }
+.free:hover {
+  color: white;
+  transition: 1s;
+}

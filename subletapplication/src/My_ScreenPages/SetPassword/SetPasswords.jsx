@@ -1,8 +1,9 @@
 import React from "react";
-import style from "../../My_ScreenPages/ResetPassword/reset.module.css";
+import style from "../../My_ScreenPages/SetPassword/setpassword.module.css";
 import Button from "../../My_Component/ButtonComponent/Button";
 import { Link } from "react-router-dom";
-const ResetPassword = () => {
+import { IoIosArrowRoundBack } from "react-icons/io";
+const Setpassword = () => {
   return (
     <main
       className={style.main}
@@ -28,8 +29,8 @@ const ResetPassword = () => {
       >
         <div
           style={{
-            width: "130px",
-            height: "132px",
+            width: "120px",
+            height: "130px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -38,17 +39,31 @@ const ResetPassword = () => {
           }}
         >
           <img
-            src="/src/assets/Subletimages/vectorlock.png"
+            src="/src/assets/Subletimages/vectorkey.png"
             alt=""
             style={{ width: "40px" }}
           />
         </div>
-        <div className={style.forgotpassword}>
-          <h1>Forgot your password</h1>
-          <p>Enter your e-mail to reset it</p>
+        <div className={style.setpassword}>
+          <h1>Set your new password</h1>
+          <div style={{ maxWidth: "300px", margin: "auto" }}>
+            <p>
+              Your new password should be different from passwords previously
+              used.
+            </p>
+          </div>
         </div>
-        <div className={style.forgotpassword_input}>
-          <label htmlFor="Email address">Email address</label>
+        <div className={style.setpassword_input}>
+          <label htmlFor="Email address">Password</label>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Input your Email address"
+          />
+        </div>
+        <div className={style.setpassword_input}>
+          <label htmlFor="Email address">Confirm your new password</label>
           <input
             type="email"
             name=""
@@ -64,6 +79,7 @@ const ResetPassword = () => {
                 height: "54px",
                 padding: "14px, 20px, 14px, 20px",
                 borderRadius: "24px",
+                color: "white",
               }}
             >
               Confirm
@@ -71,8 +87,11 @@ const ResetPassword = () => {
           </Link>
         </div>
         <div>
-          <Link className={style.forgotpassword_link}>
-            <p>Return to login screen</p>
+          <Link className={style.forgotpassword_link} to="/login">
+            <p>
+              {" "}
+              <IoIosArrowRoundBack /> Return to login screen
+            </p>
           </Link>
         </div>
       </div>
@@ -80,4 +99,4 @@ const ResetPassword = () => {
   );
 };
 
-export default ResetPassword;
+export default Setpassword;

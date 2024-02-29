@@ -65,8 +65,21 @@ const Footer = () => {
               </ul>
             </nav>
             <div className={footerstyle.icon_quicklink}>
-              <CiFacebook className={footerstyle.iconstyle_quick} />
-              <FaInstagram className={footerstyle.iconstyle_quick} />
+              <Link
+                to="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CiFacebook className={footerstyle.iconstyle_quick} />
+              </Link>
+
+              <Link
+                to="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className={footerstyle.iconstyle_quick} />{" "}
+              </Link>
             </div>
           </div>
         </div>

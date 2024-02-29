@@ -99,6 +99,12 @@ const contact = () => {
                   letterSpacing: "0em",
                   textTransform: "capitalize",
                 }}
+                hoverStyle={
+                  {
+                    // backgroundColor: "#E7FBF6",
+                    // color: "red",
+                  }
+                }
               />
             </Link>
           </div>
