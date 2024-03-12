@@ -106,7 +106,9 @@ footer {
   text-align: right;
 }
 
-@media (width: 956px) {
-  .footercontainer {
+@media screen and (max-width: 682px) {
+  .footer {
+    margin-top: unset;
+    background-color: #0bdaa6;
   }
 }

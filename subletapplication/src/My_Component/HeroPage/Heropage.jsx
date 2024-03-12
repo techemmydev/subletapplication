@@ -7,7 +7,11 @@ const Heropage = () => {
   return (
     <section className={herostyle.hero_section}>
       <div className={herostyle.ellipse}>
-        <img src="./src/assets/SubletImages/Ellipse.png" alt="messages" />
+        <img
+          src="./src/assets/SubletImages/Ellipse.png"
+          alt="messages "
+          className={herostyle.ellipseimge}
+        />
       </div>
       <main className={herostyle.maincontainer}>
         <div>

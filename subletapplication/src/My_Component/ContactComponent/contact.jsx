@@ -1,6 +1,5 @@
 import React from "react";
 import style from "../../My_Component/ContactComponent/contact.module.css";
-// import Btn from "../ContactBtn/Btn";
 import { HiOutlineMail } from "react-icons/hi";
 import { useState } from "react";
 import { Link } from "react-router-dom";
