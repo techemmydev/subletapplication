@@ -3,7 +3,15 @@ import React from "react";
 const Userpicture = () => {
   return (
     <div>
-      <input type="file" name="" id="" />
+      <div
+        style={{
+          width: "43px",
+          height: "42px",
+          borderRadius: "300px",
+          backgroundColor: "orangered",
+          backgroundImage: `url(${"/src/assets//SubletImages/userpicture.svg"})`,
+        }}
+      ></div>
     </div>
   );
 };

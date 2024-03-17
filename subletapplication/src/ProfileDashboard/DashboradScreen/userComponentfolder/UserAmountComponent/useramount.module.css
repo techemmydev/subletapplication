@@ -1,0 +1,44 @@
+.Amount_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.Amount_container_body {
+  width: 300px;
+  height: 92px;
+  background-color: white;
+  padding: 8px 15px 14px 23px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.Amount_container_body h3 {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: black;
+}
+.Amount_container_body p {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #d4d5d9;
+}
+.amountIcon {
+  width: 60px;
+  height: 60px;
+  padding: 20.263158798217773 23 20.26315689086914 22;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf4ff;
+}

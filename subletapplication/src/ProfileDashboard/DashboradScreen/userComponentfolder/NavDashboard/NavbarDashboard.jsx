@@ -2,7 +2,7 @@ import React from "react";
 import style from "../NavDashboard/Navdashboard.module.css";
 import { CiSearch } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
-
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import LogoutIcon from "../UserLogoout/LogouIcon";
 import Userpicture from "../UserPicture/Userpicture";
 const NavbarDashboard = () => {
@@ -31,12 +31,26 @@ const NavbarDashboard = () => {
           <LogoutIcon />
         </div>
         <div>
-          <IoIosNotificationsOutline />
+          <IoIosNotificationsOutline
+            style={{ fontSize: "20px", color: "#C7C8CC" }}
+          />
         </div>
-        <div></div>
-        <div>
-          <Userpicture />
-          <div></div>
+        <div style={{ height: "48px", border: "1px solid #C7C8CC" }}></div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "10px",
+          }}
+        >
+          <div>
+            <Userpicture />
+          </div>
+
+          <div>
+            <MdOutlineKeyboardArrowDown style={{ color: "#C7C8CC" }} />
+          </div>
         </div>
       </div>
     </div>
