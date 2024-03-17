@@ -10,7 +10,7 @@ import ContactusPage from "./My_ScreenPages/ContactPage/ContactusPage";
 import MyRegisterPage from "./My_ScreenPages/RegisterPage/RegisterScreen";
 import ResetPasswordPage from "./My_ScreenPages/ResetPasswordScreen/ResetPassword";
 import SetpasswordPage from "./My_ScreenPages/SetPassword/SetPasswords";
-
+import UserDashbord from "./ProfileDashboard/DashboradScreen/UserDashboardOverview/UserDashboard";
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,10 +20,12 @@ const App = () => {
           <Route path="/about" element={<AboutusPage />} />
           <Route path="/contact" element={<ContactusPage />} />
         </Route>
+
         <Route path="/signup" element={<MyRegisterPage />} />
         <Route path="/login" element={<WelcomeBackPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/set-password" element={<SetpasswordPage />} />
+        <Route path="/users" element={<UserDashbord />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

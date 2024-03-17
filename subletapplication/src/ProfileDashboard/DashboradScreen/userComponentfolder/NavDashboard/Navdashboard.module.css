@@ -1,0 +1,68 @@
+.navbarDash_container {
+  background-color: orange;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 132px;
+}
+.serchInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serchInput input {
+  outline-color: floralwhite;
+  width: 330px;
+  height: 40px;
+  padding: 0px 28px 0px 28px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f5f7f9;
+}
+.serchInput input::placeholder {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #babec5;
+}
+.serchInput button {
+  position: absolute;
+  left: 114%;
+  top: 61px;
+  width: 123px;
+  height: 40px;
+  background-color: #1dbfdc;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+.serchbox {
+  position: relative;
+
+  width: 50%;
+  padding: 2rem;
+}
+.CiSearch {
+  position: relative;
+  top: 35px;
+  color: #babec5;
+  left: 7px;
+  font-size: 25px;
+}
+/* .allnavIcon {
+  margin-right: 30px;
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+} */

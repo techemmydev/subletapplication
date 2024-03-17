@@ -97,15 +97,15 @@ const Desktop = () => {
                 </div>
               </div>
               <div className={styles.welcomeButton}>
-                {/* <Link className={styles}> */}
-                <Button
-                  style={{
-                    color: "white",
-                  }}
-                >
-                  log in
-                </Button>
-                {/* </Link> */}
+                <Link className={styles.login_link} to="/users">
+                  <Button
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    log in
+                  </Button>
+                </Link>
               </div>
 
               <div className={styles.dontHaveAnContainer}>

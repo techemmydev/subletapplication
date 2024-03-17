@@ -201,3 +201,6 @@
   text-decoration: none;
   color: var(--color-aquamarine-100);
 }
+.login_link {
+  text-decoration: none;
+}
