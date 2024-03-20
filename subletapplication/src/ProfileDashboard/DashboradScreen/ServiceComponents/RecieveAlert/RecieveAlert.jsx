@@ -1,14 +1,15 @@
 import React from "react";
 import style from "../RecieveAlert/Alert.module.css";
-
+import { useSelector } from "react-redux";
 const RecieveAlert = () => {
+  const { selectedCompany } = useSelector((state) => state.companyIcon);
   return (
     <div className={style.addimage_container}>
       <div className={style.addimage_container1}>
         <div className={style.addimage_container_flexbox}>
           <div className={style.addimage_box}>
             <div>
-              <p>NO IMAGE AVAILABLE</p>
+              <img src={selectedCompany.icons} alt="show image here" />
             </div>
           </div>
           <div>

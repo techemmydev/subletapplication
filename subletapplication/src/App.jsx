@@ -10,8 +10,9 @@ import ContactusPage from "./My_ScreenPages/ContactPage/ContactusPage";
 import MyRegisterPage from "./My_ScreenPages/RegisterPage/RegisterScreen";
 import ResetPasswordPage from "./My_ScreenPages/ResetPasswordScreen/ResetPassword";
 import SetpasswordPage from "./My_ScreenPages/SetPassword/SetPasswords";
-import UserDashbord from "./ProfileDashboard/DashboradScreen/UserDashboardOverview/UserDashboard";
+// import UserDashbord from "./ProfileDashboard/DashboradScreen/UserDashboardOverview/UserDashboard";
 import AllserviceComponent from "./ProfileDashboard/DashboradScreen/AllServiceComponent/AllserviceComponent";
+import Dashbord from "./UserDashboard/Dashbord";
 
 const App = () => {
   return (
@@ -27,7 +28,8 @@ const App = () => {
         <Route path="/login" element={<WelcomeBackPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/set-password" element={<SetpasswordPage />} />
-        <Route path="/users" element={<UserDashbord />} />
+        <Route path="/dashboard" element={<Dashbord />} />
+        {/* <Route path="/users" element={<UserDashbord />} /> */}
         <Route path="/addservices" element={<AllserviceComponent />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

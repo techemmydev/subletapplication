@@ -26,8 +26,13 @@ const SidebarDashboard = () => {
 
         <div className={style.SidebarDashboard_Navidation_container}>
           <ul className={style.SidebarDashboard_Ul}>
-            <Link to="/dashboard">
-              <li style={{ color: "#1DBFDC" }}>
+            <Link
+              to="/dashboard"
+              style={{
+                color: isActive("/dashboard") ? "#1DBFDC" : "#D4D5D9",
+              }}
+            >
+              <li>
                 <MdOutlineDashboard style={{ fontSize: "20px" }} />{" "}
                 <span> Dashboard </span>
               </li>

@@ -9,8 +9,8 @@ const Icons = () => {
   // const selecticon = useSelector((state) => state.companyIcon.iconimage);
   const dispatch = useDispatch();
 
-  const handleIconClick = (icon) => {
-    console.log(dispatch(setSelectedCompany(icon)));
+  const handleIconClick = (id) => {
+    console.log(dispatch(setSelectedCompany(id)));
   };
 
   return (
