@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonStyles from "../../My_Component/ButtonComponent/Button.module.css";
 import { useState } from "react";
-const Button = ({ children, style, hoverStyle }) => {
+const Button = ({ children, style, hoverStyle, next }) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -17,6 +17,7 @@ const Button = ({ children, style, hoverStyle }) => {
         style={isHovered ? { ...style, ...hoverStyle } : style}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onClick={next}
       >
         {children}
       </button>

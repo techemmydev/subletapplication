@@ -11,6 +11,8 @@ import MyRegisterPage from "./My_ScreenPages/RegisterPage/RegisterScreen";
 import ResetPasswordPage from "./My_ScreenPages/ResetPasswordScreen/ResetPassword";
 import SetpasswordPage from "./My_ScreenPages/SetPassword/SetPasswords";
 import UserDashbord from "./ProfileDashboard/DashboradScreen/UserDashboardOverview/UserDashboard";
+import AllserviceComponent from "./ProfileDashboard/DashboradScreen/AllServiceComponent/AllserviceComponent";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -26,7 +28,7 @@ const App = () => {
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/set-password" element={<SetpasswordPage />} />
         <Route path="/users" element={<UserDashbord />} />
-
+        <Route path="/addservices" element={<AllserviceComponent />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

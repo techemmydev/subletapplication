@@ -1,8 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import counterReducer from "../Redux/slice/counterSlice";
-
+import SubletSliceCompany from "./slice/SubletSlice";
 export const store = configureStore({
   reducer: {
-    // phone_accessories: counterReducer,
+    companyIcon: SubletSliceCompany,
   },
 });

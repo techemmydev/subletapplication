@@ -1,0 +1,32 @@
+.allservice_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e7fbf6;
+}
+.allservice_container_center {
+  width: 50%;
+  height: 420px;
+  box-shadow: 0px 4px 4px 0px #0000000d;
+  background-color: #fcfbf9;
+  padding: 1rem;
+  /* background-color: orangered; */
+  border-radius: 24px;
+}
+.allservice_container_heading {
+  font-family: "Roboto";
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  margin-left: 30px;
+}
+.button_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}

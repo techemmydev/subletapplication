@@ -1,10 +1,15 @@
 import React from "react";
 import style from "../UserAmountComponent/useramount.module.css";
 import Button from "../../../../My_Component/ButtonComponent/Button";
-import { CiSearch } from "react-icons/ci";
+
 import { FaPlusCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+import { useSelector } from "react-redux";
 const Useramount = () => {
+  const { amountsubscribed, dolloarAmount } = useSelector(
+    (state) => state.companyIcon
+  );
   return (
     <div className={style.Amount_container}>
       <div className={style.Amount_container_body}>
@@ -14,7 +19,7 @@ const Useramount = () => {
           </div>
         </div>
         <div>
-          <h3>0</h3>
+          <h3>{amountsubscribed}</h3>
           <p>Subscription</p>
         </div>
       </div>
@@ -28,7 +33,7 @@ const Useramount = () => {
           </div>
         </div>
         <div>
-          <h3>₦0.00</h3>
+          <h3>₦{dolloarAmount}</h3>
           <p>Monthly Revenue</p>
         </div>
       </div>
@@ -41,7 +46,7 @@ const Useramount = () => {
         }}
       >
         <div>
-          <Link style={{ textDecoration: "none" }}>
+          <Link style={{ textDecoration: "none" }} to="/addservices">
             <Button
               style={{
                 width: "121px",
@@ -55,9 +60,6 @@ const Useramount = () => {
               <FaPlusCircle /> <span> New</span>
             </Button>
           </Link>
-        </div>
-        <div>
-          <CiSearch />
         </div>
       </div>
     </div>
