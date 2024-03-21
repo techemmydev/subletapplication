@@ -12,7 +12,9 @@ import ResetPasswordPage from "./My_ScreenPages/ResetPasswordScreen/ResetPasswor
 import SetpasswordPage from "./My_ScreenPages/SetPassword/SetPasswords";
 // import UserDashbord from "./ProfileDashboard/DashboradScreen/UserDashboardOverview/UserDashboard";
 import AllserviceComponent from "./ProfileDashboard/DashboradScreen/AllServiceComponent/AllserviceComponent";
-import Dashbord from "./UserDashboard/Dashbord";
+// import Dashbord from "./UserDashboard/Dashbord";
+// import Calender from "./ProfileDashboard/DashboradScreen/userComponentfolder/CalendarComponent/Calender";
+import DashboardPage from "./UserDashboard/DashboardPage";
 
 const App = () => {
   return (
@@ -28,8 +30,7 @@ const App = () => {
         <Route path="/login" element={<WelcomeBackPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/set-password" element={<SetpasswordPage />} />
-        <Route path="/dashboard" element={<Dashbord />} />
-        {/* <Route path="/users" element={<UserDashbord />} /> */}
+        <Route path="/*" element={<DashboardPage />} />
         <Route path="/addservices" element={<AllserviceComponent />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

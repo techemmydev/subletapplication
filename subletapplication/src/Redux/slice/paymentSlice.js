@@ -5,7 +5,7 @@ const initialState = {
   nextPaymentDate: "",
   billingCycle: {
     value: "",
-    unit: "Monthly",
+    unit: true,
   },
   autoRenew: "",
 };

@@ -100,7 +100,7 @@ const Desktop = () => {
                   </div>
                 </div>
                 <div className={styles.welcomeButton}>
-                  <Link className={styles.login_link} to="/dashboard">
+                  <Link className={styles.login_link} to="/dashboardpage">
                     <Button
                       style={{
                         color: "white",

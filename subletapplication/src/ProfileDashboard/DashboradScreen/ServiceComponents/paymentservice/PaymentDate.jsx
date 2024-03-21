@@ -37,7 +37,7 @@ const PaymentDate = () => {
         <div className={style.addimage_container_flexbox}>
           <div className={style.addimage_box}>
             <div>
-              <img src={selectedCompany.icons} alt="show image here" />
+              <img src={selectedCompany.icons} alt="selected icons" />
             </div>
           </div>
           <div>

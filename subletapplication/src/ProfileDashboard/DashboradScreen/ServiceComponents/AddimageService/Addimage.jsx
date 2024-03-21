@@ -26,7 +26,10 @@ const Addimage = () => {
           <div className={style.addimage_box}>
             <div>
               {selectedCompany && selectedCompany.icons ? (
-                <img src={selectedCompany.icons} alt="show image here" /> // Display the selected icon if it exists
+                <img
+                  src={selectedCompany.icons}
+                  alt="Your service icon will display"
+                /> // Display the selected icon if it exists
               ) : (
                 <span>NO IMAGE AVAILABLE</span>
               )}
