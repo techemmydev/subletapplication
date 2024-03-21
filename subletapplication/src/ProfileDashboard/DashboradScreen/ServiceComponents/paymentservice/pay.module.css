@@ -75,3 +75,11 @@
   width: 40%;
   margin: 3px;
 }
+.flexinput select {
+  width: 40%;
+  height: 45px;
+  border-radius: 16px;
+  border: 1px solid #cacaca;
+  box-shadow: 0px 2px 2px 0px #00000040 inset;
+  outline-color: #cacaca;
+}

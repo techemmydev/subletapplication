@@ -2,14 +2,21 @@ import React, { useState } from "react";
 import style from "../AddimageService/addingimage.module.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Icons from "./Icons";
-import { useSelector } from "react-redux";
-
+import { useSelector, useDispatch } from "react-redux";
+import { setAmountSubscribe } from "../../../../Redux/slice/paymentSlice";
 const Addimage = () => {
   const { selectedCompany } = useSelector((state) => state.companyIcon);
+
+  const { amountSubscribe } = useSelector((state) => state.payment);
+
+  const dispatch = useDispatch();
 
   const [showIcons, setShowIcons] = useState(false);
   const toggleIcons = () => {
     setShowIcons(!showIcons);
+  };
+  const handleNextPaymentAmountSubscribe = (e) => {
+    dispatch(setAmountSubscribe(e.target.value));
   };
 
   return (
@@ -46,8 +53,20 @@ const Addimage = () => {
               {/* Render Icons component when showIcons is true */}
               {showIcons && <Icons />}
               <div>
-                <label htmlFor="Description">Description:</label>
+                <label htmlFor="Description">Description</label>
                 <input type="text" placeholder="(Optional)" required />
+              </div>
+              <div>
+                <label htmlFor="Description">
+                  Enter Amount subscribed service
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter Amount"
+                  required
+                  value={amountSubscribe}
+                  onChange={handleNextPaymentAmountSubscribe}
+                />
               </div>
             </form>
           </div>

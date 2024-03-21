@@ -1,7 +1,10 @@
 .Amount_container {
   display: flex;
+
   align-items: center;
   justify-content: space-evenly;
+
+  /* background-color: #1dbfdc; */
   gap: 50px;
   margin-top: 30px;
   margin-left: 30px;
@@ -41,4 +44,32 @@
   align-items: center;
   justify-content: center;
   background-color: #edf4ff;
+}
+.leftArrow {
+  color: #1dbfdc;
+  font-size: 30px;
+}
+.showAll {
+  margin-top: 30px;
+  width: 100%;
+  height: 100px;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.showAll_container {
+  width: 95%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: red;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.showAll_container div {
+  width: 15%;
+  height: 50px;
+  background-color: #1dbfdc;
 }

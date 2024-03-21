@@ -2,10 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { iconimage } from "../../My_DataArrays/iconsArray";
 const initialState = {
   iconimage,
-  selectedCompany: null,
-
-  amountsubscribed: 2,
-  dolloarAmount: 34.666,
+  selectedCompany: "",
 };
 
 export const SubletSlice = createSlice({
@@ -17,5 +14,5 @@ export const SubletSlice = createSlice({
     },
   },
 });
-export const { setSelectedCompany, showSelectedCompany } = SubletSlice.actions;
+export const { setSelectedCompany } = SubletSlice.actions;
 export default SubletSlice.reducer;
