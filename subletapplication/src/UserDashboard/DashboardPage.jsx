@@ -4,6 +4,7 @@ import NavbarDashboard from "../ProfileDashboard/DashboradScreen/userComponentfo
 import Dashbord from "./Dashbord";
 import Calender from "../ProfileDashboard/DashboradScreen/userComponentfolder/CalendarComponent/Calender";
 import { Routes, Route } from "react-router-dom";
+import Usersetting from "../ProfileDashboard/DashboradScreen/userComponentfolder/UserSettingComponent/Usersetting";
 
 const DashboardPage = () => {
   return (
@@ -24,6 +25,7 @@ const DashboardPage = () => {
           <Routes>
             <Route path="/*" element={<Dashbord />} />
             <Route path="/calender" element={<Calender />} />
+            <Route path="/settings" element={<Usersetting />} />
           </Routes>
         </div>
       </div>

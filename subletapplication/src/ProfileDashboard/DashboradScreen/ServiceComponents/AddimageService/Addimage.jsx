@@ -57,7 +57,7 @@ const Addimage = () => {
               {showIcons && <Icons />}
               <div>
                 <label htmlFor="Description">Description</label>
-                <input type="text" placeholder="(Optional)" required />
+                <input type="text" placeholder="Optional" required />
               </div>
               <div>
                 <label htmlFor="Description">
@@ -65,7 +65,7 @@ const Addimage = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter Amount"
+                  placeholder="Enter Amount .eg ₦3,600"
                   required
                   value={amountSubscribe}
                   onChange={handleNextPaymentAmountSubscribe}

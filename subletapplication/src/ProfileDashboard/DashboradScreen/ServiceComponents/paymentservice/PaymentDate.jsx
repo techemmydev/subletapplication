@@ -46,7 +46,7 @@ const PaymentDate = () => {
                 <label htmlFor="Company">Next payment date </label>
                 <input
                   type="text"
-                  placeholder="Next payment date"
+                  placeholder="Next payment date.eg 00-00-000"
                   value={nextPaymentDate}
                   onChange={handleNextPaymentDateChange}
                 />
@@ -73,7 +73,7 @@ const PaymentDate = () => {
                 <label htmlFor="Does it Auto Renew">Does it Auto Renew</label>
                 <input
                   type="text"
-                  placeholder="(Optional)"
+                  placeholder="Optional"
                   required
                   value={autoRenew}
                   onChange={handleAutoRenewChange}

@@ -29,7 +29,7 @@ const SidebarDashboard = () => {
             <Link
               to="/dashboard"
               style={{
-                color: isActive("/dashboard") ? "#1DBFDC" : "#D4D5D9",
+                color: isActive("/dashboard") ? "#1DBFDC" : "#1DBFDC",
               }}
             >
               <li>
@@ -40,7 +40,7 @@ const SidebarDashboard = () => {
             <Link
               to="/calender"
               style={{
-                color: isActive("/calendar") ? "#1DBFDC" : "#D4D5D9",
+                color: isActive("/calender") ? "#1DBFDC" : "#D4D5D9",
               }}
             >
               <li>
@@ -54,7 +54,12 @@ const SidebarDashboard = () => {
                 <span> Report </span>
               </li>
             </Link>
-            <Link to="/settings">
+            <Link
+              to="/settings"
+              style={{
+                color: isActive("/settings") ? "#1DBFDC" : "#D4D5D9",
+              }}
+            >
               <li>
                 <CiSettings style={{ fontSize: "20px" }} />{" "}
                 <span> Settings </span>
