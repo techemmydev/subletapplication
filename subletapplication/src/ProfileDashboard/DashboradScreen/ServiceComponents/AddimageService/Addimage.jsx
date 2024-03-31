@@ -3,11 +3,17 @@ import style from "../AddimageService/addingimage.module.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Icons from "./Icons";
 import { useSelector, useDispatch } from "react-redux";
-import { setAmountSubscribe } from "../../../../Redux/slice/paymentSlice";
+
+import {
+  setAmountSubscribe,
+  setuserDetailsDescription,
+} from "../../../../Redux/slice/AlluserValueSlice";
 const Addimage = () => {
   const { selectedCompany } = useSelector((state) => state.companyIcon);
 
-  const { amountSubscribe } = useSelector((state) => state.payment);
+  const { amountSubscribe, description } = useSelector(
+    (state) => state.payment
+  );
 
   const dispatch = useDispatch();
 
@@ -17,6 +23,9 @@ const Addimage = () => {
   };
   const handleNextPaymentAmountSubscribe = (e) => {
     dispatch(setAmountSubscribe(e.target.value));
+  };
+  const handleUserDetailsDescription = (e) => {
+    dispatch(setuserDetailsDescription(e.target.value));
   };
 
   return (
@@ -57,7 +66,13 @@ const Addimage = () => {
               {showIcons && <Icons />}
               <div>
                 <label htmlFor="Description">Description</label>
-                <input type="text" placeholder="Optional" required />
+                <input
+                  type="text"
+                  placeholder="Optional"
+                  required
+                  onChange={handleUserDetailsDescription}
+                  value={description}
+                />
               </div>
               <div>
                 <label htmlFor="Description">

@@ -4,6 +4,7 @@
   padding: 1rem;
   /* background-color: antiquewhite; */
 }
+
 .setting_page_title h3 {
   font-family: "Roboto";
   font-size: 14px;
@@ -16,7 +17,6 @@
   margin-top: 20px;
 }
 .setting_page_details {
-  /* background-color: orangered; */
   border-top: 1px solid #e3e3e5;
   width: 100%;
   display: flex;
@@ -29,6 +29,7 @@
 }
 .setting_page_box {
   /* background-color: wheat; */
+
   /* height: 80vh; */
   width: 50%;
   margin-left: 7%;

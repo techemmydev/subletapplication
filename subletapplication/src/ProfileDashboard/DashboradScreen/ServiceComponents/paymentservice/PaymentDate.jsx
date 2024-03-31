@@ -6,7 +6,7 @@ import {
   setNextPaymentDate,
   setBillingCycle,
   setAutoRenew,
-} from "../../../../Redux/slice/paymentSlice";
+} from "../../../../Redux/slice/AlluserValueSlice";
 const PaymentDate = () => {
   const { selectedCompany } = useSelector((state) => state.companyIcon);
 

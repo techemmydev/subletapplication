@@ -2,15 +2,26 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   amountSubscribe: "",
+  description: "",
   nextPaymentDate: "",
   billingCycle: {
     value: "",
     unit: true,
   },
   autoRenew: "",
+  userInformationDetails: {
+    FullName: "",
+    firstName: "",
+    lastName: "",
+    userEmail: "",
+    userPhoneNumber: "",
+    userMesssage: "",
+    userPassword: "",
+    ConfirmedPassword: "",
+  },
 };
 
-export const paymentSlice = createSlice({
+export const AlluserValueSlice = createSlice({
   name: "payment",
   initialState,
   reducers: {
@@ -26,6 +37,12 @@ export const paymentSlice = createSlice({
     setAmountSubscribe: (state, action) => {
       state.amountSubscribe = action.payload;
     },
+    setuserDetailsInformations: (state, action) => {
+      state.userInformationDetails = action.payload;
+    },
+    setuserDetailsDescription: (state, action) => {
+      state.description = action.payload;
+    },
   },
 });
 
@@ -34,5 +51,7 @@ export const {
   setBillingCycle,
   setAutoRenew,
   setAmountSubscribe,
-} = paymentSlice.actions;
-export default paymentSlice.reducer;
+  setuserDetailsInformations,
+  setuserDetailsDescription,
+} = AlluserValueSlice.actions;
+export default AlluserValueSlice.reducer;

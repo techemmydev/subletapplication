@@ -10,6 +10,7 @@
 .aboutcontainer {
   /* background-color: blue; */
   max-width: 1200px;
+  margin-top: 6%;
 
   padding: 2rem;
 }
@@ -18,11 +19,12 @@
   width: 80%;
   display: flex;
   flex-direction: row;
+  height: 300px;
 }
 .flex {
   display: flex;
   flex-direction: column;
-
+  gap: 30px;
   /* background-color: blueviolet; */
 }
 .swap_product {
@@ -31,10 +33,11 @@
   align-items: center;
   /* background-color: brown; */
   gap: 40px;
+  height: 300px;
 }
 .aboutheading {
   font-family: "Inter";
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 50px;
   letter-spacing: 0em;
@@ -47,7 +50,7 @@
 }
 .aboutpara p {
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0em;

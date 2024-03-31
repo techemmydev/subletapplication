@@ -29,7 +29,7 @@ const SidebarDashboard = () => {
             <Link
               to="/dashboard"
               style={{
-                color: isActive("/dashboard") ? "#1DBFDC" : "#1DBFDC",
+                color: isActive("/dashboard") ? "#1DBFDC" : "#D4D5D9",
               }}
             >
               <li>
@@ -48,7 +48,12 @@ const SidebarDashboard = () => {
                 <span> Calendar </span>
               </li>
             </Link>
-            <Link to="/report">
+            <Link
+              to="/report"
+              style={{
+                color: isActive("/report") ? "#1DBFDC" : "#D4D5D9",
+              }}
+            >
               <li>
                 <GoRepo style={{ fontSize: "20px" }} />
                 <span> Report </span>

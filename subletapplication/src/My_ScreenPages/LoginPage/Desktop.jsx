@@ -6,19 +6,42 @@ import Google from "../../My_Component/LoginComponent/Google";
 import { IoIosEyeOff } from "react-icons/io";
 import { IoIosEye } from "react-icons/io";
 import Navbar from "../../My_Component/NavigationBar/Navbar";
+import { useSelector, useDispatch } from "react-redux";
+import { setuserDetailsInformations } from "../../Redux/slice/AlluserValueSlice";
 const Desktop = () => {
+  const { userInformationDetails } = useSelector((state) => state.payment);
+  const dispatch = useDispatch();
+
+  const handleRegisterEmail = (e) => {
+    dispatch(
+      setuserDetailsInformations({
+        ...userInformationDetails,
+        userEmail: e.target.value,
+      })
+    );
+  };
+  console.log(userInformationDetails.userPassword);
+  console.log(userInformationDetails.userEmail);
+  const handleRegisterPassword = (e) => {
+    dispatch(
+      setuserDetailsInformations({
+        ...userInformationDetails,
+        userPassword: e.target.value,
+      })
+    );
+  };
   const [Ischeck, SetIscheckbox] = useState(false);
   const ClickedCheckedbox = () => {
     SetIscheckbox(!Ischeck);
   };
-  const [person, setPerson] = useState({ email: "", password: "" });
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    console.log(value);
-    // console.log(name);
-    setPerson({ ...person, [name]: value });
-  };
+  // const [person, setPerson] = useState({ email: "", password: "" });
+  // const handleChange = (e) => {
+  //   const name = e.target.name;
+  //   const value = e.target.value;
+  //   console.log(value);
+
+  //   setPerson({ ...person, [name]: value });
+  // };
 
   const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => {
@@ -51,8 +74,10 @@ const Desktop = () => {
                     className={styles.frameInner}
                     name="email"
                     id="email"
-                    value={person.email}
-                    onInput={handleChange}
+                    value={userInformationDetails.userEmail}
+                    onChange={handleRegisterEmail}
+                    // value={person.email}
+                    // onInput={handleChange}
                   />
                   <input
                     type={showPassword ? "text" : "password"}
@@ -60,8 +85,8 @@ const Desktop = () => {
                     required
                     className={styles.frameInner}
                     name="password"
-                    value={person.password}
-                    onInput={handleChange}
+                    value={userInformationDetails.userPassword}
+                    onChange={handleRegisterPassword}
                   />
                   <span
                     onClick={togglePasswordVisibility}

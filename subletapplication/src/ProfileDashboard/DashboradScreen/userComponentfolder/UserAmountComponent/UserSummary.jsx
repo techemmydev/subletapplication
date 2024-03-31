@@ -9,8 +9,10 @@ const UserSummary = () => {
     useSelector((state) => state.payment);
   // const dispatch = useDispatch();
   const { unit } = billingCycle;
+  // const { userEmail, userPhoneNumber } = userInformationDetails;
   const isDataAvailable =
     selectedCompany || nextPaymentDate || billingCycle || autoRenew || unit;
+
   if (!isDataAvailable) {
     return null;
   }
@@ -44,7 +46,9 @@ const UserSummary = () => {
               <div className={`${style.flex_center} ${style.flex_details}`}>
                 <h4>{amountSubscribe ? amountSubscribe : ""}</h4>
               </div>
-              <div className={style.flex_center}>6</div>
+              <div className={style.flex_center}>
+                <h6>t</h6>
+              </div>
             </div>
           </div>
         ) : (

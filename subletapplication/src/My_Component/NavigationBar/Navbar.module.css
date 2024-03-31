@@ -1,13 +1,16 @@
 .navcontainer {
   width: 100%;
-  height: 110px;
+  height: 100px;
   flex-shrink: 0;
-  background: #f8f6f2;
+  background: white;
   cursor: pointer;
+  box-shadow: -0px 0px 10px 0px #00000040;
+  position: fixed;
+  z-index: 1000;
 }
 .container {
   max-width: 1200px;
-  height: 110px;
+  height: 100px;
   margin: auto;
   padding: 1rem;
 }
@@ -29,16 +32,16 @@
 }
 .navigationLink li {
   list-style: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-size: 16px;
   line-height: 1.5;
   text-transform: capitalize;
 }
 .Linkss a {
-  color: #0d0d0d;
+  color: #28162d;
 }
 .Linkss a:hover {
-  color: #0bdaa6;
+  color: #5b0e0e;
 }
 /* .Linkss a:visited {
   color: green;
@@ -55,32 +58,46 @@
 }
 .logindetails {
   text-decoration: none;
-  color: #0d0d0d;
+  /* color: #0d0d0d; */
 }
 .sigin {
   text-decoration: none;
-  color: #0d0d0d;
+  color: #28162d;
 }
 .sigin:hover {
-  color: #0bdaa6;
-  text-decoration: underline;
+  color: #5b0e0e;
+  text-decoration: none;
 }
 .logindetails li {
   justify-content: space-around;
 
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
 
   font-weight: 500;
   line-height: 1.5;
   text-transform: capitalize;
 }
 .joinus {
-  color: white;
+  font-family: "Plus Jakarta Sans";
+  color: #28162d;
   text-decoration: none;
 }
-
+.redBackgroundcolortex {
+  color: white;
+}
 /* @media screen and (max-width: 940px) {
   .navcontainer {
   }
 } */
+/* the furture belong to those who believe in there dreams */
+.redBackground {
+  /* background-color: #0bdaa6; */
+  transition: background-color 3s ease; /* Smooth transition */
+}
+.logo_link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans";
+}

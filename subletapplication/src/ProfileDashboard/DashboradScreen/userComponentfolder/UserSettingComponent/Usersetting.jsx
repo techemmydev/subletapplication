@@ -3,7 +3,11 @@ import style from "../UserSettingComponent/usersetting.module.css";
 import Userpicture from "../UserPicture/Userpicture";
 import Button from "../../../../My_Component/ButtonComponent/Button";
 
+import { useSelector } from "react-redux";
+
 const Usersetting = () => {
+  const { userInformationDetails } = useSelector((state) => state.payment);
+  const { FullName, userEmail, userPassword } = userInformationDetails;
   return (
     <>
       <div className={style.setting_page}>
@@ -18,7 +22,7 @@ const Usersetting = () => {
             <div className={style.setting_page_Information}>
               <div>
                 <h6>FULL NAME</h6>
-                <h5>Isikalu Oluwatooni Emmanuel</h5>
+                <h5>{FullName}</h5>
               </div>
               <div>
                 <Button
@@ -41,8 +45,8 @@ const Usersetting = () => {
             </div>
             <div className={style.setting_page_Information}>
               <div>
-                <h6>FULL NAME</h6>
-                <h5>Isikalu Oluwatooni Emmanuel</h5>
+                <h6>E-MAIL ADDRESS</h6>
+                <h5>{userEmail}</h5>
               </div>
               <div>
                 <Button
@@ -65,8 +69,8 @@ const Usersetting = () => {
             </div>
             <div className={style.setting_page_Information}>
               <div>
-                <h6>FULL NAME</h6>
-                <h5>Isikalu Oluwatooni Emmanuel</h5>
+                <h6>PASSWORD</h6>
+                <h5>{userPassword}</h5>
               </div>
               <div>
                 <Button
@@ -87,10 +91,10 @@ const Usersetting = () => {
                 </Button>
               </div>
             </div>
-            <div className={style.setting_page_Information}>
+            {/* <div className={style.setting_page_Information}>
               <div>
-                <h6>FULL NAME</h6>
-                <h5>Isikalu Oluwatooni Emmanuel</h5>
+                <h6>REGION</h6>
+                <h5>Nigeria</h5>
               </div>
               <div>
                 <Button
@@ -110,11 +114,10 @@ const Usersetting = () => {
                   change Region
                 </Button>
               </div>
-            </div>
+            </div> */}
             <div className={style.setting_page_Information}>
               <div>
-                <h6>FULL NAME</h6>
-                <h5>Isikalu Oluwatooni Emmanuel</h5>
+                <h5>Deactivate account</h5>
               </div>
               <div>
                 <Button
@@ -138,8 +141,7 @@ const Usersetting = () => {
             </div>
             <div className={style.setting_page_Information}>
               <div>
-                <h6>FULL NAME</h6>
-                <h5>Isikalu Oluwatooni Emmanuel</h5>
+                <h5>Delete account</h5>
               </div>
               <div>
                 <Button

@@ -8,10 +8,48 @@ import Button from "../ButtonComponent/Button";
 
 import { IoIosEyeOff } from "react-icons/io";
 import { IoIosEye } from "react-icons/io";
+import { setuserDetailsInformations } from "../../Redux/slice/AlluserValueSlice";
+import { useSelector, useDispatch } from "react-redux";
+
 const SignupDetails = () => {
+  const { userInformationDetails } = useSelector((state) => state.payment);
+  const dispatch = useDispatch();
   const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleRegisterFullName = (e) => {
+    dispatch(
+      setuserDetailsInformations({
+        ...userInformationDetails,
+        FullName: e.target.value,
+      })
+    );
+  };
+  const handleRegisterEmail = (e) => {
+    dispatch(
+      setuserDetailsInformations({
+        ...userInformationDetails,
+        userEmail: e.target.value,
+      })
+    );
+  };
+  const handleRegisterPassword = (e) => {
+    dispatch(
+      setuserDetailsInformations({
+        ...userInformationDetails,
+        userPassword: e.target.value,
+      })
+    );
+  };
+  const handleRegisterConfirmedPassword = (e) => {
+    dispatch(
+      setuserDetailsInformations({
+        ...userInformationDetails,
+        ConfirmedPassword: e.target.value,
+      })
+    );
   };
   return (
     <div className={style.container}>
@@ -45,13 +83,21 @@ const SignupDetails = () => {
                   type="text"
                   placeholder=" input your full name"
                   required
+                  value={userInformationDetails.FullName}
+                  onChange={handleRegisterFullName}
                 />
               </div>
               <div>
                 <label htmlFor="email" id="email">
                   Email address
                 </label>
-                <input type="email" placeholder=" Email address" required />
+                <input
+                  type="email"
+                  placeholder=" Email address"
+                  required
+                  value={userInformationDetails.userEmail}
+                  onChange={handleRegisterEmail}
+                />
               </div>
               <div>
                 <label htmlFor="password" id="password">
@@ -61,6 +107,8 @@ const SignupDetails = () => {
                   type={showPassword ? "text" : "password"}
                   placeholder=" input your password"
                   required
+                  value={userInformationDetails.userPassword}
+                  onChange={handleRegisterPassword}
                 />
               </div>
               <div>
@@ -68,10 +116,12 @@ const SignupDetails = () => {
                   Confirm password
                 </label>
                 <input
-                  type="password"
-                  // type={showPassword ? "text" : "password"}
+                  // type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder=" confirm password"
                   required
+                  value={userInformationDetails.ConfirmedPassword}
+                  onChange={handleRegisterConfirmedPassword}
                 />
               </div>
 
