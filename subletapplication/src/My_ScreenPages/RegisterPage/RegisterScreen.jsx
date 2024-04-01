@@ -8,7 +8,7 @@ const RegisterScreen = () => {
       <div className={style.screen_container2}>
         <div className={style.screen_flexbox1}>
           <div className={style.screen_flexbox1_content}>
-            <h1>Welcome to Sublet</h1>
+            <h1>Welcome to NotifyMe </h1>
             <p>
               Navigate effortlessly and manage your alerts with a user-friendly
               interface.

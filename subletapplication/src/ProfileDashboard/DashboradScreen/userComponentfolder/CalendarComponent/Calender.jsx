@@ -16,7 +16,7 @@ const Calender = () => {
       }}
     >
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <StaticDatePicker orientation="landscape" disableFuture />
+        <StaticDatePicker orientation="landscape" />
       </LocalizationProvider>
     </div>
   );

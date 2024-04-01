@@ -102,7 +102,7 @@ input,
   resize: none;
 }
 .textareainput textarea::placeholder {
-  color: #e6e6e6;
+  color: #28162d;
   text-transform: capitalize;
 }
 .textareainput,
@@ -117,7 +117,7 @@ textarea:focus {
   letter-spacing: 0em;
   text-align: center;
   margin-top: 1rem;
-  color: #e6e6e6;
+  color: #28162d;
 }
 .privacy span {
   color: #000000;

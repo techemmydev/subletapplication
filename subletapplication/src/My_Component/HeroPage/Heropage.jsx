@@ -85,8 +85,9 @@ const Heropage = () => {
                 fontSize: "20px",
                 fontWeight: "500",
               }}
+              hoverStyle={{ backgroundColor: "  #f1f6f9" }}
             >
-              Apply Now
+              join now
             </Button>
           </Link>
         </div>
@@ -100,6 +101,7 @@ const Heropage = () => {
                   img={items.img}
                   title={items.title}
                   desc={items.desc}
+                  path={items.path}
                 ></Feature2>
               </div>
             );
@@ -123,7 +125,7 @@ const Heropage = () => {
         })}
       </section>
 
-      {/* <Servicepage /> */}
+      <Servicepage />
     </>
   );
 };

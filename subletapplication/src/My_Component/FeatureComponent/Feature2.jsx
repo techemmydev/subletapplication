@@ -15,13 +15,13 @@ const Feature2 = ({ title, desc, img, path }) => {
             <h2 className={style.Feature2_container_flex_h2}>{title}</h2>
             <p className={style.Feature2_container_flex_des}>{desc}</p>
             <div style={{ marginBottom: "20px" }}>
-              <Link style={{ textDecoration: "none" }} to={""}>
+              <Link style={{ textDecoration: "none" }} to={path}>
                 <Button
                   style={{
                     backgroundColor: " white",
                     border: "2px solid  #28162d",
                     color: " black",
-
+                    boxShadow: "0px 4px 4px 0px #00000040",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -30,6 +30,7 @@ const Feature2 = ({ title, desc, img, path }) => {
 
                     fontWeight: "500",
                   }}
+                  hoverStyle={{ backgroundColor: "  #f1f6f9" }}
                 >
                   learn more
                 </Button>

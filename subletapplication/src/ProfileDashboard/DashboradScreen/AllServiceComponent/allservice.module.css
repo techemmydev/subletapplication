@@ -5,24 +5,30 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #e7fbf6;
+  /* background-color: #28162d; */
+  /* background-image: linear-gradient(
+    rgb(107, 61, 144) 0%,
+    rgb(200, 16, 46) 100%
+  ); */
 }
 .allservice_container_center {
   width: 50%;
-  height: 420px;
-  box-shadow: 0px 4px 4px 0px #0000000d;
-  background-color: #fcfbf9;
+  height: 440px;
+  box-shadow: 0px 10px 20px 0px #28162d;
+  /* background-color: #fff3; */
+  background-color: white;
   padding: 1rem;
-  /* background-color: orangered; */
+
   border-radius: 24px;
 }
 .allservice_container_heading {
   font-family: "Roboto";
   font-size: 21px;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.7;
   letter-spacing: 0em;
   margin-left: 30px;
+  color: #28162d;
 }
 .button_flex {
   display: flex;

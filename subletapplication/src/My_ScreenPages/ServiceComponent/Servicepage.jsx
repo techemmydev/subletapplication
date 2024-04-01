@@ -5,12 +5,14 @@ const Servicepage = () => {
   return (
     <div className={style.service_container}>
       <div className={style.service_heading}>
-        <h1>Get More From Your Finances With Sublet App Premium</h1>
-        <p>
-          Premium is more than just software features! You’ll also get real
-          access to humans who can help you cancel subscriptions, lower your
-          bills, or help with questions about your personal finances.
-        </p>
+        <div style={{ width: "70%" }}>
+          <h1>Get More From Your Finances With NotifyMe App Premium</h1>
+          <p>
+            Premium is more than just software features! You’ll also get real
+            access to humans who can help you cancel subscriptions, lower your
+            bills, or help with questions about your personal finances.
+          </p>
+        </div>
       </div>
       <div
         style={{

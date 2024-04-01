@@ -29,7 +29,7 @@
   height: 149px;
   padding: 10px;
   /* border-radius: 200px; */
-  border: 3px solid #ababab;
+  border: 1px solid #ababab;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,10 +45,10 @@
 }
 .labels label {
   display: block;
-  color: black;
+  color: #28162d;
   margin: 10px;
   font-family: "Roboto";
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 17px;
   letter-spacing: 0em;
@@ -59,7 +59,7 @@
   height: 45px;
   border-radius: 16px;
   border: 1px solid #cacaca;
-  box-shadow: 0px 2px 2px 0px #00000040 inset;
+  /* box-shadow: 0px 2px 2px 0px #00000040 inset; */
   outline-color: #cacaca;
 }
 .labels input::placeholder {

@@ -2,8 +2,10 @@
   margin-top: 4%;
   margin-bottom: 4%;
   width: 100%;
-  /* background-color: aqua; */
+  padding: 2rem;
   height: 100vh;
+  background-color: white;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +17,7 @@
 }
 .feature_heaading {
   font-family: "Roboto";
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 45px;
   letter-spacing: 0em;

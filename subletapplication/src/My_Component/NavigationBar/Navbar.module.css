@@ -42,6 +42,9 @@
 }
 .Linkss a:hover {
   color: #5b0e0e;
+  border-bottom: 1px solid #5b0e0e;
+  border-top: 1px solid #5b0e0e;
+  transition: 1s;
 }
 /* .Linkss a:visited {
   color: green;

@@ -8,7 +8,7 @@ const Contactus = () => {
         style={{
           width: "100%",
           height: "140vh",
-          backgroundColor: "#E7FBF6",
+          // backgroundColor: " #28162d",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -66,6 +66,7 @@ const Contactus = () => {
           <div
             style={{
               backgroundColor: "white",
+              boxShadow: "-0px 0px 10px 0px #00000040",
               width: "60%",
               height: "600px",
               borderRadius: "20px",

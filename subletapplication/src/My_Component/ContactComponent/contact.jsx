@@ -84,26 +84,23 @@ const contact = () => {
                 style={{
                   width: "100%",
                   display: "inline-block",
-                  backgroundColor: "#0BDAA6",
+                  backgroundColor: "rgb(145, 13, 34)",
                   color: "white",
                   height: "50px",
                   padding: " 14px, 20px, 14px, 20px",
                   borderRadius: "18px",
                   border: "none",
                   textAlign: "center",
-                  fontamily: "Roboto",
+                  fontFamily: "Plus Jakarta Sans",
                   fontSize: "13px",
                   fontWeight: "500",
                   lineHeight: "18px",
                   letterSpacing: "0em",
                   textTransform: "capitalize",
                 }}
-                hoverStyle={
-                  {
-                    // backgroundColor: "#E7FBF6",
-                    // color: "red",
-                  }
-                }
+                hoverStyle={{
+                  backgroundColor: " #5b0e0e",
+                }}
               />
             </Link>
           </div>

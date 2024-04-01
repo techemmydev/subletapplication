@@ -24,7 +24,7 @@ const UserSummary = () => {
   return (
     <>
       <div className={style.showAlladditem} onClick={show}>
-        {showAll ? <span>Hide Summary details</span> : <span>showing All</span>}
+        {showAll ? <h5>Hide Summary details</h5> : <h5>showing All</h5>}
         {showAll ? (
           <div className={style.showAll}>
             <div className={style.showAll_container}>
@@ -46,9 +46,9 @@ const UserSummary = () => {
               <div className={`${style.flex_center} ${style.flex_details}`}>
                 <h4>{amountSubscribe ? amountSubscribe : ""}</h4>
               </div>
-              <div className={style.flex_center}>
+              {/* <div className={style.flex_center}>
                 <h6>t</h6>
-              </div>
+              </div> */}
             </div>
           </div>
         ) : (

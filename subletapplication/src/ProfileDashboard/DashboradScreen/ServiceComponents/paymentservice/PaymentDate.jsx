@@ -37,7 +37,7 @@ const PaymentDate = () => {
         <div className={style.addimage_container_flexbox}>
           <div className={style.addimage_box}>
             <div>
-              <img src={selectedCompany.icons} alt="selected icons" />
+              <img src={selectedCompany.icons} alt="service icons" />
             </div>
           </div>
           <div>
@@ -55,7 +55,7 @@ const PaymentDate = () => {
                 <label htmlFor="Company">Billing cycle</label>
                 <input
                   type="text"
-                  placeholder="1"
+                  placeholder="Enter a value"
                   value={billingCycle.value}
                   onChange={handleBillingCycleValueChange}
                 />

@@ -8,23 +8,25 @@ footer {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  background-color: #333333;
+  /* background-color: red; */
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 .flexcontainer {
   width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  /* background-color: orangered; */
+  /* background-color: orange; */
   padding: 2rem;
-  height: 40vh;
+  /* height: 40vh; */
+  flex-wrap: wrap;
 }
 .footerimage {
-  height: 50vh;
   flex-direction: column;
-  /* background-color: black; */
+  /* background-color: orangered; */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
   padding: 2rem;
 }
@@ -32,18 +34,18 @@ footer {
   width: 100px;
   height: 100px;
 
-  /* background-color: black; */
+  background-color: brown;
 }
 
 .iconstyle {
-  color: white;
+  color: #28162d;
 
   width: 24px;
 }
 .iconstyle_quick {
   width: 39px;
 
-  color: white;
+  color: #28162d;
 }
 .flexcontainer h2 {
   font-family: "Roboto";
@@ -52,7 +54,7 @@ footer {
   line-height: 40px;
   letter-spacing: 0em;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #28162d;
   /* background-color: black; */
 }
 .contactlist {
@@ -64,7 +66,7 @@ footer {
   list-style: none;
 }
 .contactlist li {
-  color: #ffffff;
+  color: #28162d;
   font-family: "Inter";
   font-size: 14px;
   font-weight: 600;
@@ -78,7 +80,7 @@ footer {
   color: grey;
 }
 .ctaemail {
-  color: #0bdaa6;
+  color: #28162d;
 }
 .quicklink {
   /* background-color: #0bdaa6; */
@@ -97,7 +99,7 @@ footer {
 }
 .quicklinks {
   text-decoration: none;
-  color: #0bdaa6;
+  color: #28162d;
 }
 .quicklinks:hover {
   color: grey;
@@ -111,4 +113,17 @@ footer {
     margin-top: unset;
     background-color: #0bdaa6;
   }
+}
+.getStarted h1 {
+  font-size: 40px;
+  font-family: "Plus Jakarta Sans";
+  color: #5b0e0e;
+  font-weight: 800;
+}
+.getStarted p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  color: gray;
+  width: 55%;
+  line-height: 1.5;
 }

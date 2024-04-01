@@ -15,12 +15,12 @@ const SidebarDashboard = () => {
   return (
     <div className={style.navDashboard_container}>
       <div className={style.navDashboard_container_logoflex}>
-        <div>
+        {/* <div>
           <SubletLogo />
-        </div>
+        </div> */}
 
         <div className={style.navDashboard_container_headingtitle}>
-          <h1>sublet</h1>
+          <h1>NotifyMe</h1>
           <p>Dashboard</p>
         </div>
 
@@ -29,7 +29,8 @@ const SidebarDashboard = () => {
             <Link
               to="/dashboard"
               style={{
-                color: isActive("/dashboard") ? "#1DBFDC" : "#D4D5D9",
+                color: isActive("/dashboard") ? "white" : "#D4D5D9",
+                fontWeight: isActive("/dashboard") ? "700" : "600",
               }}
             >
               <li>
@@ -40,7 +41,8 @@ const SidebarDashboard = () => {
             <Link
               to="/calender"
               style={{
-                color: isActive("/calender") ? "#1DBFDC" : "#D4D5D9",
+                color: isActive("/calender") ? "white" : "#D4D5D9",
+                fontWeight: isActive("/calender") ? "700" : "600",
               }}
             >
               <li>
@@ -51,7 +53,7 @@ const SidebarDashboard = () => {
             <Link
               to="/report"
               style={{
-                color: isActive("/report") ? "#1DBFDC" : "#D4D5D9",
+                color: isActive("/report") ? "white" : "#D4D5D9",
               }}
             >
               <li>
@@ -62,7 +64,7 @@ const SidebarDashboard = () => {
             <Link
               to="/settings"
               style={{
-                color: isActive("/settings") ? "#1DBFDC" : "#D4D5D9",
+                color: isActive("/settings") ? "white" : "#D4D5D9",
               }}
             >
               <li>

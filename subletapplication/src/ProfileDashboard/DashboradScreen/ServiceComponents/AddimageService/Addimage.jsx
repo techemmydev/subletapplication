@@ -47,7 +47,7 @@ const Addimage = () => {
           <div className={style.box_feild}>
             <form action="" className={style.labels}>
               <div>
-                <label htmlFor="Company">Company:</label>
+                <label htmlFor="Company">Company</label>
                 <div>
                   {selectedCompany && selectedCompany.icons ? (
                     <span>{selectedCompany.name}</span>

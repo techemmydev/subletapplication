@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className={navStyles.container}>
           <div className={navStyles.innercontainer}>
             <div>
-              <Link to="/www.notifymeApp" className={navStyles.logo_link}>
+              <Link to="/" className={navStyles.logo_link}>
                 <SubletLogo />
               </Link>
             </div>
@@ -69,10 +69,11 @@ const Navbar = () => {
                 to="/login"
                 className={navStyles.sigin}
                 style={{
-                  color: isActive("/login") ? "#0bdaa6" : "",
+                  color: isActive("/login") ? " rgb(145, 13, 34)" : "",
+                  fontWeight: isActive("/login") ? "700" : "600",
                 }}
               >
-                <li>sign in</li>
+                <li>login </li>
               </Link>
 
               <Button
@@ -87,7 +88,7 @@ const Navbar = () => {
                     scrolled ? navStyles.redBackgroundcolortex : ""
                   }`}
                 >
-                  join us
+                  Get Started
                 </Link>
               </Button>
             </div>

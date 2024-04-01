@@ -129,6 +129,10 @@ const Desktop = () => {
                     <Button
                       style={{
                         color: "white",
+                        backgroundColor: "rgb(145, 13, 34)",
+                      }}
+                      hoverStyle={{
+                        backgroundColor: "#5b0e0e",
                       }}
                     >
                       log in

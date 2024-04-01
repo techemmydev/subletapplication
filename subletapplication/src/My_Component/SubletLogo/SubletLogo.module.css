@@ -1,5 +1,5 @@
 .logo {
-  width: 170px;
+  width: 200px;
   height: 79px;
   flex-shrink: 0;
   display: flex;
@@ -10,4 +10,9 @@
 }
 .imglogo {
   width: 80px;
+}
+.app_styles {
+  transition: 1s;
+
+  color: #5b0e0e;
 }

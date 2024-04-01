@@ -75,7 +75,12 @@
 .css-1hbyad5-MuiTypography-root {
   display: none !important;
 }
-div
-  > div.MuiPickersToolbar-root.MuiDatePickerToolbar-root.MuiPickersLayout-toolbar.css-16d8vrz-MuiPickersToolbar-root-MuiDatePickerToolbar-root {
+
+.css-16d8vrz-MuiPickersToolbar-root-MuiDatePickerToolbar-root {
   display: none;
 }
+/* background-image: linear-gradient(
+  rgb(107, 61, 144) 0%,
+  rgb(200, 16, 46) 100%
+);  */
+/* background-color: #fff3; */

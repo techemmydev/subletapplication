@@ -13,9 +13,10 @@ export const ClassRoom = [
       "Sublet allows you to set alerts before your next payments.Exactly when you want them. Sent wherever you want.",
     paragraph2:
       "Online or in app, manage all of your finances with Sublet Application.",
-    path: "/signup",
+    path: "/Manage_subscriptions",
   },
   {
+    path: "/spending-insights",
     id: 2,
     feature2: true,
     img: "/src/assets/SubletImages/man1.png",
@@ -24,7 +25,7 @@ export const ClassRoom = [
     title: "Stay On Top Of Your Spending ",
   },
   {
-    path: "/screen",
+    path: "/Autopilot_savings",
     id: 1,
     feature2: false,
     heading: "Put Your Savings On Track with Sublet App",

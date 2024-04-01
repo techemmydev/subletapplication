@@ -7,7 +7,7 @@ const Herosection = () => {
     <>
       <div>
         <div className={herosectionstyle.herotitle}>
-          <h1>Explore More sublet App Features</h1>
+          <h1>Explore More NotifyMe App Features</h1>
         </div>
 
         <section className={herosectionstyle.hero_section}>
@@ -22,6 +22,7 @@ const Herosection = () => {
                     width: "100%",
                     marginBottom: "10px",
                     display: "flex",
+                    flexWrap: "wrap",
                   }}
                 >
                   <div
@@ -38,6 +39,7 @@ const Herosection = () => {
                       padding: "1rem",
                       // backgroundColor: "green",
                       display: "flex",
+                      flexWrap: "wrap",
                     }}
                   >
                     <div style={{ display: "flex", gap: "20px" }}>

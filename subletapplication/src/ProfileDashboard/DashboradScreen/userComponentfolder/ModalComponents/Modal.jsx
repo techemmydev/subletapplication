@@ -1,13 +1,30 @@
 import React from "react";
+import style from "../ModalComponents/modal.module.css";
+import Button from "../../../../My_Component/ButtonComponent/Button";
+import { CloseModal, OpenModal } from "../../../../Redux/slice/ModalSlice";
 
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 const Modal = () => {
+  // const { isOpen } = useSelector((state) => state.modal);
+  const closemyModal = () => {
+    dispatch(CloseModal());
+  };
+  function open() {
+    dispatch(OpenModal());
+  }
+  const dispatch = useDispatch();
   return (
-    <aside style={{ width: "100%", height: "100vh", backgroundColor: "red" }}>
-      <div className="">
-        <h4>Remove all items from your shopping cart</h4>
-        <div>
-          <button type="button">confirm</button>
-          <button type="button">cancel</button>
+    <aside className={style.modal_container}>
+      <div className={style.modal_container1}>
+        <h4>Are you sure you want to cancel</h4>
+        <div className={style.modal_container_button}>
+          <Link to={"/dashboard"}>
+            {" "}
+            <Button next={open}>yes</Button>{" "}
+          </Link>
+
+          <Button next={closemyModal}>no</Button>
         </div>
       </div>
     </aside>

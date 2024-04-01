@@ -22,7 +22,10 @@ const SubletLogo = () => {
   }, []);
   return (
     <div className={logoStyles.logo}>
-      <h3>NotifyMe {scrolled && <span>App</span>}</h3>
+      <h3>
+        NotifyMe{" "}
+        {scrolled && <span className={logoStyles.app_styles}>App</span>}
+      </h3>
       {/* <img src={logo} alt="subletlogo" className={logoStyles.imglogo} /> */}
     </div>
   );

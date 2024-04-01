@@ -8,20 +8,50 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiFacebook } from "react-icons/ci";
 
 import { FaInstagram } from "react-icons/fa";
+import SubletLogo from "../SubletLogo/SubletLogo";
+import Button from "../ButtonComponent/Button";
 
 const Footer = () => {
   const copyright = new Date().getFullYear();
   return (
     <footer>
+      <div
+        style={{
+          maxWidth: "1200px",
+          margin: "auto",
+          // backgroundColor: "red",
+          height: "100px",
+          display: "flex",
+          alignContent: "center",
+          justifyContent: "space-between",
+          padding: "2rem",
+        }}
+        className={footerstyle.getStarted}
+      >
+        <div>
+          <h1>Get Started</h1>
+          <p>
+            Download NotifyMe App for free on the iOS and Google Play stores –
+            or sign up online today.
+          </p>
+        </div>
+        <div>
+          <Link to={"/signup"} style={{ textDecoration: "none" }}>
+            {" "}
+            <Button>Sign Up</Button>{" "}
+          </Link>
+        </div>
+      </div>
       <div className={footerstyle.footercontainer}>
         <div className={footerstyle.flexcontainer}>
           <div>
             <div className={footerstyle.footerimage}>
-              <img
+              {/* <img
                 src="/src/assets/Subletimages/Frame 1.png"
                 alt="logofooter"
                 className={footerstyle.footerimage2}
-              />
+              /> */}
+              <SubletLogo />
             </div>
           </div>
           <div className={footerstyle.contactlist}>
@@ -50,7 +80,7 @@ const Footer = () => {
             <h2>quick links</h2>
             <nav>
               <ul>
-                <Link className={footerstyle.quicklinks}>
+                <Link className={footerstyle.quicklinks} to={"/contactus"}>
                   {" "}
                   <li>contact us</li>
                 </Link>
@@ -86,16 +116,16 @@ const Footer = () => {
       </div>
       <p
         style={{
-          textAlign: "center",
-          backgroundColor: " #333333",
-
+          textAlign: "left",
+          // backgroundColor: " #333333",
+          fontFamily: "Plus Jakarta Sans",
           padding: "2rem",
-          fontfamily: "Inter",
+          marginLeft: "75px",
           fontSize: "14px",
           fontWeight: "600",
           lineHeight: "30px",
           letterSpacing: "0em",
-          color: "#0bdaa6",
+          color: "#28162d",
         }}
       >
         {copyright} All Rights Reserved

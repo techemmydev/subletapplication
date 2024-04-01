@@ -7,7 +7,7 @@ const RecieveAlert = () => {
   const { selectedCompany } = useSelector((state) => state.companyIcon);
   const dispatch = useDispatch();
 
-  const { userInformationDetails } = useSelector((state) => state.payment);  
+  const { userInformationDetails } = useSelector((state) => state.payment);
 
   const handleRecieveAlertOptionsEmail = (e) => {
     dispatch(
@@ -32,7 +32,7 @@ const RecieveAlert = () => {
         <div className={style.addimage_container_flexbox}>
           <div className={style.addimage_box}>
             <div>
-              <img src={selectedCompany.icons} alt="show image here" />
+              <img src={selectedCompany.icons} alt="service icon" />
             </div>
           </div>
           <div>
@@ -41,7 +41,7 @@ const RecieveAlert = () => {
                 <label htmlFor="Alert">
                   How would you like to receive alerts
                 </label>
-                <input  
+                <input
                   type="email"
                   placeholder="Email"
                   required
@@ -52,7 +52,7 @@ const RecieveAlert = () => {
               <div>
                 <input
                   type="text"
-                  placeholder="(phone Number)"
+                  placeholder="08065593278"
                   required
                   value={userInformationDetails.userPhoneNumber}
                   onChange={handleRecieveAlertOptionsPhoneNumber}

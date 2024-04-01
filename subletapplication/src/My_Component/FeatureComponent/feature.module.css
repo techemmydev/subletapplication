@@ -1,10 +1,9 @@
 .features_container {
   width: 100%;
-  background-color: rgb(242, 242, 242);
+  /* background-color: rgb(242, 242, 242); */
   display: flex;
 
   justify-content: center;
-  /* background-color: #e9f8fb; */
 
   padding: 2rem;
 }
@@ -25,9 +24,9 @@
 }
 .classroom_h2 {
   font-family: "Plus Jakarta Sans";
-  font-size: 23px;
+  font-size: 29px;
   font-weight: 700;
-
+  line-height: 1.5;
   letter-spacing: 0em;
   color: #0a0f29;
 }
@@ -62,9 +61,9 @@
   margin-bottom: 23px;
 
   font-family: "Plus Jakarta Sans";
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 1.5;
   letter-spacing: 0em;
 }
 .Feature2_container_flex_des {

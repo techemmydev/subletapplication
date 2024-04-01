@@ -1,0 +1,47 @@
+.Manage_subscriptions_heading h1 {
+  font-size: 45px;
+  font-family: "Plus Jakarta Sans";
+
+  font-weight: 800;
+}
+.Manage_subscriptions_heading {
+  width: 80%;
+  /* background-color: brown; */
+  padding: 2rem;
+}
+.Manage_subscriptions_heading p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.Manage_subscriptions_sections {
+  display: flex;
+  align-items: "center";
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  /* position: relative;
+  bottom: 150px; */
+  padding: 2rem;
+}
+.Manage_subscriptions_sections h1 {
+  font-family: "Plus Jakarta Sans";
+
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.Manage_subscriptions_sections p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+  color: rgb(145, 13, 34);
+}

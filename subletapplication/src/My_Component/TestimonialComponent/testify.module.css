@@ -1,7 +1,7 @@
 .testify_secection_container {
   width: 100%;
-  height: 70vh;
-  background-color: #ccdad1;
+  /* height: 70vh; */
+  background-color: #28162d;
   padding: 64px, 121px, 64px, 121px;
   padding: 2rem;
   border-radius: 8px;
@@ -10,7 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+
+  flex-wrap: wrap;
 }
 .testimonaildeatils_flex {
   display: flex;
@@ -19,14 +20,26 @@
   justify-content: center;
   padding: 2rem;
   align-items: center;
+  flex-wrap: wrap;
   /* background-color: blue; */
+}
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(0); /* Start at original position */
+  }
+  100% {
+    transform: translateX(-20px); /* Float 20px above original position */
+  }
 }
 .info_box {
   width: 370px;
   height: 236px;
   padding: 27px, 18px, 27px, 18px;
   border-radius: 8px;
+  /* background-color: #fff3; */
   background-color: #fafcff;
+  box-shadow: -0px 0px 10px 0px #00000040;
+  animation: floatAnimation 3s ease-in-out infinite alternate;
 }
 .persondetails_box {
   padding: 1rem;
@@ -44,6 +57,7 @@
   line-height: 48px;
   letter-spacing: 0em;
   text-align: left;
+  color: white;
 }
 .infoStyle h1 {
   font-family: "Plus Jakarta Sans";
@@ -73,5 +87,5 @@
   width: 37px;
   border-radius: 100px;
   height: 8px;
-  background-color: #0a0f29;
+  background-color: #fff3;
 }

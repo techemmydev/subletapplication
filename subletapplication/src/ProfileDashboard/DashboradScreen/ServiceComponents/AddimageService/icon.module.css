@@ -60,7 +60,3 @@
   gap: 20px;
   justify-content: space-around;
 }
-.icon_box_flex:hover {
-  background-color: #cacaca;
-  width: 100%;
-}

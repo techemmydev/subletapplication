@@ -68,7 +68,9 @@ const SignupDetails = () => {
           <h5>
             Already have an account ?{" "}
             <span>
-              <Link to="/login">Sign in</Link>
+              <Link to="/login" style={{ color: " rgb(145, 13, 34)" }}>
+                Sign in
+              </Link>
             </span>
           </h5>
         </div>
@@ -144,15 +146,17 @@ const SignupDetails = () => {
               marginTop: "10px",
             }}
           >
-            <Link>{/* <Btn className={style.shw}>sign up</Btn> */}</Link>
-            <Button
-              style={{
-                width: "100%",
-                color: "white",
-              }}
-            >
-              sign up
-            </Button>
+            <Link to={"/login"} style={{ textDecoration: "none" }}>
+              <Button
+                style={{
+                  width: "100%",
+                  color: "white",
+                  backgroundColor: " #0a0f29",
+                }}
+              >
+                sign up
+              </Button>
+            </Link>
           </div>
 
           <div className={style.or}>

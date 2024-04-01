@@ -1,13 +1,14 @@
 .welcomepagescreen {
   width: 100%;
   /* background-color: var(--color-white); */
-  height: 130vh;
-  background-color: white;
+  /* height: 130vh; */
+  /* background-color: orangered; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding: 30px;
-
+  /* background-image: url("/src/assets/SubletImages/imagebackground.png"),
+  linear-gradient(rgb(107, 61, 144) 0%, rgb(200, 16, 46) 100%); */
   /* background-image: url("/src/assets/imagebackground.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -15,12 +16,16 @@
 }
 .innerwelcompagescreencontainer {
   width: 70%;
-  height: 700px;
-  background-image: url("/src/assets/SubletImages/imagebackground.png");
+  height: 600px;
+  background-image: linear-gradient(
+    rgb(107, 61, 144) 0%,
+    rgb(200, 16, 46) 100%
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   /* background-color: red; */
+  margin-top: 90px;
 
   display: flex;
   justify-content: center;
@@ -38,7 +43,7 @@
   top: 90px;
   width: 100%;
   height: 440px;
-  background-color: white;
+  background-color: #fff3;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -88,7 +93,7 @@
   font-weight: 500;
   line-height: 21px;
   letter-spacing: 0em;
-  color: #808080;
+  color: white;
 }
 .input_Details {
   display: flex;
@@ -133,7 +138,7 @@
 }
 
 .frameInput2 input[type="checkbox"]:checked {
-  background-color: #0bdaa6;
+  background-color: rgb(145, 13, 34);
   border: none;
 }
 .frameInput2 input[type="checkbox"]:checked:after {
@@ -200,7 +205,7 @@
 
 .dontHaveAnContainer a {
   text-decoration: none;
-  color: var(--color-aquamarine-100);
+  color: rgb(145, 13, 34);
 }
 .login_link {
   text-decoration: none;

@@ -7,18 +7,18 @@ import { useSelector } from "react-redux";
 
 const Usersetting = () => {
   const { userInformationDetails } = useSelector((state) => state.payment);
-  const { FullName, userEmail, userPassword } = userInformationDetails;
+  const { FullName, userEmail, userPassword, userPhoneNumber } =
+    userInformationDetails;
   return (
     <>
       <div className={style.setting_page}>
         <div className={style.setting_page_title}>
+          <Userpicture />
           <h3>My Account</h3>
         </div>
         <div className={style.setting_page_details}>
           <div className={style.setting_page_box}>
-            <div>
-              <Userpicture />
-            </div>
+            <div></div>
             <div className={style.setting_page_Information}>
               <div>
                 <h6>FULL NAME</h6>
@@ -36,7 +36,8 @@ const Usersetting = () => {
                     fontWeight: "50px",
                     lineHeight: "19px",
                     bordeRadius: "12px",
-                    backgroundColor: "white",
+                    backgroundColor: " #28162d",
+                    color: "white",
                   }}
                 >
                   change
@@ -60,7 +61,8 @@ const Usersetting = () => {
                     fontWeight: "50px",
                     lineHeight: "19px",
                     bordeRadius: "12px",
-                    backgroundColor: "white",
+                    backgroundColor: " #28162d",
+                    color: "white",
                   }}
                 >
                   change/verify
@@ -84,40 +86,19 @@ const Usersetting = () => {
                     fontWeight: "50px",
                     lineHeight: "19px",
                     bordeRadius: "12px",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: " #28162d",
                   }}
                 >
                   change
                 </Button>
               </div>
             </div>
-            {/* <div className={style.setting_page_Information}>
-              <div>
-                <h6>REGION</h6>
-                <h5>Nigeria</h5>
-              </div>
-              <div>
-                <Button
-                  style={{
-                    width: "132px",
-                    height: "39px",
-                    padding: "10px",
-                    boxShadow: " 0px 3px 3px 0px #E7FBF6",
-                    fontFamily: "Roboto",
-                    fontSize: "12px",
-                    fontWeight: "50px",
-                    lineHeight: "19px",
-                    bordeRadius: "12px",
-                    backgroundColor: "white",
-                  }}
-                >
-                  change Region
-                </Button>
-              </div>
-            </div> */}
+
             <div className={style.setting_page_Information}>
               <div>
-                <h5>Deactivate account</h5>
+                <h5>Phone Number</h5>
+                <h5>{userPhoneNumber}</h5>
               </div>
               <div>
                 <Button
@@ -131,11 +112,37 @@ const Usersetting = () => {
                     fontWeight: "50px",
                     lineHeight: "19px",
                     bordeRadius: "12px",
-                    backgroundColor: "white",
-                    color: "#808080",
+                    backgroundColor: " #28162d",
+                    color: "white",
                   }}
                 >
-                  Deactivate
+                  change
+                </Button>
+              </div>
+            </div>
+            <div className={style.setting_page_Information}>
+              <div>
+                <h5>Deactivate account</h5>
+              </div>
+              <div>
+                <Button
+                  style={{
+                    width: "132px",
+                    height: "39px",
+                    padding: "10px",
+                    boxShadow: "0px 3px 3px 0px #023125",
+
+                    fontFamily: "Roboto",
+                    fontSize: "12px",
+                    fontWeight: "50px",
+                    lineHeight: "19px",
+                    bordeRadius: "12px",
+                    backgroundColor: "rgb(145, 13, 34)",
+                    color: "white",
+                  }}
+                  hoverStyle={{ backgroundColor: " #5b0e0e" }}
+                >
+                  Delete
                 </Button>
               </div>
             </div>
@@ -156,9 +163,10 @@ const Usersetting = () => {
                     fontWeight: "50px",
                     lineHeight: "19px",
                     bordeRadius: "12px",
-                    backgroundColor: "#F73B44",
+                    backgroundColor: "rgb(145, 13, 34)",
                     color: "white",
                   }}
+                  hoverStyle={{ backgroundColor: " #5b0e0e" }}
                 >
                   Delete
                 </Button>

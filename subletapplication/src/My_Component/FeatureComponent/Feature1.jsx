@@ -28,7 +28,7 @@ const Feature1 = ({
                 backgroundColor: " white",
                 border: "2px solid  #28162d",
                 color: " black",
-
+                boxShadow: "0px 4px 4px 0px #00000040",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -37,6 +37,7 @@ const Feature1 = ({
 
                 fontWeight: "500",
               }}
+              hoverStyle={{ backgroundColor: "  #f1f6f9" }}
             >
               learn more
             </Button>

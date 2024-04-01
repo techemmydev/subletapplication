@@ -24,9 +24,7 @@ const Useramount = () => {
             </div>
           </div>
           <div>
-            <h3 style={{ fontSize: "12px" }}>
-              {value ? value : <p> No subscribe Subscription</p>}
-            </h3>
+            <h3>{value ? value : <p>Total Subcribe</p>}</h3>
           </div>
           <div>
             <BiChevronRight className={style.leftArrow} />
@@ -42,8 +40,8 @@ const Useramount = () => {
             </div>
           </div>
           <div>
-            <h3 style={{ fontSize: "12px" }}>
-              {amountSubscribe ? amountSubscribe : <p> Monthly Revenue</p>}
+            <h3>
+              {amountSubscribe ? amountSubscribe : <p> Amount Subcribe</p>}
             </h3>
           </div>
           <div>
@@ -62,15 +60,24 @@ const Useramount = () => {
             <Link style={{ textDecoration: "none" }} to="/addservices">
               <Button
                 style={{
-                  width: "121px",
+                  width: "141px",
                   height: "43px",
                   padding: "4px 21px 4px 21px",
                   color: "white",
                   borderRadius: "12px",
                   boxShadow: "0px 2px 2px 0px #0000001A",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "#28162d",
+                  fontSize: "12px",
+                  gap: "5px",
+
+                  fontFamily: "Plus Jakarta Sans",
                 }}
+                hoverStyle={{ backgroundColor: " grey" }}
               >
-                <FaPlusCircle /> <span> New</span>
+                <FaPlusCircle /> <span> Add Service</span>
               </Button>
             </Link>
           </div>

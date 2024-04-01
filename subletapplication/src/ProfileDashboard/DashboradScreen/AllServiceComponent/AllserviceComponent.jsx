@@ -6,9 +6,13 @@ import PaymentDate from "../ServiceComponents/paymentservice/PaymentDate";
 import { useState } from "react";
 import RecieveAlert from "../ServiceComponents/RecieveAlert/RecieveAlert";
 import { Link } from "react-router-dom";
+import { OpenModal } from "../../../Redux/slice/ModalSlice";
+import { useSelector, useDispatch } from "react-redux";
 import Modal from "../userComponentfolder/ModalComponents/Modal";
-
 const AllserviceComponent = () => {
+  const { isOpen } = useSelector((state) => state.modal);
+
+  const dispatch = useDispatch();
   const [TrackIndex, SetTrackIndex] = useState(0);
   function nextButton() {
     SetTrackIndex((prev) => prev + 1);
@@ -16,7 +20,9 @@ const AllserviceComponent = () => {
   function previousButton() {
     SetTrackIndex((prev) => prev - 1);
   }
-
+  function open() {
+    dispatch(OpenModal());
+  }
   return (
     <>
       <div className={style.allservice_container}>
@@ -28,7 +34,9 @@ const AllserviceComponent = () => {
 
           <div className={style.button_flex}>
             <div>
+              {isOpen && <Modal />}
               <Button
+                next={open}
                 style={{
                   width: "159px",
                   height: "44px",
@@ -36,8 +44,9 @@ const AllserviceComponent = () => {
                   padding: "12px 10px 12px 10px",
                   color: "white",
                   bordeRadius: "18px",
-                  backgroundColor: "#F06445",
+                  backgroundColor: " rgb(145, 13, 34)",
                 }}
+                hoverStyle={{ backgroundColor: " #5b0e0e" }}
               >
                 Cancel
               </Button>
@@ -50,7 +59,9 @@ const AllserviceComponent = () => {
                     next={previousButton}
                     style={{
                       color: "white",
+                      backgroundColor: " rgb(145, 13, 34)",
                     }}
+                    hoverStyle={{ backgroundColor: " #5b0e0e" }}
                   >
                     Back
                   </Button>
@@ -63,6 +74,7 @@ const AllserviceComponent = () => {
                     <Button
                       style={{
                         color: "white",
+                        backgroundColor: " #28162d",
                       }}
                     >
                       {" "}
@@ -74,6 +86,7 @@ const AllserviceComponent = () => {
                     next={nextButton}
                     style={{
                       color: "white",
+                      backgroundColor: " #28162d",
                     }}
                   >
                     Next

@@ -16,6 +16,9 @@ import AllserviceComponent from "./ProfileDashboard/DashboradScreen/AllServiceCo
 // import Dashbord from "./UserDashboard/Dashbord";
 // import Calender from "./ProfileDashboard/DashboradScreen/userComponentfolder/CalendarComponent/Calender";
 import DashboardPage from "./UserDashboard/DashboardPage";
+import Manage_subscriptions from "./My_Component/3In 1 component/Manage_subscriptions";
+import Spending_insights from "./My_Component/3In 1 component/Spending_insights";
+import Autopilot_savings from "./My_Component/3In 1 component/Autopilot_savings";
 
 const App = () => {
   return (
@@ -25,6 +28,12 @@ const App = () => {
         <Route path="/" element={<Outletcomponent />}>
           <Route path="/about" element={<AboutusPage />} />
           <Route path="/contact" element={<ContactusPage />} />
+          <Route
+            path="/Manage_subscriptions"
+            element={<Manage_subscriptions />}
+          />
+          <Route path="/spending-insights" element={<Spending_insights />} />
+          <Route path="/Autopilot_savings" element={<Autopilot_savings />} />
         </Route>
 
         <Route path="/signup" element={<MyRegisterPage />} />
