@@ -39,7 +39,7 @@ const ResetPassword = () => {
           }}
         >
           <img
-            src="/src/assets/Subletimages/vectorlock.png"
+            src="/SubletImages/Vectorlock.png"
             alt=""
             style={{ width: "40px" }}
           />

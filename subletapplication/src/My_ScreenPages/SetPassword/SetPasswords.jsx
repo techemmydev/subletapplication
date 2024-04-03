@@ -39,7 +39,7 @@ const Setpassword = () => {
           }}
         >
           <img
-            src="/src/assets/Subletimages/vectorkey.png"
+            src="/SubletImages/Vectorkey.png"
             alt=""
             style={{ width: "40px" }}
           />

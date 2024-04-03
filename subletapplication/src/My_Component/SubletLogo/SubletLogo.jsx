@@ -1,5 +1,5 @@
 import logoStyles from "../../My_Component/SubletLogo/SubletLogo.module.css";
-import logo from "../../assets/SubletImages/logo.png";
+// import logo from "../../assets/SubletImages/logo.png";
 import React, { useState, useEffect } from "react";
 const SubletLogo = () => {
   const [scrolled, setScrolled] = useState(false);

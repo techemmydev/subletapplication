@@ -9,7 +9,7 @@ const Userpicture = () => {
           height: "42px",
           borderRadius: "300px",
           backgroundColor: "orangered",
-          backgroundImage: `url(${"/src/assets//SubletImages/userpicture.svg"})`,
+          backgroundImage: `url(${"/SubletImages/userpicture.svg"})`,
         }}
       ></div>
     </div>

@@ -56,7 +56,7 @@ const Autopilot_savings = () => {
           >
             {" "}
             <img
-              src="/src/assets/Subletimages/boy.jpg"
+              src="/SubletImages/boy.jpg"
               alt=""
               width={"79%"}
               style={{ borderRadius: "12px" }}

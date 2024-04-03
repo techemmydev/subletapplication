@@ -56,7 +56,7 @@ const Spending_insights = () => {
           >
             {" "}
             <img
-              src="/src/assets/Subletimages/JnRnEAbhoVj83rNnOSxDCS2Fxw.webp"
+              src="/SubletImages/JnRnEAbhoVj83rNnOSxDCS2Fxw.webp"
               alt=""
               width={"70%"}
             />

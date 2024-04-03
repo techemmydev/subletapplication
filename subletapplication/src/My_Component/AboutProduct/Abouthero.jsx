@@ -28,7 +28,7 @@ const Abouthero = () => {
         }}
       >
         <img
-          src="/src/assets/Subletimages/G3RVSdOVYnlfnSCdgn5G9zR4zY.png"
+          src="/SubletImages/G3RVSdOVYnlfnSCdgn5G9zR4zY.png"
           alt=""
           width={"60%"}
         />

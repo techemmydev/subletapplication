@@ -7,8 +7,8 @@ export const ClassRoom = [
     // title: "Assignment Management ",
     cardTitle1: "Receiveing Alert ",
     cardTitle2: "Resource Sharing",
-    img1: "src/assets/SubletImages/subscribe_12437329.png",
-    img2: "src/assets/SubletImages/subscription_7261321.png",
+    img1: "/SubletImages/subscribe_12437329.png",
+    img2: "/SubletImages/subscription_7261321.png",
     paragraph1:
       "Sublet allows you to set alerts before your next payments.Exactly when you want them. Sent wherever you want.",
     paragraph2:
@@ -19,7 +19,7 @@ export const ClassRoom = [
     path: "/spending-insights",
     id: 2,
     feature2: true,
-    img: "/src/assets/SubletImages/man1.png",
+    img: "/SubletImages/man1.png",
     heading: "Stay On Top Of Your Spending",
     desc: "Get an effortless breakdown of your finances to see where your money is going and how to improve. We’ll notify you of important events that need your attention so you’re never caught off guard.",
     title: "Stay On Top Of Your Spending ",
@@ -37,7 +37,7 @@ export const ClassRoom = [
     cardTitle2: "Support personal growth",
     paragraph2:
       "Time and resources are a constraint. We can only win if we are faster, more effective, and more agile than others..",
-    img1: "/src/assets/SubletImages/save-money_2676802.png",
-    img2: "/src/assets/SubletImages/carbon_chart-stepper.svg",
+    img1: "/SubletImages/save-money_2676802.png",
+    img2: "/SubletImages/carbon_chart-stepper.svg",
   },
 ];

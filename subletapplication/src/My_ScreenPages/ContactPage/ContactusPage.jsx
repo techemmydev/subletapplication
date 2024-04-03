@@ -103,11 +103,7 @@ const Contactus = () => {
             }}
           >
             <div>
-              <img
-                src="/src/assets/Subletimages/map.logo.png"
-                alt=""
-                width={"80%"}
-              />
+              <img src="/SubletImages/map.logo.png" alt="" width={"80%"} />
             </div>
           </div>
           <div

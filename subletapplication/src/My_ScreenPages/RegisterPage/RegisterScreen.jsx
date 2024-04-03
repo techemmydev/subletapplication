@@ -16,7 +16,7 @@ const RegisterScreen = () => {
           </div>
           <div className={style.image_container}>
             <img
-              src="/src/assets/Subletimages/undraw_hello_re_3evm 2.png"
+              src="/SubletImages/undraw_hello_re_3evm 2.png"
               alt=""
               style={{ width: "60%" }}
             />

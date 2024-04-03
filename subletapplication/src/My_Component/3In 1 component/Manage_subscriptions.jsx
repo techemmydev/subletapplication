@@ -56,7 +56,7 @@ const Manage_subscriptions = () => {
           >
             {" "}
             <img
-              src="/src/assets/Subletimages/oINXW1NLasVKOhD9h9TB5IhM8TY.webp"
+              src="/SubletImages/oINXW1NLasVKOhD9h9TB5IhM8TY.webp"
               alt=""
               width={"70%"}
             />

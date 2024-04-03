@@ -20,7 +20,7 @@ const Useramount = () => {
         <div className={style.Amount_container_body}>
           <div className={style.amountIcon}>
             <div>
-              <img src="/src/assets/SubletImages/sAmount.svg" alt="" />
+              <img src="/SubletImages/sAmount.svg" alt="" />
             </div>
           </div>
           <div>
@@ -33,10 +33,7 @@ const Useramount = () => {
         <div className={style.Amount_container_body}>
           <div className={style.amountIcon}>
             <div>
-              <img
-                src="/src/assets/SubletImages\healthicons_dollar-negative.svg"
-                alt=""
-              />
+              <img src="/SubletImages\healthicons_dollar-negative.svg" alt="" />
             </div>
           </div>
           <div>

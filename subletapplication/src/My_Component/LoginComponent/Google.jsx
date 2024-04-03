@@ -6,7 +6,7 @@ const Google = () => {
       <div className={styles.inputicon}>
         <button>
           <img
-            src="/src/assets/SubletImages/googleicon.png"
+            src="/SubletImages/googleicon.png"
             alt="messages"
             className={styles.goo}
           />{" "}
@@ -14,7 +14,7 @@ const Google = () => {
         </button>
         <button>
           <img
-            src="/src/assets/SubletImages/facebookicon.png"
+            src="/SubletImages/facebookicon.png"
             alt="messages"
             className={styles.fb}
           />{" "}
