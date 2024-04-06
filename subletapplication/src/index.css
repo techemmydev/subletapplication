@@ -16,71 +16,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-:root {
-  /* fonts */
-  --font-inter: Inter;
-  --font-roboto: Roboto;
-  /* font sizes */
-  --font-size-xs: 12px;
-  --font-size-lg: 18px;
-  --font-size-base: 16px;
-  --font-size-2xl: 21px;
-  --font-size-7xl: 26px;
-  --font-size-mini: 15px;
-  --font-size-3xl: 22px;
-  --font-size-sm: 14px;
-  --font-size-xl: 20px;
-
-  /* Colors */
-  --color-gray-100: #808080;
-  --color-gray-200: #0d0d0d;
-  --color-white: #fff;
-  --foundation-green-green-300: #5ce6c3;
-  --color-aquamarine-100: #0bdaa6;
-  --color-black: #000;
-  --color-gainsboro: #e6e6e6;
-  --color-darkgray: #b3b3b3;
-  --foundation-blue-blue-50: #e9f8fb;
-  --color-dimgray: #555;
-  --foundation-blue-blue-200: #9bdfeb;
-
-  /* Gaps */
-  --gap-9xl: 28px;
-  --gap-3xs: 10px;
-  --gap-4xl: 23px;
-  --gap-8xs: 5px;
-
-  /* Paddings */
-  --padding-sm: 14px;
-  --padding-xl: 20px;
-  --padding-3xs: 10px;
-  --padding-9xl: 28px;
-  --padding-23xl: 42px;
-
-  /* Border radiuses */
-  --br-5xl: 24px;
-  --br-5xs: 8px;
-  --br-base: 16px;
-  --br-xs: 12px;
-  --br-231xl: 250px;
-  --br-xl: 20px;
-
-  /* accent-color: #0bdaa6; */
-}
-/* @media screen and (max-width: 942px) {
-  body {
-    background-color: #000;
-  }
-} */
+/* calender components style*/
+.css-1aj9me-MuiPickersLayout-root .MuiPickersLayout-actionBar,
 .css-1hbyad5-MuiTypography-root {
-  display: none !important;
-}
-
-.css-16d8vrz-MuiPickersToolbar-root-MuiDatePickerToolbar-root {
   display: none;
 }
-/* background-image: linear-gradient(
-  rgb(107, 61, 144) 0%,
-  rgb(200, 16, 46) 100%
-);  */
-/* background-color: #fff3; */

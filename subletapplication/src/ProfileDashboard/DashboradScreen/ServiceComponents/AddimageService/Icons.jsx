@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setSelectedCompany } from "../../../../Redux/slice/SubletSlice";
 const Icons = () => {
   const { iconimage } = useSelector((state) => state.companyIcon);
+
   // const selecticon = useSelector((state) => state.companyIcon.iconimage);
   const dispatch = useDispatch();
 

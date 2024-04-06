@@ -30,6 +30,10 @@ const PaymentDate = () => {
   const handleAutoRenewChange = (e) => {
     dispatch(setAutoRenew(e.target.value));
   };
+  // const [day] = nextPaymentDate.split("-");
+
+  // const dateParts = nextPaymentDate.split("-"); // Split the full date string by "-"
+  // const date = dateParts[0]; // Extract the first part (day)
 
   return (
     <div className={style.addimage_container}>
