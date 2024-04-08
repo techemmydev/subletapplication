@@ -84,8 +84,3 @@ const Calender = () => {
   );
 };
 export default Calender;
-
-// const fullDate = "27-08-2024";
-// const dateParts = fullDate.split("-"); // Split the full date string by "-"
-// const date = dateParts[0]; // Extract the first part (day)
-// console.log(date); // Output: 27
