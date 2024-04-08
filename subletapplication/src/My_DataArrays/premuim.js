@@ -1,11 +1,9 @@
 export const mypremuim = [
   {
     id: 1,
-    heading: "Without Premium",
+
     premiumstatus: "free",
-    title1: "Account Linking",
-    title1paragraph:
-      "Link your checking, savings, credit cards, and investments accounts to see everything in one place.",
+
     title2: "Balance Alerts",
     title2paragraph:
       "Get alerted when checking account falls below a safe balance or when credit spend is too high..",
@@ -18,8 +16,8 @@ export const mypremuim = [
   },
   {
     id: 2,
-    heading: "With Premium",
-    premiumstatus: "Concierge Services",
+
+    premiumstatus: " Premium",
     title1: "Subscription Cancellation Assistant",
     title1paragraph:
       "Let us cancel your subscriptions for you with a couple of taps.",
@@ -29,8 +27,5 @@ export const mypremuim = [
     title3: "Maintain full control",
     title3paragraph:
       "Your savings are your money. You can edit, pause, withdraw, or close your account at any time..",
-    title4: "Smart Savings Account",
-    title4paragraph:
-      "Open a savings account with Sublet App and save with ease.Turbocharge your finances with net worth tracking, shared accounts, unlimited budgets, and more.",
   },
 ];

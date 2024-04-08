@@ -5,7 +5,7 @@ const Testimonial = () => {
   return (
     <section className={style.testify_secection_container}>
       <div className={style.titleh1}>
-        <h1>Testimonials</h1>
+        <h1> Teams that control your spending</h1>
       </div>
       <div className={style.testimonaildeatils_flex}>
         {testimonailDeatils.map((items, index) => {

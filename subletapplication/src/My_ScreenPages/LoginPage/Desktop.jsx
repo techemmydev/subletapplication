@@ -129,7 +129,7 @@ const Desktop = () => {
                     <Button
                       style={{
                         color: "white",
-                        backgroundColor: "rgb(145, 13, 34)",
+                        backgroundColor: "#CC8F99",
                       }}
                       hoverStyle={{
                         backgroundColor: "#5b0e0e",

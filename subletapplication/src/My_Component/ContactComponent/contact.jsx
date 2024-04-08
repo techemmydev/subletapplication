@@ -84,7 +84,7 @@ const contact = () => {
                 style={{
                   width: "100%",
                   display: "inline-block",
-                  backgroundColor: "rgb(145, 13, 34)",
+                  backgroundColor: "#CC8F99",
                   color: "white",
                   height: "50px",
                   padding: " 14px, 20px, 14px, 20px",

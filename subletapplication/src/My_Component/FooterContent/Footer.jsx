@@ -20,7 +20,7 @@ const Footer = () => {
           maxWidth: "1200px",
           margin: "auto",
           // backgroundColor: "red",
-          height: "100px",
+          height: "120px",
           display: "flex",
           alignContent: "center",
           justifyContent: "space-between",
@@ -30,10 +30,7 @@ const Footer = () => {
       >
         <div>
           <h1>Get Started</h1>
-          <p>
-            Download NotifyMe App for free on the iOS and Google Play stores –
-            or sign up online today.
-          </p>
+          <p>sign up online today.</p>
         </div>
         <div>
           <Link to={"/signup"} style={{ textDecoration: "none" }}>
@@ -70,7 +67,7 @@ const Footer = () => {
                 <Link className={footerstyle.emaillink}>
                   <span className={footerstyle.ctaemail}>
                     {" "}
-                    sublet@gmail.com{" "}
+                    Subsentry@gmail.com{" "}
                   </span>
                 </Link>
               </li>

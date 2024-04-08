@@ -7,18 +7,18 @@ const Herosection = () => {
     <>
       <div>
         <div className={herosectionstyle.herotitle}>
-          <h1>Explore More NotifyMe App Features</h1>
+          <h1>Explore More Subsentry Features</h1>
         </div>
 
         <section className={herosectionstyle.hero_section}>
-          <div style={{ height: "100vh", width: "90%" }}>
+          <div style={{ width: "90%" }}>
             {featuresArray.map((item, index) => {
               return (
                 <div
                   key={index}
                   style={{
                     // backgroundColor: "pink",
-                    height: "100px",
+                    height: "200px",
                     width: "100%",
                     marginBottom: "10px",
                     display: "flex",
@@ -34,7 +34,7 @@ const Herosection = () => {
 
                   <div
                     style={{
-                      height: "100%",
+                      height: "200px",
                       width: "50%",
                       padding: "1rem",
                       // backgroundColor: "green",

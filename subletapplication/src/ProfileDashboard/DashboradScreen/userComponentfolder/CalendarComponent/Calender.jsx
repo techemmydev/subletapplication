@@ -4,8 +4,6 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
 import { PickersDay } from "@mui/x-date-pickers/PickersDay/PickersDay";
 import Badge from "@mui/material/Badge";
-
-// import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import { useSelector } from "react-redux";
 import { DayCalendarSkeleton } from "@mui/x-date-pickers/DayCalendarSkeleton";
 
@@ -13,8 +11,6 @@ const Calender = () => {
   const { selectedCompany } = useSelector((state) => state.companyIcon);
   const { nextPaymentDate } = useSelector((state) => state.payment);
   const [highlightedDays, setHighlightedDays] = useState([]);
-
-  // const [highlightedDays, setHighlightedDays] = useState([1, 2, 15]);
 
   const handleMonthChange = () => {
     setHighlightedDays([]);
@@ -28,9 +24,6 @@ const Calender = () => {
       day.date() === paymentDate.getDate() &&
       day.month() === paymentDate.getMonth() &&
       day.year() === paymentDate.getFullYear();
-    // const isSelected =
-    //   !props.outsideCurrentMonth &&
-    //   highlightedDays.indexOf(props.day.date()) >= 0;
 
     return (
       <Badge

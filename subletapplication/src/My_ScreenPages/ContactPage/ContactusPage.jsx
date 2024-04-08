@@ -43,7 +43,7 @@ const Contactus = () => {
                 Email, call, or complete the form so as Sublet can solve
                 whatever subscription problem.
               </p>
-              <p className={styles.p}>Sublet@gmail.com</p>
+              <p className={styles.p}>Subsentry@gmail.com</p>
               <p className={styles.p}>+234 703 856 3487 , +234 803 922 3488</p>
             </div>
             <div style={{ display: "flex", gap: "20px", overflow: "hidden" }}>
@@ -58,7 +58,8 @@ const Contactus = () => {
                 <h2>Feedback and suggestions</h2>
                 <p>
                   We value your feedback and are continuously working to improve
-                  Sublet. Your input is crucial in shaping the future of Sublet.
+                  Sublet. Your input is crucial in shaping the future of
+                  Subsentry.
                 </p>
               </div>
             </div>
@@ -125,8 +126,8 @@ const Contactus = () => {
             <div className={styles.address}>
               <h5>Head quaters </h5>
               <address>
-                Sublet inc. Lagos, Nigeria 123 Tech Boulevard, jibowu Lagos 123
-                Tech Boulevard. Nigeria
+                Subsentry inc. Lagos, Nigeria 123 Tech Boulevard, jibowu Lagos
+                123 Tech Boulevard. Nigeria
               </address>
             </div>
           </div>

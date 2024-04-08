@@ -27,6 +27,6 @@ export const featuresArray = [
     id: 5,
     img: "/SubletImages/fluent-mdl2_reminder-time.png",
     heading: "Track And Understand Your Credit Score",
-    text: " Sublet allows you to set alerts before your next payments.Exactly when you want them. Sent wherever you want,Access your complete credit report and history. Get alerted to important changes that impact your score..",
+    text: " subsentry allows you to set alerts before your next payments.Exactly when you want them. Sent wherever you want,Access your complete credit report and history. Get alerted to important changes that impact your score..",
   },
 ];

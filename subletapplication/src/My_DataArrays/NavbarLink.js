@@ -4,11 +4,11 @@ export const routes = [
     path: "/",
   },
   {
-    label: "About",
+    label: "About us",
     path: "/about",
   },
   {
-    label: "Contact",
+    label: "Contact us",
     path: "/contact",
   },
 ];

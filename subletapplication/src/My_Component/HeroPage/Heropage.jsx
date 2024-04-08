@@ -13,8 +13,8 @@ const Heropage = () => {
       <section className={herostyle.hero_section}>
         <main className={herostyle.maincontainer}>
           <div>
-            <div className={herostyle.boreder}> .</div>
-            <h1>NotifyMe App That Works For You</h1>
+            <div className={herostyle.boreder}></div>
+            <h1>Subsentry App That Works For You</h1>
             <p>
               Managing money is hard, but you don’t have to do it alone.
               NotifyMe empowers you to save more, spend less, see everything,
@@ -61,10 +61,10 @@ const Heropage = () => {
         <div className={herostyle.another_section_box}>
           <div className={herostyle.another_section_para}>
             {" "}
-            <h1>Join 5 Million+ Members</h1>
+            <h1>Join 2K + Members</h1>
             <p>
-              We’ve worked hard for the past 5 years saving our members over $1
-              billion dollars* and counting.
+              we’ve worked hard for the past 1 year saving our members a lot of
+              money and counting
             </p>{" "}
           </div>
           <Link to="/signup" className={herostyle.free}>
@@ -74,9 +74,9 @@ const Heropage = () => {
                 borderRadius: "12px",
 
                 marginTop: "30px",
-                marginLeft: "80px",
+                marginLeft: "130px",
                 color: "#28162d",
-                width: "249px",
+                width: "200px",
                 height: "60px",
                 fontFamily: "Plus Jakarta Sans",
                 border: "2px solid white",
