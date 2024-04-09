@@ -32,17 +32,19 @@ const Addimage = () => {
     <div className={style.addimage_container}>
       <div className={style.addimage_container1}>
         <div className={style.addimage_container_flexbox}>
-          <div className={style.addimage_box}>
-            <div>
-              {selectedCompany && selectedCompany.icons ? (
-                <img
-                  src={selectedCompany.icons}
-                  alt="Your service icon will display"
-                /> // Display the selected icon if it exists
-              ) : (
-                <span>NO IMAGE AVAILABLE</span>
-              )}
-            </div>
+          <div
+            className={`${style.addimage_box} ${
+              selectedCompany && selectedCompany.icons ? style.noBorder : ""
+            }`}
+          >
+            {selectedCompany && selectedCompany.icons ? (
+              <img
+                src={selectedCompany.icons}
+                alt="Your service icon will display"
+              /> // Display the selected icon if it exists
+            ) : (
+              <span>NO IMAGE AVAILABLE</span>
+            )}
           </div>
           <div className={style.box_feild}>
             <form action="" className={style.labels}>
@@ -64,8 +66,9 @@ const Addimage = () => {
               </div>
               {/* Render Icons component when showIcons is true */}
               {showIcons && <Icons />}
+              {/* {!selectedCompany || !selectedCompany.icons ? <Icons /> : null} */}
               <div>
-                <label htmlFor="Description">Description</label>
+                <label htmlFor="Description"> Add Description</label>
                 <input
                   type="text"
                   placeholder="Optional"
@@ -76,7 +79,7 @@ const Addimage = () => {
               </div>
               <div>
                 <label htmlFor="Description">
-                  Enter Amount subscribed service
+                  Input Your Amount subscribed service
                 </label>
                 <input
                   type="text"

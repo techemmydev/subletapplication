@@ -12,14 +12,14 @@ const Google = () => {
           />{" "}
           <span className={styles.spans}>google</span>
         </button>
-        <button>
+        {/* <button>
           <img
             src="/SubletImages/facebookicon.png"
             alt="messages"
             className={styles.fb}
           />{" "}
           <span className={styles.spans}>facebook</span>
-        </button>
+        </button> */}
       </div>
     </div>
   );

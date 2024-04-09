@@ -56,17 +56,17 @@ const Autopilot_savings = () => {
           >
             {" "}
             <img
-              src="/SubletImages/boy.jpg"
+              src="/SubletImages/5DkTjyeV6QkNskjaRCtmTsHgfSw.webp"
               alt=""
               width={"79%"}
               style={{ borderRadius: "12px" }}
             />
           </div>
           <div className={style.Manage_subscriptions_heading}>
-            <h1>Put your savings on Autopilot</h1>
+            <h1>Put Your Savings On Track with Subsentry</h1>
             <p>
-              Rocket Money smart savings accounts make saving money effortless.
-              We analyze your accounts to determine the optimal time to save, so
+              Subsentry smart savings accounts make saving money effortless. We
+              analyze your accounts to determine the optimal time to save, so
               you reach your goals faster and avoid overdraft fees.
             </p>
             <Link to={"/signup"} style={{ textDecoration: "none" }}>
@@ -95,8 +95,8 @@ const Autopilot_savings = () => {
         <div>
           <h1>FDIC insured</h1>
           <p>
-            Rocket Money smart savings deposits are housed in your own account
-            at our FDIC insured banking partner.
+            Subsentry smart savings deposits are housed in your own account at
+            our FDIC insured banking partner.
           </p>
         </div>
         <div>

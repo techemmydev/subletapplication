@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import { useSelector } from "react-redux";
 import UserSummary from "./UserSummary";
+
 const Useramount = () => {
   // const { amountsubscribed, dolloarAmount } = useSelector(
   //   (state) => state.companyIcon
@@ -20,11 +21,11 @@ const Useramount = () => {
         <div className={style.Amount_container_body}>
           <div className={style.amountIcon}>
             <div>
-              <img src="/SubletImages/sAmount.svg" alt="" />
+              <img src="/SubletImages/s.svg" alt="" />
             </div>
           </div>
           <div>
-            <h3>{value ? value : <p>Total Subcribe</p>}</h3>
+            <h3>{value ? value : <p> Subscription</p>}</h3>
           </div>
           <div>
             <BiChevronRight className={style.leftArrow} />
@@ -33,12 +34,12 @@ const Useramount = () => {
         <div className={style.Amount_container_body}>
           <div className={style.amountIcon}>
             <div>
-              <img src="/SubletImages\healthicons_dollar-negative.svg" alt="" />
+              <img src="/SubletImages\naira.svg" alt="" />
             </div>
           </div>
           <div>
             <h3>
-              {amountSubscribe ? amountSubscribe : <p> Amount Subcribe</p>}
+              {amountSubscribe ? amountSubscribe : <p> Monthly Revenue</p>}
             </h3>
           </div>
           <div>

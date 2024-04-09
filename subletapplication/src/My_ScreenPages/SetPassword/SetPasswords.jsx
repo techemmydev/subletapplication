@@ -34,7 +34,7 @@ const Setpassword = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#E7FBF6",
+            backgroundColor: " #F4E7E9",
             borderRadius: "50%",
           }}
         >
@@ -80,6 +80,7 @@ const Setpassword = () => {
                 padding: "14px, 20px, 14px, 20px",
                 borderRadius: "24px",
                 color: "white",
+                backgroundColor: " #CC8F99",
               }}
             >
               Confirm

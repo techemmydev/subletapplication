@@ -21,3 +21,17 @@
 .css-1hbyad5-MuiTypography-root {
   display: none;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Plus Jakarta Sans";
+}
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+}

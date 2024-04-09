@@ -5,7 +5,7 @@ const Testimonial = () => {
   return (
     <section className={style.testify_secection_container}>
       <div className={style.titleh1}>
-        <h1> Teams that control your spending</h1>
+        <h1>Our Team</h1>
       </div>
       <div className={style.testimonaildeatils_flex}>
         {testimonailDeatils.map((items, index) => {
@@ -13,7 +13,7 @@ const Testimonial = () => {
             <div key={index} className={style.info_box}>
               <div className={style.persondetails_box}>
                 <div>
-                  <img src={items.img} alt="" />
+                  <img src={items.img} alt="hello" />
                 </div>
                 <div className={style.infoStyle}>
                   <h1>{items.heading}</h1>

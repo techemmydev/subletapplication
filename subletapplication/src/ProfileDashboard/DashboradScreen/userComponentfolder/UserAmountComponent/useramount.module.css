@@ -14,7 +14,7 @@
 .Amount_container_body {
   width: 300px;
   height: 82px;
-  background-color: #28162d;
+  background-color: white;
   padding: 8px 15px 14px 23px;
   border-radius: 12px;
   display: flex;
@@ -28,14 +28,15 @@
   font-weight: 600;
   line-height: 1.7;
 
-  color: white;
+  color: #28162d;
 }
 .Amount_container_body p {
   font-family: "Plus Jakarta Sans";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0em;
+
   color: #d4d5d9;
 }
 .amountIcon {
@@ -46,10 +47,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #edf4ff;
+  background-color: #f4e7e9;
 }
 .leftArrow {
-  color: #1dbfdc;
+  color: #ddb4ba;
   font-size: 30px;
 }
 .showAlladditem {
@@ -57,6 +58,16 @@
   /* background-color: #1dbfdc; */
 }
 .showAlladditem h5 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #28162d;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.showAlladditem h4 {
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
   font-weight: 600;

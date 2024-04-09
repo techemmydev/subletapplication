@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+  notify: "",
   amountSubscribe: "",
   description: "",
   nextPaymentDate: "",
@@ -43,6 +44,9 @@ export const AlluserValueSlice = createSlice({
     setuserDetailsDescription: (state, action) => {
       state.description = action.payload;
     },
+    Setnotify: (state, action) => {
+      state.notify = state.notify + 1;
+    },
   },
 });
 
@@ -53,5 +57,6 @@ export const {
   setAmountSubscribe,
   setuserDetailsInformations,
   setuserDetailsDescription,
+  Setnotify,
 } = AlluserValueSlice.actions;
 export default AlluserValueSlice.reducer;

@@ -18,7 +18,7 @@
   font-weight: 700;
   line-height: 1.7;
   letter-spacing: 0em;
-  color: #d4d5d9;
+  color: white;
 }
 .navDashboard_container_headingtitle p {
   font-family: "Plus Jakarta Sans";
@@ -31,8 +31,9 @@
   color: #d4d5d9;
 }
 .SidebarDashboard_Navidation_container {
-  margin-top: 3rem;
   /* background-color: white; */
+
+  width: 200px;
   padding: 2rem;
 }
 
@@ -41,6 +42,7 @@
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
+
   gap: 50px;
   justify-content: center;
 }
@@ -54,6 +56,8 @@
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0em;
+  display: flex;
+  align-items: center;
 }
 .SidebarDashboard_Ul span {
   margin-left: 15px;

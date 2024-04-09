@@ -30,8 +30,12 @@ const RecieveAlert = () => {
     <div className={style.addimage_container}>
       <div className={style.addimage_container1}>
         <div className={style.addimage_container_flexbox}>
-          <div className={style.addimage_box}>
-            <div>
+          <div>
+            <div
+              className={`${style.addimage_box} ${
+                selectedCompany ? style.noBorder : ""
+              }`}
+            >
               <img src={selectedCompany.icons} alt="service icon" />
             </div>
           </div>

@@ -6,7 +6,7 @@ const Servicepage = () => {
     <div className={style.service_container}>
       <div className={style.service_heading}>
         <div style={{ width: "70%" }}>
-          <h1>Get More From Your Finances With NotifyMe App Premium</h1>
+          <h1>Get More From Your Finances With Subsentry Premium</h1>
           <p>
             Premium is more than just software features! You’ll also get real
             access to humans who can help you cancel subscriptions, lower your

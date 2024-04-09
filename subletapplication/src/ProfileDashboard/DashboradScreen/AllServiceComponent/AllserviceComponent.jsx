@@ -7,8 +7,11 @@ import { useState } from "react";
 import RecieveAlert from "../ServiceComponents/RecieveAlert/RecieveAlert";
 import { Link } from "react-router-dom";
 import { OpenModal } from "../../../Redux/slice/ModalSlice";
-import { useSelector, useDispatch } from "react-redux";
+
 import Modal from "../userComponentfolder/ModalComponents/Modal";
+import SubletLogo from "../../../My_Component/SubletLogo/SubletLogo";
+import { Setnotify } from "../../../Redux/slice/AlluserValueSlice";
+import { useSelector, useDispatch } from "react-redux";
 const AllserviceComponent = () => {
   const { isOpen } = useSelector((state) => state.modal);
 
@@ -23,11 +26,18 @@ const AllserviceComponent = () => {
   function open() {
     dispatch(OpenModal());
   }
+  function notification() {
+    dispatch(Setnotify());
+  }
   return (
     <>
       <div className={style.allservice_container}>
         <div className={style.allservice_container_center}>
-          <h4 className={style.allservice_container_heading}>New</h4>
+          <div className={style.allservice_container_iconflex}>
+            <h4 className={style.allservice_container_heading}>New</h4>
+            <SubletLogo />
+          </div>
+
           {TrackIndex === 0 && <Addimage />}
           {TrackIndex === 1 && <PaymentDate />}
           {TrackIndex === 2 && <RecieveAlert />}
@@ -76,6 +86,7 @@ const AllserviceComponent = () => {
                         color: "white",
                         backgroundColor: " #28162d",
                       }}
+                      next={notification}
                     >
                       {" "}
                       Finish{" "}

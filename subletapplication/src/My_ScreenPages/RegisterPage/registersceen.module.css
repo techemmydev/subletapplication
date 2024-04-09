@@ -20,10 +20,8 @@
   gap: 30px;
 }
 .screen_flexbox1 {
-  /* background-color: orange; */
-  /* background-color: #e7fbf6; */
-  /* background-color: #28162d; */
-  box-shadow: -0px 0px 10px 0px #00000040;
+  background-color: #f4e7e9;
+  /* box-shadow: -0px 0px 10px 0px #00000040; */
   flex-basis: 50%;
   height: 110vh;
   display: flex;
@@ -40,15 +38,16 @@
   letter-spacing: 0em;
   text-align: center;
   color: #000;
+  margin-bottom: 10px;
 }
 .screen_flexbox1_content p {
   font-family: "Plus Jakarta Sans";
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0em;
   text-align: center;
-  color: #a7b1b9;
+  color: black;
 }
 .screen_flexbox2 {
   /* background-color: #fff3; */

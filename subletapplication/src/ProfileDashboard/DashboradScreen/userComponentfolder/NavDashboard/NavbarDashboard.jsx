@@ -5,15 +5,19 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import LogoutIcon from "../UserLogoout/LogouIcon";
 import Userpicture from "../UserPicture/Userpicture";
-import { Closein } from "../../../../Redux/slice/ModalSlice";
+// import { Setnotify } from "../../../../Redux/slice/AlluserValueSlice";
 import { useSelector, useDispatch } from "react-redux";
-import HomePage from "../../../../My_ScreenPages/LandingPage/Landingpage";
+import { useState } from "react";
 const NavbarDashboard = () => {
-  const { loginIn } = useSelector((state) => state.modal);
-  function logout() {
-    dispatch(Closein());
-  }
-  const dispatch = useDispatch();
+  const { notify } = useSelector((state) => state.payment);
+  const { userInformationDetails } = useSelector((state) => state.payment);
+  const sliceName = userInformationDetails.userEmail.slice(0, 10);
+
+  const [showIcons, setShowIcons] = useState(false);
+  const toggleIcons = () => {
+    setShowIcons(!showIcons);
+    console.log(showIcons);
+  };
   return (
     <div className={style.navbarDash_container}>
       <div className={style.serchInput}>
@@ -36,10 +40,16 @@ const NavbarDashboard = () => {
           {" "}
           <LogoutIcon />
         </div>
-        {/* <div>{loginIn ? <LogoutIcon next={logout} /> : <HomePage />}</div> */}
-        <div>
+
+        <div className={`${style.notify_container} `}>
+          {notify ? (
+            <div className={style.rednotifiation}></div>
+          ) : (
+            <div className={style.redback}></div>
+          )}
+
           <IoIosNotificationsOutline
-            style={{ fontSize: "20px", color: "#C7C8CC" }}
+            style={{ fontSize: "25px", color: "#C7C8CC" }}
           />
         </div>
         <div style={{ height: "48px", border: "1px solid #C7C8CC" }}></div>
@@ -55,8 +65,17 @@ const NavbarDashboard = () => {
             <Userpicture />
           </div>
 
-          <div>
-            <MdOutlineKeyboardArrowDown style={{ color: "#C7C8CC" }} />
+          <div className={style.navbarDaasuserbox}>
+            <MdOutlineKeyboardArrowDown
+              style={{ color: "#C7C8CC", fontSize: "30px" }}
+              onClick={toggleIcons}
+            />
+
+            {showIcons ? (
+              <h6 className={style.navbarDaasusername}> {sliceName} </h6>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>

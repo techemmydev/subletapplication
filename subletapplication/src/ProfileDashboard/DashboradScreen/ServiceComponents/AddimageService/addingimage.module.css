@@ -24,6 +24,12 @@
   justify-content: space-between;
 }
 
+.noBorder {
+  border: none !important; /* Ensure the border is overridden */
+}
+.hide {
+  display: block;
+}
 .addimage_box {
   width: 155px;
   height: 149px;
@@ -52,6 +58,7 @@
   font-weight: 600;
   line-height: 17px;
   letter-spacing: 0em;
+  text-transform: capitalize;
 }
 .labels input {
   width: 300px;

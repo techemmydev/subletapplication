@@ -209,10 +209,13 @@
   line-height: 12px;
   letter-spacing: 0em;
 }
+.dontHaveAnContainer span {
+  color: #af97a3;
+}
 
 .dontHaveAnContainer a {
   text-decoration: none;
-  color: rgb(145, 13, 34);
+  color: #ca8a97;
 }
 .login_link {
   text-decoration: none;

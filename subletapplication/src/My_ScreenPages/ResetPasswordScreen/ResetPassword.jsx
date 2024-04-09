@@ -20,7 +20,7 @@ const ResetPassword = () => {
         style={{
           width: "500px",
           height: "500px",
-          //   backgroundColor: "orangered",
+          // backgroundColor: "orangered",
           display: "flex",
           alignItems: "center",
 
@@ -34,7 +34,7 @@ const ResetPassword = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#E7FBF6",
+            backgroundColor: " #F4E7E9",
             borderRadius: "50%",
           }}
         >
@@ -66,6 +66,7 @@ const ResetPassword = () => {
                 padding: "14px, 20px, 14px, 20px",
                 borderRadius: "24px",
                 color: "white",
+                backgroundColor: " #CC8F99",
               }}
             >
               Confirm

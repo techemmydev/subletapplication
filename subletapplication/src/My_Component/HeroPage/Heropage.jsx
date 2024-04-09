@@ -17,7 +17,7 @@ const Heropage = () => {
             <h1>Subsentry App That Works For You</h1>
             <p>
               Managing money is hard, but you don’t have to do it alone.
-              NotifyMe empowers you to save more, spend less, see everything,
+              Subsentry empowers you to save more, spend less, see everything,
               and take back control of your financial life.
             </p>
 

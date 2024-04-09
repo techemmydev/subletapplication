@@ -39,9 +39,13 @@ const PaymentDate = () => {
     <div className={style.addimage_container}>
       <div className={style.addimage_container1}>
         <div className={style.addimage_container_flexbox}>
-          <div className={style.addimage_box}>
-            <div>
-              <img src={selectedCompany.icons} alt="service icons" />
+          <div>
+            <div
+              className={`${style.addimage_box} ${
+                selectedCompany ? style.noBorder : ""
+              }`}
+            >
+              <img src={selectedCompany.icons} alt="icon" />
             </div>
           </div>
           <div>
@@ -50,7 +54,7 @@ const PaymentDate = () => {
                 <label htmlFor="Company">Next payment date </label>
                 <input
                   type="text"
-                  placeholder="Next payment date.eg 00-00-000"
+                  placeholder="Next payment date.eg 0000-00-00"
                   value={nextPaymentDate}
                   onChange={handleNextPaymentDateChange}
                 />
@@ -74,10 +78,12 @@ const PaymentDate = () => {
               </div>
 
               <div>
-                <label htmlFor="Does it Auto Renew">Does it Auto Renew</label>
+                <label htmlFor="Does it Auto Renew">
+                  Does it Auto Renew for you
+                </label>
                 <input
                   type="text"
-                  placeholder="Optional"
+                  placeholder="Yes / No"
                   required
                   value={autoRenew}
                   onChange={handleAutoRenewChange}

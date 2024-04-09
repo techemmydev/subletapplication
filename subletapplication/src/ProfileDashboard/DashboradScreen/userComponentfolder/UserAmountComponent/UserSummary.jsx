@@ -2,6 +2,7 @@ import React from "react";
 import style from "../UserAmountComponent/useramount.module.css";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import Button from "../../../../My_Component/ButtonComponent/Button";
 
 const UserSummary = () => {
   const { selectedCompany } = useSelector((state) => state.companyIcon);
@@ -24,32 +25,33 @@ const UserSummary = () => {
   return (
     <>
       <div className={style.showAlladditem} onClick={show}>
-        {showAll ? <h5>Hide Summary details</h5> : <h5>showing All</h5>}
+        {showAll ? <h4>Hide Summary details</h4> : <h5>showing All</h5>}
         {showAll ? (
           <div className={style.showAll}>
-            <div className={style.showAll_container}>
-              <div className={style.flex_center}>
-                <img src={selectedCompany.icons ? selectedCompany.icons : ""} />
-              </div>
-              <div className={`${style.flex_center} ${style.flex_details}`}>
-                <h4>{selectedCompany ? selectedCompany.name : ""}</h4>
-              </div>
-              <div className={`${style.flex_center} ${style.flex_details}`}>
-                <h3> {` ${nextPaymentDate ? nextPaymentDate : ""}`}</h3>
-              </div>
-              <div className={`${style.flex_center} ${style.flex_details}`}>
-                <h4>{unit ? unit : ""}</h4>
-              </div>
-              <div className={`${style.flex_center} ${style.flex_details}`}>
-                <h4>{autoRenew ? autoRenew : ""}</h4>
-              </div>
-              <div className={`${style.flex_center} ${style.flex_details}`}>
-                <h4>{amountSubscribe ? amountSubscribe : ""}</h4>
-              </div>
-              {/* <div className={style.flex_center}>
-                <h6>t</h6>
-              </div> */}
-            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Brand Icon </th>
+                  <th>Brand Name </th>
+                  <th>Renewal date</th>
+                  <th>Billing cycle</th>
+                  <th>Price</th>
+                  <th>Cancel Subscription</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data 1</td>
+                  <td>Data 2</td>
+                  <td>Data 3</td>
+                  <td>Data 4</td>
+                  <td>Data 5</td>
+                  <td>
+                    <Button>cancle</Button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         ) : (
           ""

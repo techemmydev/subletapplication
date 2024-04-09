@@ -27,6 +27,7 @@ const SignupDetails = () => {
       })
     );
   };
+
   const handleRegisterEmail = (e) => {
     dispatch(
       setuserDetailsInformations({
@@ -151,7 +152,7 @@ const SignupDetails = () => {
                 style={{
                   width: "100%",
                   color: "white",
-                  backgroundColor: " #0a0f29",
+                  backgroundColor: " #CC8F99",
                 }}
               >
                 sign up

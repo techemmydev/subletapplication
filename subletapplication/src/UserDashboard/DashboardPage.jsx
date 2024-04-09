@@ -15,7 +15,7 @@ const DashboardPage = () => {
           display: "flex",
           flexDirection: "column",
           width: "100%",
-          backgroundColor: " white",
+          backgroundColor: " #F6F4EE",
         }}
       >
         <div>

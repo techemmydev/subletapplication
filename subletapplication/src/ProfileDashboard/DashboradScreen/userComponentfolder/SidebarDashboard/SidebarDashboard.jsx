@@ -20,7 +20,7 @@ const SidebarDashboard = () => {
         </div> */}
 
         <div className={style.navDashboard_container_headingtitle}>
-          <h1>NotifyMe</h1>
+          <h1>Subsentry</h1>
           <p>Dashboard</p>
         </div>
 
@@ -34,7 +34,7 @@ const SidebarDashboard = () => {
               }}
             >
               <li>
-                <MdOutlineDashboard style={{ fontSize: "20px" }} />{" "}
+                <MdOutlineDashboard style={{ fontSize: "25px" }} />{" "}
                 <span> Dashboard </span>
               </li>
             </Link>
@@ -46,7 +46,7 @@ const SidebarDashboard = () => {
               }}
             >
               <li>
-                <IoCalendarClearOutline style={{ fontSize: "20px" }} />
+                <IoCalendarClearOutline style={{ fontSize: "25px" }} />
                 <span> Calendar </span>
               </li>
             </Link>
@@ -57,7 +57,7 @@ const SidebarDashboard = () => {
               }}
             >
               <li>
-                <GoRepo style={{ fontSize: "20px" }} />
+                <GoRepo style={{ fontSize: "25px" }} />
                 <span> Report </span>
               </li>
             </Link>
@@ -68,7 +68,7 @@ const SidebarDashboard = () => {
               }}
             >
               <li>
-                <CiSettings style={{ fontSize: "20px" }} />{" "}
+                <CiSettings style={{ fontSize: "25px" }} />{" "}
                 <span> Settings </span>
               </li>
             </Link>

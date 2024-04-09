@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../ButtonComponent/Button";
 import style from "../3In 1 component/manage.module.css";
 import { Link } from "react-router-dom";
-import Testimonial from "../TestimonialComponent/Testimonial";
+
 const Manage_subscriptions = () => {
   return (
     <>
@@ -64,9 +64,10 @@ const Manage_subscriptions = () => {
           <div className={style.Manage_subscriptions_heading}>
             <h1>Take control of your subscriptions</h1>
             <p>
-              Rocket Money identifies your subscriptions to help you stop paying
-              for things you no longer need. Your concierge is there when you
-              need them to cancel unwanted subscriptions so you don't have to.
+              Subsentry Money identifies your subscriptions to help you stop
+              paying for things you no longer need. Your concierge is there when
+              you need them to cancel unwanted subscriptions so you don't have
+              to.
             </p>
             <Link to={"/signup"} style={{ textDecoration: "none" }}>
               {" "}
@@ -109,7 +110,6 @@ const Manage_subscriptions = () => {
           </p>
         </div>
       </div>
-      <Testimonial />
     </>
   );
 };
