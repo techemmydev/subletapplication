@@ -5,13 +5,30 @@ import { BiChevronRight } from "react-icons/bi";
 import { FaPlusCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import UserSummary from "./UserSummary";
-
+import {
+  addUserSummary,
+  removeUserSummary,
+} from "../../../../Redux/slice/UserSummariesSlice";
 const Useramount = () => {
-  // const { amountsubscribed, dolloarAmount } = useSelector(
-  //   (state) => state.companyIcon
-  // );
+  const handleAddSummary = () => {
+    const newSummaryData = {
+      /* Your summary data here */
+    };
+    dispatch(addUserSummary(newSummaryData));
+    console.log(newSummaryData);
+  };
+
+  // const handleRemoveSummary = (summary) => {
+  //   dispatch(removeUserSummary(summary));
+  // };
+  const dispatch = useDispatch();
+  const MyuserSummaries = useSelector(
+    (state) => state.userSummary.userSummaries
+  );
+  console.log(userSummaries);
+
   const { billingCycle } = useSelector((state) => state.payment);
   const { value } = billingCycle;
   const { amountSubscribe } = useSelector((state) => state.payment);
@@ -57,6 +74,7 @@ const Useramount = () => {
           <div>
             <Link style={{ textDecoration: "none" }} to="/addservices">
               <Button
+                next={handleAddSummary}
                 style={{
                   width: "141px",
                   height: "43px",
@@ -77,12 +95,28 @@ const Useramount = () => {
               >
                 <FaPlusCircle /> <span> Add Service</span>
               </Button>
+              {/* <Button
+                next={() =>
+                  handleRemoveSummary(userSummaries[userSummaries.length - 1])
+                }
+              >
+                Remove Service
+              </Button> */}
             </Link>
+            {/* <Button
+              next={() =>
+                handleRemoveSummary(userSummaries[userSummaries.length - 1])
+              }
+            >
+              Remove Service
+            </Button> */}
           </div>
         </div>
       </div>
       <div>
-        <UserSummary />
+        {MyuserSummaries.map((summary, index) => (
+          <UserSummary key={index} summary={summary} /> // Render UserSummary component based on state data
+        ))}
       </div>
     </>
   );

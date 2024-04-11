@@ -36,11 +36,6 @@ const NavbarDashboard = () => {
           <img src="/SubletImages/emojione_flag-for-nigeria.svg" alt="" />
         </div>
 
-        <div>
-          {" "}
-          <LogoutIcon />
-        </div>
-
         <div className={`${style.notify_container} `}>
           {notify ? (
             <div className={style.rednotifiation}></div>
