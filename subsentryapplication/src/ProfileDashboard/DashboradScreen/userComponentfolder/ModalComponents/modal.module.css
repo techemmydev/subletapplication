@@ -1,0 +1,39 @@
+.modal_container {
+  width: 30%;
+  background-color: white;
+  height: 30vh;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -0px 0px 10px 0px #00000040;
+}
+.modal_container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal_container1 h4 {
+  font-family: "Plus Jakarta Sans";
+  text-transform: capitalize;
+}
+.modal_container_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* width: 159px;
+  height: 44px; */
+  margin-top: 20px;
+  padding: 12px 10px 12px 10px;
+  color: white;
+  border-radius: 18px;
+
+  /* display: inline-block;
+  margin-left: 20px;
+  border: none; */
+}

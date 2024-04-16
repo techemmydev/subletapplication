@@ -1,0 +1,43 @@
+.hero_section {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 100%;
+  padding: 2rem;
+  /* height: 100vh; */
+  background-color: #f2f2f1;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/SubletImages/Ellipse 1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.feature_heaading {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  font-family: "Plus Jakarta Sans";
+  color: #000000;
+}
+.feature_para {
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  color: #808080;
+}
+.herotitle {
+  margin-top: 7%;
+  padding: 2rem;
+}
+.herotitle h1 {
+  font-size: 35px;
+  font-family: "Roboto serif";
+  text-align: center;
+}

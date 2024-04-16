@@ -1,0 +1,95 @@
+.reset_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+  height: 100vh;
+  /* background-color: blue; */
+}
+
+.reset_inner {
+  width: 500px;
+  height: 500px;
+  /* background-color: orangered; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.img_container {
+  width: 159px;
+
+  height: 154px;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  border-radius: 50%;
+}
+.forgotpassword {
+  margin-top: 30px;
+}
+.forgotpassword h1 {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  color: black;
+}
+.forgotpassword p {
+  margin-top: 10px;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.forgotpassword_input {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.forgotpassword_input label {
+  display: block;
+  font-family: "Poppins";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.forgotpassword_input input {
+  width: 300px;
+  height: 40px;
+  padding: 10px, 10px, 10px, 15px;
+  border-radius: 8px;
+  border: 1px solid #e9eff5;
+  background-color: #f4f6f9;
+  outline-color: #808080;
+}
+.forgotpassword_input input::placeholder {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #808080;
+  padding: 1rem;
+}
+.submit {
+  text-decoration: none;
+}
+.forgotpassword_link {
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  color: #1a1a1a;
+}
+.forgotpassword_link:hover {
+  color: #ca8a97;
+}

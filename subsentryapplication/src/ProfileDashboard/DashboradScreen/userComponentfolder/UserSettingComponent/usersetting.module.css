@@ -1,0 +1,61 @@
+.setting_page_title {
+  height: 70px;
+  width: 30%;
+  padding: 1rem;
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.setting_page_title h3 {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin-right: 50px;
+  text-align: left;
+  color: #28162d;
+}
+.setting_page_details {
+  border-top: 1px solid #e3e3e5;
+  width: 90%;
+
+  /* background-color: orangered; */
+
+  height: 60vh;
+}
+.setting_page_box {
+  width: 90%;
+  margin: auto;
+}
+
+.setting_page_Information {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 25px;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.setting_page_Information h6 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #28162d;
+}
+.setting_page_Information h5 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #28162d;
+  text-transform: capitalize;
+}
+/* font-family: "Plus Jakarta Sans"; */

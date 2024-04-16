@@ -1,0 +1,64 @@
+.navDashboard_container {
+  background-color: #28162d;
+  width: 300px;
+  height: 100vh;
+}
+.navDashboard_container_logoflex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 2rem;
+}
+.navDashboard_container_headingtitle h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  color: white;
+}
+.navDashboard_container_headingtitle p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #d4d5d9;
+}
+.SidebarDashboard_Navidation_container {
+  /* background-color: white; */
+
+  width: 200px;
+  padding: 2rem;
+}
+
+.SidebarDashboard_Ul {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+  justify-content: center;
+}
+.SidebarDashboard_Ul a {
+  text-decoration: none;
+  color: white;
+}
+.SidebarDashboard_Ul li {
+  font-family: "Plus Jakarta Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+}
+.SidebarDashboard_Ul span {
+  margin-left: 15px;
+}

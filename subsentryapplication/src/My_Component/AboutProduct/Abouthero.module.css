@@ -1,0 +1,94 @@
+.section_about_backgrouncolor {
+  width: 100%;
+  height: 95vh;
+  background-color: #28162d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section_about_backgrouncolor_heading {
+  width: 55%;
+  height: 60vh;
+  /* background-color: blue; */
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.section_about_backgrouncolor_heading h1 {
+  font-size: 40px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+}
+.section_about_backgrouncolor_heading p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+.section_about {
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+.aboutcontainer {
+  /* background-color: blue; */
+  max-width: 1200px;
+  margin-top: 6%;
+
+  padding: 2rem;
+}
+.section_grid {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* background-color: blueviolet; */
+}
+.swap_product {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* background-color: brown; */
+  gap: 40px;
+  height: 300px;
+}
+.aboutheading {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  margin-left: 10px;
+}
+.aboutpara {
+  max-width: 85%;
+  margin-top: 5px;
+  /* background-color: chocolate; */
+}
+.aboutpara p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  text-wrap: wrap;
+}
