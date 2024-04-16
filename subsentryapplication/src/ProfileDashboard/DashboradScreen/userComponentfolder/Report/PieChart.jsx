@@ -4,10 +4,11 @@ import { useDrawingArea } from "@mui/x-charts/hooks";
 import { styled } from "@mui/material/styles";
 
 const data = [
-  { value: 5, label: "A" },
-  { value: 10, label: "B" },
-  { value: 15, label: "C" },
-  { value: 20, label: "D" },
+  { value: 5, label: "Educational" },
+  { value: 10, label: "Entertainment" },
+  { value: 15, label: "Productivity" },
+  { value: 20, label: "Health" },
+  { value: 20, label: "Personal" },
 ];
 
 const size = {
@@ -34,7 +35,7 @@ function PieCenterLabel({ children }) {
 export default function PieChartWithCenterLabel() {
   return (
     <PieChart series={[{ data, innerRadius: 80 }]} {...size}>
-      <PieCenterLabel>Center label</PieCenterLabel>
+      <PieCenterLabel></PieCenterLabel>
     </PieChart>
   );
 }

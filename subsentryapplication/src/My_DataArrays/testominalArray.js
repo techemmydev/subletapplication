@@ -18,8 +18,24 @@ export const testimonailDeatils = [
   {
     id: 3,
     img: "/ContentImage/person3.svg",
-    heading: "Koya Aeyemi",
-    title: " Deveops Engineer",
+    heading: "Koya Adeniji",
+    title: " DevOps Engineer",
+    paragraph:
+      " “This app has been great to help me create a budget that works for me. It is accurate and stays up to date. Even better, they have a responsive team at support to help if needed and to take ideas for me” ",
+  },
+  {
+    id: 3,
+    img: "/ContentImage/person3.svg",
+    heading: "uloma",
+    title: " product Analyst",
+    paragraph:
+      " “This app has been great to help me create a budget that works for me. It is accurate and stays up to date. Even better, they have a responsive team at support to help if needed and to take ideas for me” ",
+  },
+  {
+    id: 3,
+    img: "/ContentImage/person3.svg",
+    heading: "Anthony Tobi",
+    title: " product Manager",
     paragraph:
       " “This app has been great to help me create a budget that works for me. It is accurate and stays up to date. Even better, they have a responsive team at support to help if needed and to take ideas for me” ",
   },

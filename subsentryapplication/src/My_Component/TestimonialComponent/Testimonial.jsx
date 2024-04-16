@@ -12,9 +12,7 @@ const Testimonial = () => {
           return (
             <div key={index} className={style.info_box}>
               <div className={style.persondetails_box}>
-                <div>
-                  <img src={items.img} alt="hello" />
-                </div>
+                <div>{/* <img src={items.img} alt="hello" /> */}</div>
                 <div className={style.infoStyle}>
                   <h1>{items.heading}</h1>
                   <p>{items.title}</p>

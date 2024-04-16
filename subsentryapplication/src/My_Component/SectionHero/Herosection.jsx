@@ -80,7 +80,7 @@ const Herosection = () => {
           </div>
         </section>
       </div>
-      <Testimonial />
+      {/* <Testimonial /> */}
     </>
   );
 };
