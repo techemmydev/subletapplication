@@ -14,15 +14,7 @@ const Servicepage = () => {
           </p>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          gap: "20px",
-          alignItems: "center",
-          justifyContent: "center",
-          //   marginTop: "5%",
-        }}
-      >
+      <div className={`${style.con}  `}>
         {mypremuim.map((items, index) => {
           return (
             <div

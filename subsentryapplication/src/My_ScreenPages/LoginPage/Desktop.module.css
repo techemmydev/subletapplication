@@ -66,12 +66,13 @@
   line-height: 41px;
   letter-spacing: 0em;
   text-transform: capitalize;
+  color: white;
 }
 .welcomepagescreenContent p {
   font-family: "Inter";
   font-size: 15px;
   font-weight: 400;
-
+  color: white;
   letter-spacing: 0em;
 }
 .inputformcontainer {
@@ -99,7 +100,7 @@
   font-weight: 500;
   line-height: 21px;
   letter-spacing: 0em;
-  color: white;
+  color: black;
 }
 .input_Details {
   display: flex;

@@ -95,3 +95,54 @@
   padding: 1rem;
   /* background-color: red; */
 }
+@media screen and (max-width: 760px) {
+  .features_container {
+    width: 100%;
+    /* background-color: orangered; */
+    display: unset;
+
+    padding: unset;
+  }
+  .features_container_classroom {
+    display: unset;
+    /* background-color: brown; */
+    gap: unset;
+
+    padding: unset;
+  }
+  .features_class {
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .classroom_h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .classroom_desc {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .cardDetails {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    /* background-color: blue; */
+  }
+
+  .features_classroom_Line2 {
+    display: none;
+  }
+  .Feature2_container_flex {
+    display: unset;
+    display: none;
+  }
+  .Feature2_container_flex_h2 {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+  }
+}

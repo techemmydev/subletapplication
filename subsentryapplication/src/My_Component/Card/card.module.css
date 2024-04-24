@@ -40,3 +40,9 @@
   padding: 20px;
   border-radius: 166.67px;
 }
+@media screen and (max-width: 760px) {
+  .cardTitle_divboder {
+    width: 300px;
+    height: 300px;
+  }
+}

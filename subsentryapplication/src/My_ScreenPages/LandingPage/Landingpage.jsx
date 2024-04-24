@@ -20,10 +20,10 @@ const Landingpage = () => {
   return (
     <>
       <section>
-        <Navbar />
+        {/* <Navbar /> */}
         <Heropage />
-        <Herosection />
-        <Footer />
+        {/* <Herosection /> */}
+        {/* <Footer /> */}
       </section>
     </>
   );

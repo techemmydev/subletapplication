@@ -12,7 +12,7 @@ const Heropage = () => {
     <>
       <section className={herostyle.hero_section}>
         <main className={herostyle.maincontainer}>
-          <div>
+          <div className={herostyle.flex}>
             <div className={herostyle.boreder}></div>
             <h1>Subsentry App That Works For You</h1>
             <p>
@@ -67,32 +67,34 @@ const Heropage = () => {
               money and counting
             </p>{" "}
           </div>
-          <Link to="/signup" className={herostyle.free}>
-            <Button
-              style={{
-                padding: "28px, 42px, 28px, 42px",
-                borderRadius: "12px",
+          <div className={herostyle.another_section_button}>
+            <Link to="/signup" className={herostyle.free}>
+              <Button
+                style={{
+                  padding: "28px, 42px, 28px, 42px",
+                  borderRadius: "12px",
 
-                marginTop: "30px",
-                marginLeft: "130px",
-                color: "#28162d",
-                width: "200px",
-                height: "60px",
-                fontFamily: "Plus Jakarta Sans",
-                border: "2px solid white",
-                boxShadow: "0px 4px 4px 0px #00000040",
-                backgroundColor: " white",
-                fontSize: "20px",
-                fontWeight: "500",
-              }}
-              hoverStyle={{ backgroundColor: "  #f1f6f9" }}
-            >
-              join now
-            </Button>
-          </Link>
+                  marginTop: "30px",
+                  // marginLeft: "130px",
+                  color: "#28162d",
+                  width: "200px",
+                  height: "60px",
+                  fontFamily: "Plus Jakarta Sans",
+                  border: "2px solid white",
+                  boxShadow: "0px 4px 4px 0px #00000040",
+                  backgroundColor: " white",
+                  fontSize: "20px",
+                  fontWeight: "500",
+                }}
+                hoverStyle={{ backgroundColor: "  #f1f6f9" }}
+              >
+                join now
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
-      <section>
+      <section className={herostyle.help}>
         {ClassRoom.map((items, index) => {
           if (items.feature2) {
             return (
