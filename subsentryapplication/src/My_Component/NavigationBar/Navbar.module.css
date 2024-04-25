@@ -104,3 +104,21 @@
   font-size: 20px;
   font-family: "Plus Jakarta Sans";
 }
+@media screen and (max-width: 760px) {
+  .logindetails {
+    display: none;
+  }
+  .Linkss ul {
+    display: none;
+  }
+  .container {
+    max-width: unset;
+    height: 100px;
+    margin: unset;
+    /* background-color: #28162d; */
+  }
+  .innercontainer {
+    justify-content: center;
+    gap: 100px;
+  }
+}

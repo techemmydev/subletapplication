@@ -4,7 +4,10 @@ import SubletLogo from "../../My_Component/SubletLogo/SubletLogo";
 import Button from "../../My_Component/ButtonComponent/Button";
 import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { FaBars } from "react-icons/fa6";
 
+// import { CgClose } from "react-icons/cg";
+// <CgClose />
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -45,24 +48,30 @@ const Navbar = () => {
                 <SubletLogo />
               </Link>
             </div>
+
             <div className={navStyles.navigationLink}>
-              <nav className={navStyles.Linkss}>
-                <ul>
-                  {routes.map((route, index) => (
-                    <Link
-                      to={route.path}
-                      key={index}
-                      style={{
-                        color: isActive(route.path) ? "  #28162d" : null,
-                        fontWeight: isActive(route.path) ? "700" : "600",
-                        textDecoration: isActive(route.path) ? "none" : "none",
-                      }}
-                    >
-                      <li>{route.label}</li>
-                    </Link>
-                  ))}
-                </ul>
-              </nav>
+              <div className={navStyles.hide}>
+                <FaBars />
+                <nav className={navStyles.Linkss}>
+                  <ul>
+                    {routes.map((route, index) => (
+                      <Link
+                        to={route.path}
+                        key={index}
+                        style={{
+                          color: isActive(route.path) ? "  #28162d" : null,
+                          fontWeight: isActive(route.path) ? "700" : "600",
+                          textDecoration: isActive(route.path)
+                            ? "none"
+                            : "none",
+                        }}
+                      >
+                        <li>{route.label}</li>
+                      </Link>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
             </div>
             <div className={navStyles.logindetails}>
               <Link

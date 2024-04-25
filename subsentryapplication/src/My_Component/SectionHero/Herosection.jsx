@@ -14,47 +14,21 @@ const Herosection = () => {
           <div style={{ width: "90%" }}>
             {featuresArray.map((item, index) => {
               return (
-                <div
-                  key={index}
-                  style={{
-                    // backgroundColor: "pink",
-                    height: "200px",
-                    width: "100%",
-                    marginBottom: "10px",
-                    display: "flex",
-                    flexWrap: "wrap",
-                  }}
-                >
+                <div key={index} className={herosectionstyle.div1}>
                   <div
+                    // className={`${
+                    //   index % 2 === 0
+                    //     ? herosectionstyle.widthss
+                    //     : herosectionstyle.widthss
+                    // }`}
                     style={{
                       width: index % 2 === 0 ? "50%" : "0%",
                     }}
                   ></div>
-                  {/* <div style={{ width: index % 1 === 0 ? "70%" : "0%" }}></div> */}
 
-                  <div
-                    style={{
-                      height: "200px",
-                      width: "50%",
-                      padding: "1rem",
-                      // backgroundColor: "green",
-                      display: "flex",
-                      flexWrap: "wrap",
-                    }}
-                  >
+                  <div className={herosectionstyle.div2}>
                     <div style={{ display: "flex", gap: "20px" }}>
-                      <div
-                        style={{
-                          width: "30px",
-                          padding: "2rem",
-                          height: "30px",
-                          borderRadius: "200px",
-                          backgroundColor: " #E6E6E6",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
+                      <div className={herosectionstyle.div3}>
                         <img
                           src={item.img}
                           alt=""

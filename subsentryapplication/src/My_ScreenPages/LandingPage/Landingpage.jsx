@@ -20,9 +20,9 @@ const Landingpage = () => {
   return (
     <>
       <section>
-        {/* <Navbar /> */}
+        <Navbar />
         <Heropage />
-        {/* <Herosection /> */}
+        <Herosection />
         {/* <Footer /> */}
       </section>
     </>
