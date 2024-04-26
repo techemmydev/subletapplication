@@ -22,3 +22,9 @@
 .logo h3 {
   font-family: "Plus Jakarta Sans";
 }
+@media screen and (max-width: 760px) {
+  .logo {
+    display: unset;
+    height: unset;
+  }
+}

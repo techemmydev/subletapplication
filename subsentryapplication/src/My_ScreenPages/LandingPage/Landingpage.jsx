@@ -23,7 +23,7 @@ const Landingpage = () => {
         <Navbar />
         <Heropage />
         <Herosection />
-        {/* <Footer /> */}
+        <Footer />
       </section>
     </>
   );

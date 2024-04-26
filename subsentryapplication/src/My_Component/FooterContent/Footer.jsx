@@ -41,15 +41,13 @@ const Footer = () => {
       </div>
       <div className={footerstyle.footercontainer}>
         <div className={footerstyle.flexcontainer}>
-          <div>
-            <div className={footerstyle.footerimage}>
-              {/* <img
+          <div className={footerstyle.footerimage}>
+            {/* <img
                 src="/src/assets/Subletimages/Frame 1.png"
                 alt="logofooter"
                 className={footerstyle.footerimage2}
               /> */}
-              <SubletLogo />
-            </div>
+            <SubletLogo />
           </div>
           <div className={footerstyle.contactlist}>
             <h2>contact us</h2>
@@ -112,6 +110,7 @@ const Footer = () => {
         </div>
       </div>
       <p
+        className={footerstyle.copyrightyear}
         style={{
           textAlign: "left",
           // backgroundColor: " #333333",

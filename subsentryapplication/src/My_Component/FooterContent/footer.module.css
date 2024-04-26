@@ -107,13 +107,6 @@ footer {
 .icon_quicklink {
   text-align: right;
 }
-
-@media screen and (max-width: 682px) {
-  .footer {
-    margin-top: unset;
-    background-color: #0bdaa6;
-  }
-}
 .getStarted h1 {
   font-size: 40px;
   font-family: "Plus Jakarta Sans";
@@ -126,4 +119,48 @@ footer {
   color: gray;
   margin-left: 5px;
   line-height: 1.5;
+}
+@media screen and (max-width: 760px) {
+  .footer {
+    margin-top: unset;
+    background-color: #0bdaa6;
+  }
+  .getStarted h1 {
+    font-size: 25px;
+  }
+  .getStarted p {
+    font-size: 13px;
+  }
+  .footercontainer {
+    background-color: orangered;
+
+    /* flex-wrap: nowrap; */
+  }
+  .flexcontainer {
+    background-color: #28162d;
+    display: unset;
+    padding: 1rem;
+    color: white;
+  }
+  .icon_quicklink,
+  .iconstyle,
+  .flexcontainer h2,
+  .emaillink,
+  .contactlist li,
+  .ctaemail,
+  .quicklinks,
+  .iconstyle_quick,
+  .iconstyle_quick {
+    color: white;
+    font-size: 12px;
+  }
+  .footerimage {
+    /* align-items: flex-end; */
+    align-items: unset;
+
+    padding: 1rem;
+  }
+  .copyrightyear {
+    margin-left: unset;
+  }
 }

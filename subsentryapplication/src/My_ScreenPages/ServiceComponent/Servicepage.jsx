@@ -5,7 +5,7 @@ const Servicepage = () => {
   return (
     <div className={style.service_container}>
       <div className={style.service_heading}>
-        <div style={{ width: "70%" }}>
+        <div style={{ width: "70%" }} className={style.hide_width}>
           <h1>Get More From Your Finances With Subsentry Premium</h1>
           <p>
             Premium is more than just software features! You’ll also get real
