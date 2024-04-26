@@ -16,17 +16,7 @@ const Abouthero = () => {
           </p>
         </div>
       </div>
-      <div
-        style={{
-          position: "relative",
-          bottom: "120px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-          gap: "50px",
-        }}
-      >
+      <div className={Aboutstylehero.people_image}>
         <img
           src="/SubletImages/G3RVSdOVYnlfnSCdgn5G9zR4zY.png"
           alt=""
@@ -57,7 +47,8 @@ const Abouthero = () => {
                     <img
                       src={details.img}
                       alt={details.alt}
-                      style={{ width: "200px" }}
+                      // style={{ width: "200px" }}
+                      className={Aboutstylehero.mobileimageSize}
                     />
                   </div>
                 </div>

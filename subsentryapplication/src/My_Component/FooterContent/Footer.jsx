@@ -109,21 +109,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p
-        className={footerstyle.copyrightyear}
-        style={{
-          textAlign: "left",
-          // backgroundColor: " #333333",
-          fontFamily: "Plus Jakarta Sans",
-          padding: "2rem",
-          marginLeft: "75px",
-          fontSize: "14px",
-          fontWeight: "600",
-          lineHeight: "30px",
-          letterSpacing: "0em",
-          color: "#28162d",
-        }}
-      >
+      <p className={footerstyle.copyrightyear}>
         {copyright} All Rights Reserved
       </p>
     </footer>

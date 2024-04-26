@@ -120,6 +120,18 @@ footer {
   margin-left: 5px;
   line-height: 1.5;
 }
+.copyrightyear {
+  text-align: left;
+
+  font-family: "Plus Jakarta Sans";
+  padding: 2rem;
+  margin-left: 75px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #28162d;
+}
 @media screen and (max-width: 760px) {
   .footer {
     margin-top: unset;
