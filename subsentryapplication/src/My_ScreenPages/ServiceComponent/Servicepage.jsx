@@ -24,7 +24,6 @@ const Servicepage = () => {
               } `}
             >
               <div className={style.inner_heading}>
-                <h1>{items.heading}</h1>
                 <h5>{items.premiumstatus}</h5>
               </div>
               <div>

@@ -7,25 +7,22 @@
   box-shadow: -0px 0px 10px 0px #00000040;
   position: fixed;
   z-index: 1000;
-}
-.container {
-  max-width: 1200px;
-  height: 100px;
-  margin: auto;
-  padding: 1rem;
-}
-.innercontainer {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 1rem;
+  /* gap: 50px; */
 }
 .navigationLink {
-  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
+  /* background-color: orangered; */
+  margin-right: 30%;
 }
 .navigationLink ul {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 35px;
@@ -46,12 +43,6 @@
   border-top: 1px solid #5b0e0e;
   transition: 1s;
 }
-/* .Linkss a:visited {
-  color: green;
-} */
-/* .Linkss a:active {
-  color: white;
-} */
 .logindetails {
   display: flex;
   align-items: center;
@@ -104,21 +95,63 @@
   font-size: 20px;
   font-family: "Plus Jakarta Sans";
 }
+.nav_mob_close {
+  display: none;
+}
+.nav_mob_open {
+  display: none;
+}
 @media screen and (max-width: 760px) {
   .logindetails {
     display: none;
   }
-  .Linkss ul {
-    display: none;
+  .nav_mob_open {
+    display: block;
+    position: fixed;
+    right: 30px;
+    font-size: 20px;
+    color: #28162d;
   }
-  .container {
-    max-width: unset;
-    height: 100px;
-    margin: unset;
-    /* background-color: #28162d; */
+  .nav_mob_close {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 350px;
+    width: 30px;
+    font-size: 20px;
+    color: #28162d;
   }
-  .innercontainer {
+  .Linkss {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
-    gap: 100px;
+    top: 0;
+    gap: 30px;
+    background-color: white;
+    width: 414px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -414px;
+  }
+
+  .Linkss li {
+    display: flex;
+
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .Linkss ul {
+    display: unset;
+  }
+  /* .navigationLink {
+    margin-right: unset;
+  } */
+  .navcontainer {
+    justify-content: space-between;
+    padding: 1rem;
+    /* gap: 50px; */
   }
 }

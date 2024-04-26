@@ -166,8 +166,9 @@
     flex-wrap: wrap;
     flex-direction: column;
     /* background-color: blue; */
+
     width: unset;
-    padding: unset;
+    padding: 1rem;
     height: unset;
     margin-left: unset;
   }
