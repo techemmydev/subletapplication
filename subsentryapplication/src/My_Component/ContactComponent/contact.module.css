@@ -134,5 +134,5 @@ textarea:focus {
   font-weight: 600;
   color: #4d4d4d;
 }
-@media (width: 956px) {
+@media screen and (max-width: 760px) {
 }

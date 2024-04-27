@@ -4,39 +4,9 @@ import Contact from "../../My_Component/ContactComponent/contact";
 const Contactus = () => {
   return (
     <>
-      <main
-        style={{
-          width: "100%",
-          height: "140vh",
-          // backgroundColor: " #28162d",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <section
-          style={{
-            width: "75%",
-            // backgroundColor: "red",
-            gap: "50px",
-            height: "100vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              // backgroundColor: "orangered",
-              width: "60%",
-              height: "600px",
-              padding: "2rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-evenly",
-              flexDirection: "column",
-            }}
-          >
+      <main className={styles.main_Container}>
+        <section className={styles.main_Container2}>
+          <div className={styles.main_Container3}>
             <div>
               <h1 className={styles.h1}>Contact Us</h1>
               <p className={styles.p}>
@@ -46,7 +16,7 @@ const Contactus = () => {
               <p className={styles.p}>Subsentry@gmail.com</p>
               <p className={styles.p}>+234 703 856 3487 , +234 803 922 3488</p>
             </div>
-            <div style={{ display: "flex", gap: "20px", overflow: "hidden" }}>
+            <div className={styles.support_Container}>
               <div className={styles.h2}>
                 <h2>Customer support</h2>
                 <p>
@@ -64,61 +34,21 @@ const Contactus = () => {
               </div>
             </div>
           </div>
-          <div
-            style={{
-              backgroundColor: "white",
-              boxShadow: "-0px 0px 10px 0px #00000040",
-              width: "60%",
-              height: "600px",
-              borderRadius: "20px",
-              overflow: "hidden",
-            }}
-          >
-            <div>
-              <div style={{ padding: "2rem" }}>
-                <Contact />
-              </div>
+          <div>
+            <div className={styles.main_Container5}>
+              <Contact />
             </div>
           </div>
         </section>
       </main>
-      <aside className={styles.mapcontainerflex}>
-        <div
-          style={{
-            display: "flex",
-            // backgroundColor: "red",
-            width: "80%",
-            height: "70vh",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              width: "40%",
-              height: "400px",
-              // backgroundColor: "orangered",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+      {/* <aside className={styles.mapcontainerflex}>
+        <div className={styles.mapcontainerflex1}>
+          <div className={styles.mapcontainerflex2}>
             <div>
               <img src="/SubletImages/map.logo.png" alt="" width={"80%"} />
             </div>
           </div>
-          <div
-            style={{
-              width: "40%",
-              height: "400px",
-              // backgroundColor: "orange",
-              display: "flex",
-              justifyContent: "space-evenly",
-
-              flexDirection: "column",
-              padding: "2rem",
-            }}
-          >
+          <div className={styles.mapcontainerflex3}>
             <div>
               <h2 className={styles.location}>Our Location</h2>
               <h1 className={styles.locationh1}>Connecting Near and far</h1>
@@ -132,7 +62,7 @@ const Contactus = () => {
             </div>
           </div>
         </div>
-      </aside>
+      </aside> */}
     </>
   );
 };
