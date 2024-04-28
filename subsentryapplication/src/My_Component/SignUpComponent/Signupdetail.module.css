@@ -6,6 +6,12 @@
 /* .shw {
   background-color: red;
 } */
+.logocontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .logocontent p {
   font-family: "Poppins";
   font-size: 16px;
@@ -79,4 +85,17 @@
 
   letter-spacing: 0em;
   color: #808080;
+}
+@media screen and (max-width: 760px) {
+  .logocontent {
+    gap: 20px;
+    width: 100%;
+    /* background-color: orangered; */
+  }
+  .logocontent p {
+    font-size: 20px;
+  }
+  .logocontent h5 {
+    font-size: 14px;
+  }
 }

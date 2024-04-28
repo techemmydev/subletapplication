@@ -49,107 +49,107 @@ const Desktop = () => {
   };
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={styles.welcomepagescreen}>
         <div className={styles.innerwelcompagescreencontainer}>
-          <div className={styles.secondinnercontainer}>
-            <div className={styles.welcomepagescreenContent}>
-              <h1>welcome back</h1>
-              <p>Log in to your account </p>
-            </div>
+          {/* <div className={styles.secondinnercontainer}> */}
+          <div className={styles.welcomepagescreenContent}>
+            <h1>welcome back</h1>
+            <p>Log in to your account </p>
+          </div>
 
-            <div className={styles.detailsinputcontainer}>
-              <div className={styles.inputformcontainer}>
-                <Google />
-                <div className={styles.or}>
-                  <div className={styles.frameline}></div>
-                  <p className={styles.framelineparagraph}>or</p>
-                  <div className={styles.frameline}></div>
-                </div>
-                <div className={styles.input_Details}>
+          <div className={styles.detailsinputcontainer}>
+            <div className={styles.inputformcontainer}>
+              <Google />
+              <div className={styles.or}>
+                <div className={styles.frameline}></div>
+                <p className={styles.framelineparagraph}>or</p>
+                <div className={styles.frameline}></div>
+              </div>
+              <div className={styles.input_Details}>
+                <input
+                  type="email"
+                  placeholder="email"
+                  required
+                  className={styles.frameInner}
+                  name="email"
+                  id="email"
+                  value={userInformationDetails.userEmail}
+                  onChange={handleRegisterEmail}
+                  // value={person.email}
+                  // onInput={handleChange}
+                />
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="password"
+                  required
+                  className={styles.frameInner}
+                  name="password"
+                  value={userInformationDetails.userPassword}
+                  onChange={handleRegisterPassword}
+                />
+                <span
+                  onClick={togglePasswordVisibility}
+                  style={{
+                    color: "black",
+                    position: "absolute",
+                    right: "45px",
+                    top: "95px",
+                  }}
+                >
+                  {showPassword ? <IoIosEye /> : <IoIosEyeOff />}
+                </span>
+              </div>
+              <div className={styles.forgot}>
+                <div className={styles.frameInput2}>
                   <input
-                    type="email"
-                    placeholder="email"
-                    required
-                    className={styles.frameInner}
-                    name="email"
-                    id="email"
-                    value={userInformationDetails.userEmail}
-                    onChange={handleRegisterEmail}
-                    // value={person.email}
-                    // onInput={handleChange}
+                    // style={{
+                    //   backgroundColor: Ischeck ? "green" : "red",
+                    //   width: "20px",
+                    //   height: "20px",
+                    // }}
+                    checked={Ischeck}
+                    type="checkbox"
+                    name=""
+                    id=""
+                    onChange={(e) => ClickedCheckedbox(e.target.checked)}
+                    className={styles.frameInput1}
                   />
-                  <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="password"
-                    required
-                    className={styles.frameInner}
-                    name="password"
-                    value={userInformationDetails.userPassword}
-                    onChange={handleRegisterPassword}
-                  />
-                  <span
-                    onClick={togglePasswordVisibility}
-                    style={{
-                      color: "black",
-                      position: "absolute",
-                      right: "45px",
-                      top: "95px",
-                    }}
-                  >
-                    {showPassword ? <IoIosEye /> : <IoIosEyeOff />}
-                  </span>
+                  <span className={styles.keep}>Keep me Logged in</span>
                 </div>
-                <div className={styles.forgot}>
-                  <div className={styles.frameInput2}>
-                    <input
-                      // style={{
-                      //   backgroundColor: Ischeck ? "green" : "red",
-                      //   width: "20px",
-                      //   height: "20px",
-                      // }}
-                      checked={Ischeck}
-                      type="checkbox"
-                      name=""
-                      id=""
-                      onChange={(e) => ClickedCheckedbox(e.target.checked)}
-                      className={styles.frameInput1}
-                    />
-                    <span className={styles.keep}>Keep me Logged in</span>
-                  </div>
 
-                  <div className={styles.alreadyLink}>
-                    <Link to="/reset-password">
-                      <span className={styles.already}>Forgot Password?</span>{" "}
-                    </Link>
-                  </div>
-                </div>
-                <div className={styles.welcomeButton}>
-                  <Link className={styles.login_link} to="/dashboardpage">
-                    <Button
-                      style={{
-                        color: "white",
-                        backgroundColor: "#CC8F99",
-                      }}
-                      hoverStyle={{
-                        backgroundColor: "#5b0e0e",
-                      }}
-                    >
-                      log in
-                    </Button>
+                <div className={styles.alreadyLink}>
+                  <Link to="/reset-password">
+                    <span className={styles.already}>Forgot Password?</span>{" "}
                   </Link>
                 </div>
+              </div>
+              <div className={styles.welcomeButton}>
+                <Link className={styles.login_link} to="/dashboardpage">
+                  <Button
+                    style={{
+                      color: "white",
+                      backgroundColor: "#CC8F99",
+                    }}
+                    hoverStyle={{
+                      backgroundColor: "#5b0e0e",
+                    }}
+                  >
+                    log in
+                  </Button>
+                </Link>
+              </div>
 
-                <div className={styles.dontHaveAnContainer}>
-                  <span>{`Don’t have an account ? `}</span>
-                  <span className={styles.signUp}>
-                    {" "}
-                    <Link to="/signup"> Sign up</Link>{" "}
-                  </span>
-                </div>
+              <div className={styles.dontHaveAnContainer}>
+                <span>{`Don’t have an account ? `}</span>
+                <span className={styles.signUp}>
+                  {" "}
+                  <Link to="/signup"> Sign up</Link>{" "}
+                </span>
               </div>
             </div>
           </div>
+          {/* </div> */}
         </div>
         <Outlet />
       </main>

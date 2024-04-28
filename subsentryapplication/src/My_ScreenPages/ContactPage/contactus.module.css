@@ -28,7 +28,7 @@
   letter-spacing: 0em;
 }
 .mapcontainerflex {
-  /* background-color: blue; */
+  background-color: orange;
   width: 100%;
   height: 85vh;
   display: flex;
@@ -108,8 +108,9 @@
 .mapcontainerflex1 {
   width: 80%;
   height: 70vh;
-  background-color: blue;
-
+  /* background-color: blue; */
+  gap: 20px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,8 +118,11 @@
 .mapcontainerflex2 {
   width: 40%;
   height: 400px;
-  background-color: olive;
-
+  /* background-color: olive; */
+  background-image: url("/SubletImages/map.logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +145,14 @@
 .main_Container5 {
   padding: 2rem;
 }
-
+/* .mapcontainerflexImage {
+  width: 80%;
+  height: 200px;
+  background-image: url("../../../public/SubletImages/map.logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 @media screen and (max-width: 760px) {
   .main_Container {
     height: unset;
@@ -168,5 +179,30 @@
   }
   .h2 p {
     font-size: 10px;
+  }
+  .mapcontainerflex {
+    /* flex-direction: column; */
+    background-color: white;
+  }
+  .mapcontainerflex1 {
+    /* background-color: orangered; */
+    display: block;
+    width: 100%;
+    height: unset;
+  }
+  .mapcontainerflex2 {
+    width: 100%;
+    height: 300px;
+  }
+  .mapcontainerflex3 {
+    height: auto;
+    gap: 20px;
+    width: unset;
+  }
+  .location {
+    font-size: 17px;
+  }
+  .locationh1 {
+    font-size: 18px;
   }
 }

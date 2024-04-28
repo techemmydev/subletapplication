@@ -10,11 +10,11 @@ const Contactus = () => {
             <div>
               <h1 className={styles.h1}>Contact Us</h1>
               <p className={styles.p}>
-                Email, call, or complete the form so as Sublet can solve
+                Email, call, or complete the form so as Subsentry can solve
                 whatever subscription problem.
               </p>
               <p className={styles.p}>Subsentry@gmail.com</p>
-              <p className={styles.p}>+234 703 856 3487 , +234 803 922 3488</p>
+              <p className={styles.p}>+234 8065592378 , +234 803 922 3488</p>
             </div>
             <div className={styles.support_Container}>
               <div className={styles.h2}>
@@ -28,7 +28,7 @@ const Contactus = () => {
                 <h2>Feedback and suggestions</h2>
                 <p>
                   We value your feedback and are continuously working to improve
-                  Sublet. Your input is crucial in shaping the future of
+                  Subsentry. Your input is crucial in shaping the future of
                   Subsentry.
                 </p>
               </div>
@@ -41,12 +41,14 @@ const Contactus = () => {
           </div>
         </section>
       </main>
-      {/* <aside className={styles.mapcontainerflex}>
+      <aside className={styles.mapcontainerflex}>
         <div className={styles.mapcontainerflex1}>
           <div className={styles.mapcontainerflex2}>
-            <div>
-              <img src="/SubletImages/map.logo.png" alt="" width={"80%"} />
-            </div>
+            {/* <img
+              src="/SubletImages/map.logo.png"
+              alt=""
+              className={styles.mapcontainerflexImage}
+            /> */}
           </div>
           <div className={styles.mapcontainerflex3}>
             <div>
@@ -62,7 +64,7 @@ const Contactus = () => {
             </div>
           </div>
         </div>
-      </aside> */}
+      </aside>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../My_Component/SignUpComponent/Signupdetail.module.css";
-import SubletLogo from "../SubletLogo/SubletLogo";
+// import SubletLogo from "../SubletLogo/SubletLogo";
 import { useState } from "react";
 import Google from "../LoginComponent/Google";
 import { Link } from "react-router-dom";
@@ -55,16 +55,8 @@ const SignupDetails = () => {
   return (
     <div className={style.container}>
       <div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
-          className={style.logocontent}
-        >
-          <SubletLogo />
+        <div className={style.logocontent}>
+          {/* <SubletLogo /> */}
           <p>Sign up to your account</p>
           <h5>
             Already have an account ?{" "}

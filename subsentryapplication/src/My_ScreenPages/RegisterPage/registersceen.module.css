@@ -65,3 +65,25 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 760px) {
+  .screen_container2 {
+    background-color: white;
+    width: 100%;
+
+    display: unset;
+  }
+  .screen_flexbox1 {
+    height: 70vh;
+    gap: 20px;
+  }
+  .screen_flexbox1_content h1 {
+    font-size: 35px;
+  }
+  .screen_flexbox1_content p {
+    font-family: "Plus Jakarta Sans";
+    font-size: 15px;
+  }
+  .screen_flexbox2 {
+    align-items: unset;
+  }
+}
