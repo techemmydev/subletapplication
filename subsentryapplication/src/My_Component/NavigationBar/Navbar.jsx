@@ -14,7 +14,7 @@ const Navbar = () => {
     menuRef.current.style.right = "0";
   };
   const closeMenu = () => {
-    menuRef.current.style.right = "-414px";
+    menuRef.current.style.right = "-350px";
   };
   useEffect(() => {
     const handleScroll = () => {

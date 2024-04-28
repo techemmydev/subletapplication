@@ -1,3 +1,32 @@
+.Manage_subscriptions_container1 {
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Manage_subscriptions_container2 {
+  width: 80%;
+  /* background-color: orangered; */
+  padding: 2rem;
+  /* //   height: "90vh", */
+
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Manage_subscriptions_container3 {
+  margin-top: 50px;
+  width: 60%;
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Manage_subscriptions_heading h1 {
   font-size: 45px;
   font-family: "Plus Jakarta Sans";
@@ -44,4 +73,49 @@
   line-height: 1.7;
   text-align: center;
   color: rgb(145, 13, 34);
+}
+.Manage_subscriptions_containerimg {
+  background-image: url("../../../public//SubletImages/oINXW1NLasVKOhD9h9TB5IhM8TY.webp");
+  width: 70%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media screen and (max-width: 760px) {
+  /* .Manage_subscriptions_containerimg {
+    background-image: none;
+  } */
+  .Manage_subscriptions_container3 {
+    display: none;
+  }
+  .Manage_subscriptions_container2 {
+    width: unset;
+  }
+  .Manage_subscriptions_heading {
+    width: unset;
+  }
+  .Manage_subscriptions_heading h1 {
+    font-size: 30px;
+  }
+  .Manage_subscriptions_heading p {
+    font-size: 13px;
+  }
+  .Manage_subscriptions_sections {
+    display: unset;
+    padding: unset;
+    gap: unset;
+  }
+  .Manage_subscriptions_sections h1 {
+    font-size: 20px;
+    padding: 1rem;
+  }
+  .Manage_subscriptions_sections p {
+    padding: 1rem;
+    font-size: 15px;
+  }
+  /* .Manage1 {
+    text-align: center;
+    font-size: 19px;
+  } */
 }

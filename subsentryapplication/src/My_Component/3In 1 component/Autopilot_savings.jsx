@@ -6,65 +6,22 @@ import Testimonial from "../TestimonialComponent/Testimonial";
 const Autopilot_savings = () => {
   return (
     <>
-      <div
-        style={{
-          width: "100%",
-          backgroundColor: "rgb(242, 242, 242)",
-          // height: "100vh",
-          display: "flex",
-          alignItems: "center",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{
-            width: "80%",
-            //   backgroundColor: "orangered",
-            padding: "2rem",
-            //   height: "90vh",
-
-            marginTop: "50px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              marginTop: "50px",
-              width: "60%",
-              //   backgroundColor: "yellowgreen",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-            //   style={{
-            //     width: "380px",
-            //     height: "700px",
-            //     /* background-color: #333333; */
-
-            //     padding: "1rem",
-            //     backgroundImage: {
-            //       url: "/src/assets/Subletimages/5DkTjyeV6QkNskjaRCtmTsHgfSw.webp",
-            //     },
-            //     /* border-radius: 10px; */
-            //     backgroundRepeat: "no-repeat",
-            //     backgroundPosition: "center",
-            //     backgroundSize: "contain",
-            //   }}
-          >
-            {" "}
-            <img
+      <div className={style.Manage_subscriptions_container1}>
+        <div className={style.Manage_subscriptions_container2}>
+          <div className={style.Manage_subscriptions_container3}>
+            <div className={style.Manage_subscriptions_containerimg}></div>
+            {/* <img
               src="/SubletImages/5DkTjyeV6QkNskjaRCtmTsHgfSw.webp"
               alt=""
               width={"79%"}
               style={{ borderRadius: "12px" }}
-            />
+            /> */}
           </div>
           <div className={style.Manage_subscriptions_heading}>
-            <h1>Put Your Savings On Track with Subsentry</h1>
-            <p>
+            <h1 className={style.Manage1}>
+              Put Your Savings On Track with Subsentry
+            </h1>
+            <p className={style.Manage2}>
               Subsentry smart savings accounts make saving money effortless. We
               analyze your accounts to determine the optimal time to save, so
               you reach your goals faster and avoid overdraft fees.

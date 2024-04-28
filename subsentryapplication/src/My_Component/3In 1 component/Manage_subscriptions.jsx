@@ -6,60 +6,15 @@ import { Link } from "react-router-dom";
 const Manage_subscriptions = () => {
   return (
     <>
-      <div
-        style={{
-          width: "100%",
-          backgroundColor: "rgb(242, 242, 242)",
-          // height: "100vh",
-          display: "flex",
-          alignItems: "center",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{
-            width: "80%",
-            //   backgroundColor: "orangered",
-            padding: "2rem",
-            //   height: "90vh",
-
-            marginTop: "50px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              marginTop: "50px",
-              width: "60%",
-              // backgroundColor: "yellowgreen",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-            //   style={{
-            //     width: "380px",
-            //     height: "700px",
-            //     /* background-color: #333333; */
-
-            //     padding: "1rem",
-            //     backgroundImage: {
-            //       url: "/src/assets/Subletimages/5DkTjyeV6QkNskjaRCtmTsHgfSw.webp",
-            //     },
-            //     /* border-radius: 10px; */
-            //     backgroundRepeat: "no-repeat",
-            //     backgroundPosition: "center",
-            //     backgroundSize: "contain",
-            //   }}
-          >
-            {" "}
-            <img
+      <div className={style.Manage_subscriptions_container1}>
+        <div className={style.Manage_subscriptions_container2}>
+          <div className={style.Manage_subscriptions_container3}>
+            <div className={style.Manage_subscriptions_containerimg}></div>
+            {/* <img
               src="/SubletImages/oINXW1NLasVKOhD9h9TB5IhM8TY.webp"
               alt=""
               width={"70%"}
-            />
+            /> */}
           </div>
           <div className={style.Manage_subscriptions_heading}>
             <h1>Take control of your subscriptions</h1>

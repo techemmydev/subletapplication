@@ -50,7 +50,7 @@ const Desktop = () => {
   return (
     <>
       {/* <Navbar /> */}
-      <main className={styles.welcomepagescreen}>
+      <main className={`${styles.welcomepagescreen}`}>
         <div className={styles.innerwelcompagescreencontainer}>
           {/* <div className={styles.secondinnercontainer}> */}
           <div className={styles.welcomepagescreenContent}>
