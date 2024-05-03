@@ -7,18 +7,12 @@ import { Routes, Route } from "react-router-dom";
 import Usersetting from "../ProfileDashboard/DashboradScreen/userComponentfolder/UserSettingComponent/Usersetting";
 import PageNotFound from "../My_ScreenPages/PageNotFound/PageNotFounds";
 import StackBars from "../ProfileDashboard/DashboradScreen/userComponentfolder/Report/Report";
+import style from "./dashbord.module.css";
 const DashboardPage = () => {
   return (
     <div style={{ display: "flex" }}>
       <SidebarDashboard />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "100%",
-          backgroundColor: " #F6F4EE",
-        }}
-      >
+      <div className={style.DashboardPage_container}>
         <div>
           <NavbarDashboard />
         </div>

@@ -44,11 +44,15 @@ const Contactus = () => {
       <aside className={styles.mapcontainerflex}>
         <div className={styles.mapcontainerflex1}>
           <div className={styles.mapcontainerflex2}>
-            {/* <img
-              src="/SubletImages/map.logo.png"
-              alt=""
-              className={styles.mapcontainerflexImage}
-            /> */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.00094306994!2d3.364662475713153!3d6.5215615231843795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c4da6e7985b%3A0xcc91fa8b98376c74!2sThe%20Bulb!5e0!3m2!1sen!2sng!4v1714732737710!5m2!1sen!2sng"
+              width="100%"
+              height="400"
+              title="Responsive Google Map"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           <div className={styles.mapcontainerflex3}>
             <div>

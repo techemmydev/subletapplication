@@ -40,3 +40,8 @@
   justify-content: space-between;
   margin-top: 16px;
 }
+@media screen and (max-width: 760px) {
+  .allservice_container_center {
+    width: unset;
+  }
+}

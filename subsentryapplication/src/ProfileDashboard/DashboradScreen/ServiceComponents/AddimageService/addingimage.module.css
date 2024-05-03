@@ -107,3 +107,12 @@
   font-size: 15px;
   color: #cacaca;
 }
+@media screen and (max-width: 760px) {
+  .addimage_container_flexbox {
+    display: unset;
+  }
+  .addimage_box {
+    border: none;
+    height: unset;
+  }
+}

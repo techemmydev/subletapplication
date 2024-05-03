@@ -28,7 +28,7 @@
   letter-spacing: 0em;
 }
 .mapcontainerflex {
-  background-color: orange;
+  /* background-color: orange; */
   width: 100%;
   height: 85vh;
   display: flex;
@@ -119,13 +119,16 @@
   width: 40%;
   height: 400px;
   /* background-color: olive; */
-  background-image: url("/SubletImages/map.logo.png");
+  /* background-image: url("/SubletImages/map.logo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
+  display: flex; */
   justify-content: center;
   align-items: center;
+}
+.mapcontainerflex2 iframe {
+  border: none;
 }
 .mapcontainerflex3 {
   width: 40%;
