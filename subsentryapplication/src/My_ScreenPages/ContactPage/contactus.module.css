@@ -196,9 +196,11 @@
   .mapcontainerflex2 {
     width: 100%;
     height: 300px;
+    padding: 1rem;
   }
   .mapcontainerflex3 {
-    height: auto;
+    margin-top: 70px;
+
     gap: 20px;
     width: unset;
   }

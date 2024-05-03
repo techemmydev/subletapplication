@@ -62,8 +62,7 @@ const Contactus = () => {
             <div className={styles.address}>
               <h5>Head quaters </h5>
               <address>
-                Subsentry inc. Lagos, Nigeria 123 Tech Boulevard, jibowu Lagos
-                123 Tech Boulevard. Nigeria
+                The Bulb 39 Ikorodu-Ososun Rd, Jibowu, Lagos 101245, Lagos
               </address>
             </div>
           </div>
