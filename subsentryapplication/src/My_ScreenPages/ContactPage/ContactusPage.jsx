@@ -49,9 +49,9 @@ const Contactus = () => {
               width="100%"
               height="400"
               title="Responsive Google Map"
-              allowfullscreen=""
+              // allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              // referrerpolicy="no-referrer-when-downgrade"s
             ></iframe>
           </div>
           <div className={styles.mapcontainerflex3}>

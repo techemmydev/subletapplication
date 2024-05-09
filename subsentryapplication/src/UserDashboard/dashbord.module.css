@@ -1,7 +1,7 @@
 .DashboardPage_container {
   display: flex;
   flex-direction: column;
-  width: "100%";
+  width: 100%;
   background-color: #f6f4ee;
 }
 @media screen and (max-width: 760px) {
