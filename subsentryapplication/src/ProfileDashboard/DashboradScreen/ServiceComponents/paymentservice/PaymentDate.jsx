@@ -54,7 +54,7 @@ const PaymentDate = () => {
                 <label htmlFor="Company">Next payment date </label>
                 <input
                   type="text"
-                  placeholder="Next payment date.eg 0000-00-00"
+                  placeholder="Next payment date.eg 00-00-0000"
                   value={nextPaymentDate}
                   onChange={handleNextPaymentDateChange}
                 />

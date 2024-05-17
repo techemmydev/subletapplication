@@ -1,32 +1,27 @@
 export const iconimage = [
   {
     id: 1,
-    icons:
-      "src/ProfileDashboard/DashboradScreen/ServiceComponents/AddimageService/iconFolder/spotify.svg",
+    icons: "/iconFolder/spotify.svg",
     name: "Spotify",
   },
   {
     id: 2,
-    icons:
-      "src/ProfileDashboard/DashboradScreen/ServiceComponents/AddimageService/iconFolder/netfix.svg",
+    icons: "/iconFolder/netfix.svg",
     name: "Netflix",
   },
   {
     id: 3,
-    icons:
-      "src/ProfileDashboard/DashboradScreen/ServiceComponents/AddimageService/iconFolder/Amazon logo.svg",
+    icons: "/iconFolder/Amazon logo.svg",
     name: "Amazon",
   },
   {
     id: 5,
-    icons:
-      "src/ProfileDashboard/DashboradScreen/ServiceComponents/AddimageService/iconFolder/shomax.svg",
+    icons: "/iconFolder/shomax.svg",
     name: "Prime video",
   },
   {
     id: 4,
-    icons:
-      "src/ProfileDashboard/DashboradScreen/ServiceComponents/AddimageService/iconFolder/YouTube.svg",
+    icons: "/iconFolder/YouTube.svg",
     name: "Youtube",
   },
 ];
